@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+@media screen and (min-width: 769px){
+    #wrap{
+        width: 100%;
+        min-width: 1020px;
+    }
+    .section{
+        width:1020px;
+        margin: 0 auto;
+    }
+    /* footer */
+    footer{
+        background: #222;
+        color: #999;
+    }
+    #foot_top{
+        border-bottom: 1px solid #555;
+        height: 50px;
+    }
+    #foot_top ul{
+        overflow: hidden;
+    }
+    #foot_top li{
+        float: left;
+        padding: 15px 0px;
+    }
+    #foot_top a{
+
+    }
+    #foot_top span{
+        margin: 0 15px;
+    }
+
+    #foot_bot{
+        overflow: hidden;
+        padding: 4rem 0;
+    }
+    #f_logo{
+        float: left;
+        filter: grayscale(100%);
+        margin-right: 3rem;
+    }
+    #f_logo a{}
+    #foot_bot address{
+        float: left;
+    }
+    #foot_bot select{
+        float: right;
+        width: 170px;
+        padding-left: 1rem;
+        border: none;
+        background: #444;
+        color:#ccc;
+        height: 35px;
+        border-radius: 20px;
+    }
+
+
+}
+
+/*모바일*/
+@media screen and (max-width: 768px){
+    footer{
+        background: #222;
+        color: #999;
+    }
+    #f_logo{
+        display: none;
+    }
+    select{
+        display: none;
+    }
+    
+    #foot_top{
+        border-bottom: 1px solid #555;
+        height: 50px;
+    }
+    #foot_top ul{
+        overflow: hidden;
+    }
+    #foot_top li{
+        float: left;
+        padding: 15px 0px;
+    }
+    #foot_top li:first-child{
+        padding-left: 15px;
+    }
+    #foot_top a{
+
+    }
+    #foot_top span{
+        margin: 0 15px;
+    }
+
+    #foot_bot{
+        overflow: hidden;
+        padding: 4rem 0;
+    }
+    #f_logo{
+        float: left;
+        filter: grayscale(100%);
+        margin-right: 3rem;
+    }
+    #f_logo a{}
+    #foot_bot address{
+        float: left;
+        margin-left: 15px;
+    }
+    #foot_bot select{
+        float: right;
+        width: 170px;
+        padding-left: 1rem;
+        border: none;
+        background: #444;
+        color:#ccc;
+        height: 35px;
+        border-radius: 20px;
+    }
+}

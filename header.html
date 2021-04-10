@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Header</title>
+    <link rel="stylesheet" href="css/commen.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="bxslide/dist/jquery.bxslider.css">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="bxslide/dist/jquery.bxslider.min.js">
+    </script>
+    <script> /* 배너 슬라이드 */
+            $(document).ready(function(){
+                $('.slider').bxSlider({
+                    auto:true,
+                    adaptiveHeight:true,
+                    mode:'fade'
+                });
+            });
+    </script>
+    <script src="./js/header.js"></script>
+</head>
+<body>
+    <div id="wrap"> <!-- 전체를 감싸는 부분 -->
+        <header><!--상단 메뉴 -->
+            <section id="head-top"> <!-- 상단메뉴의 검은색 메뉴 -->
+                <div class="section">
+                    <div class="topnavi"> <!-- 메뉴명 -->
+                        <ul>
+                            <li>
+                                <a href="#">홈으로</a>
+                                <span></span>
+                            </li>
+                            <li>
+                                <a href="#">즐겨찾기</a>
+                                <span></span>
+                            </li>
+                            <li>
+                                <a href="./html/loginform.html">로그인</a>
+                                <span></span>
+                                </li>
+                            <li>
+                                <a href="./html/sign_up_from.html">회원가입</a>
+                                <span></span>
+                                </li>
+                            <li>
+                                <a href="#">여행바구니</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="snsicon"> <!-- 상단아이콘 -->
+                        <a href="#" class="sns1">안드로이드</a>
+                        <a href="#" class="sns2">카페</a>
+                        <a href="#" class="sns3">코레일</a>
+                    </div>
+                </div>
+            </section>
+            <section id="head-bot">
+                <div class="section">
+                    <div id="logo"> <!-- 로고 -->
+                        <a href="#">
+                            <img src="jpg/RailroTour%20LOGO.png" alt="" class="main_logo">
+                            </a>
+  
+                    </div>
+                    <nav>
+                        <ul class="m-menu"><!--메인메뉴-->
+                            <li class="list01 list" onmouseover="bgcolor(1)" onmouseout="removecolor(1)">
+                                <a href="#" class="list_a1">내일로 소개</a>
+                                
+                            </li>
+                            <li class="list02 list" onmouseover="bgcolor(2)" onmouseout="removecolor(2)">
+                                <a href="#" class="list_a2">TOP 100</a>
+                            </li>
+                            <li class="list03 list" onmouseover="bgcolor(3)" onmouseout="removecolor(3)">
+                                <a href="#" class="list_a3">플래너</a>
+                            </li>
+                            <li class="list04 list" onmouseover="bgcolor(4)" onmouseout="removecolor(4)">
+                                <a href="#" class="list_a4">검색</a>
+                            </li>
+                            <li class="list05 list" onmouseover="bgcolor(5)" onmouseout="removecolor(5)">
+                                <a href="#" class="list_a5">커뮤니티</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="s-menu">
+                        <div class="section">
+                           <div class="float">
+                            <dl class="hoverbg1 hoverbg" onmouseover="bgcolor(1)" onmouseout="removecolor(1)">
+<!--                                            <dt>지우지 말것</dt>-->
+                                <dd><a href="./html/sub01.html">내일로 소개</a></dd>
+                                <dd><a href="#">발권지 혜택</a></dd>
+                            </dl>
+                            <dl class="hoverbg2 hoverbg" onmouseover="bgcolor(2)" onmouseout="removecolor(2)">
+                                <dd><a href="#">관광지</a></dd>
+                                <dd><a href="#">맛집</a></dd>
+                                <dd><a href="#">코스</a></dd>
+                                <dd><a href="#">트레버</a></dd>
+                            </dl>
+                            <dl class="hoverbg3 hoverbg" onmouseover="bgcolor(3)" onmouseout="removecolor(3)">
+
+                                <dd><a href="#">새 플래너 작성</a></dd>
+                                <dd><a href="#">내 플래너 목록</a></dd>
+                            </dl>
+                            <dl class="hoverbg4 hoverbg" onmouseover="bgcolor(4)" onmouseout="removecolor(4)">
+                                <dd><a href="#">통합검색</a></dd>
+                            </dl>
+                            <dl class="hoverbg5 hoverbg" onmouseover="bgcolor(5)" onmouseout="removecolor(5)">
+                                <dd><a href="./html/sub02.html">정보공유</a></dd>
+                                <dd><a href="#">동행자</a></dd>
+                            </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="navbar__toggleBtn">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+			</section>
+        </header>
+    </div>
+    
+    <script src="js/script.js"></script>
+    <script>
+     $(function() {
+      var count = $('#rank-list li').length;
+      var height = $('#rank-list li').height();
+
+      function step(index) {
+          $('#rank-list ol').delay(2000).animate({
+              top: -height * index,
+          }, 500, function() {
+              step((index + 1) % count);
+          });
+      }
+
+      step(1);
+  });
+		
+
+  </script>
+</body>
+</html>
