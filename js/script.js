@@ -96,6 +96,8 @@ function change(num){
   
 }
 
+
+
 		
 function area_change(cnt){
   

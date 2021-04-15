@@ -128,7 +128,10 @@
         border-right: 1px solid #ccc;
     }
 
-
+    .ban-iconbox li a img{
+        width: 127px;
+    }
+    
     .ban-iconbox li.one a{
         background-position: 0 0px;
     }
@@ -260,6 +263,7 @@
 
     #ban02-2 .CustomSearch{
         float: left;
+        width: 100%;
         font-family: 'NanumSquare', sans-serif;
     }
 
@@ -311,41 +315,25 @@
         width: 13px;
     }
     #ban02-2 .CustomSearch .day{
-        font-size: 1.2rem;
-        padding: 24px 37px 18px;
+        font-size: 1.5rem;
+        padding: 50px 37px 18px;
         font-weight: bold;
     }
     #ban02-2 .CustomSearch .r-button{
         width: 100%;
-        margin-left: 72px;
     }
     #ban02-2 .CustomSearch .r-button input:nth-child(2){
         margin-left: 45px;
     }
     #ban02-2 .CustomSearch .tema{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-weight: bold;
-        padding: 24px 37px 18px;
+        padding: 100px 37px 18px;
     }
     #ban02-2 .CustomSearch .tema_group{
         width: 100%;
     }
-    #ban02-2 .CustomSearch .Left_icon{
-        float: left;
-        transform: rotate(90deg);
-        width: 15px;
-        margin-top: 24px;
-        margin-left: 40px;
-        cursor: pointer;
-    }
-    #ban02-2 .CustomSearch .Right_icon{
-        transform: rotate(-90deg);
-        float: right;
-        width: 15px;
-        margin-top: 24px;
-        margin-right: 40px;
-        cursor: pointer;
-    }
+
     .tema_slide{
         float: left;
         position: relative;
@@ -367,7 +355,7 @@
         padding-top: 15px;
     }
 
-    .search{
+    .CustomSearch .search{
         width: 135px;
         background: #0078ff;
         color: white;
@@ -375,9 +363,37 @@
         text-align: center;
         padding: 10px 20px;
         cursor: pointer;
-        margin: 25px 40px;
+        margin: 0 auto;
+        margin-top: 100px;
     }
-
+    .r-button select{
+        width: 100px;
+        padding-left: 1rem;
+        border: none;
+        background: #3e3e3e;
+        color:#ccc;
+        height: 25px;
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto;
+    }
+    .tema_group select{
+        width: 100px;
+        padding-left: 1rem;
+        border: none;
+        background: #3e3e3e;
+        color:#ccc;
+        height: 25px;
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    
+    
+    
+    
+    
     #ban03{
         width:510px;
         height: 510px;
@@ -770,6 +786,9 @@
         width: 100%;
         display: block;
         max-width: 768px;
+        max-height: 555px;
+        overflow: hidden;
+        position: relative;
     }
     #ban02-1{
         float: left;
@@ -799,28 +818,212 @@
         float: left;
     }
     .ban-iconbox a{
+        width: 100%;
+        height: auto;
         display: block;
-        height: 127px;
-        background: url(../jpg/b_menu.png) no-repeat;
     }
-    .ban-iconbox span{
-        display: block;
-        text-align: center;
-        padding-top: 100px;
-        font-weight: bold;
+    .ban-iconbox img{
+        width: 100%;
+        height: auto;
+        border: 0.5px solid #ccc;
     }
 
-    .ban-iconbox li.one a{
-        background-position: 0 0px;
+    
+    /* 실시간 급상승 검색어와 사용자 맞춤 코스 추천 검색 부분 */
+    #ban02-2{
+        width: 50%;
+        height: 100%;
+        border-top: none;
+        overflow: hidden;
+        max-height: 555px;
+    }
+    #ban02-2 .rank{
+        height: 40px;
+        background: #fff;
+        position: relative;
+        border-bottom: 1px solid #ccc;
+    }
+    #ban02-2 #rank-list{
+      padding: 8px 6px;
+    }
+    #ban02-2 #rank-list a {
+        color: #000;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'NanumSquare', sans-serif;
+    }
+
+    #ban02-2 #rank-list dl {
+        overflow: hidden;
+        width: 160px;
+        height: 26px;
+        margin: 0;
+    }
+
+    #ban02-2 #rank-list dt {
+        display: none;
+    }
+
+    #ban02-2 #rank-list dd {
+        position: relative;
+        margin: 0;
+    }
+
+    #ban02-2 #rank-list ol {
+        position: absolute;
+        top: 0;
+        left: 7px;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    #ban02-2 #rank-list .rank-color{
+        color: #5498ff;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+
+    .hoverrank-list{
+          position: absolute;
+          width: 253px;
+          border: 2px solid #6ac0ff;
+          top: 0;
+          background: #fff;
+          box-sizing: border-box;
+          padding: 15px;
+          display: none;
+          font-family: 'NanumSquare', sans-serif;
+          overflow: hidden;
+    }
+    
+    #ban02-2 .hoverrank-list li:first-child{
+        font-family: 'NanumSquare', sans-serif;
+    }
+    
+/*    사용자 맞춤 플래너 검색*/
+    
+    #ban02-2 .CustomSearch{
+        width: 100%;
+        font-family: 'NanumSquare', sans-serif;
+    }
+
+    #ban02-2 .CustomSearch .Search-Title{
+        font-size: 12px;
+        padding: 10px 12px;
+        font-weight: bold;
+    }
+    #ban02-2 .CustomSearch .area{
+        font-size: 1.2rem;
+        padding: 10px 37px;
+        font-weight: bold;
+    }
+    #ban02-2 .CustomSearch .Peo-select{
+        width: 133px;
+        overflow: hidden;
+        margin: 0 auto;
         
     }
-    .ban-iconbox li.two a{
-        background-position: -127px 0px;
+    #ban02-2 .CustomSearch .Peo-select>*{
+        float: left;
     }
-    .ban-iconbox li.three a{
-        background-position: -254px 0px;
+    #ban02-2 .CustomSearch .Peo-select #minus{
+        cursor: pointer;
+        width: 18px;
+        height: 18px;
+        background: url('../jpg/마이너스.png');
+        font-size: 0px;
+        margin-right: 20px;
     }
-    .ban-iconbox li.four a{
-        background-position: -381px 0px;
+    #ban02-2 .CustomSearch .Peo-select .input_cover{
+        margin: 0 12px;
+    }
+    #ban02-2 .CustomSearch .Peo-select #plus{
+        cursor: pointer;
+        width:18px;
+        height: 18px;
+        background: url('../jpg/플러스.png');
+        font-size: 0px;
+        margin-left: 11px;
+
+    }
+    #ban02-2 .CustomSearch .Peo-select img{
+        width: 19px;
+    }
+    input{
+        border:none;
+    }
+    #ban02-2 .CustomSearch .Peo-select #count{
+        width: 13px;
+    }
+    #ban02-2 .CustomSearch .day{
+        font-size: 1.2rem;
+        padding: 10px 37px;
+        font-weight: bold;
+    }
+    #ban02-2 .CustomSearch .r-button{
+        width: 100%;
+    }
+    #ban02-2 .CustomSearch .r-button input:nth-child(2){
+        margin-left: 45px;
+    }
+    #ban02-2 .CustomSearch .tema{
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 10px 37px;
+    }
+    #ban02-2 .CustomSearch .tema_group{
+        width: 100%;
+    }
+    .r-button select{
+        width: 100px;
+        padding-left: 1rem;
+        border: none;
+        background: #3e3e3e;
+        color:#ccc;
+        height: 25px;
+        border-radius: 20px;
+        margin: 0 auto;
+        display: block;
+    }
+    .tema_group select{
+        width: 100px;
+        padding-left: 1rem;
+        border: none;
+        background: #3e3e3e;
+        color:#ccc;
+        height: 25px;
+        border-radius: 20px;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .search{
+        width: 135px;
+        background: #0078ff;
+        color: white;
+        display: block;
+        text-align: center;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+    
+    
+/*    자동 슬라이드 배너광고*/
+    #ban03{
+        width: 100%;
+        max-width: 768px;
+        height: auto;
+        display: block;
+    }
+    #ban03 .imgbox{
+        width: 100%;
+        height: auto;
+    }
+    #ban03 img{
+        width: 100%;
+        height: auto;
     }
 }
