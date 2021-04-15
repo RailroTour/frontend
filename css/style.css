@@ -722,6 +722,10 @@
     #wrap{
         width: 100%;
     }
+
+    .section{
+        overflow: hidden;
+    }
     
 /*    BX슬라이더 부분*/
     ul.slider{}
@@ -1014,16 +1018,121 @@
 /*    자동 슬라이드 배너광고*/
     #ban03{
         width: 100%;
-        max-width: 768px;
-        height: auto;
-        display: block;
     }
-    #ban03 .imgbox{
+    #ban03 .imgbox img{
         width: 100%;
         height: auto;
     }
     #ban03 img{
-        width: 100%;
-        height: auto;
     }
+
+/*    실시간 여행기*/
+    #ban04{
+        width: 509px;
+        height: 255px;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        display: block;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    #timeline-title{
+        font-family: 'NanumSquare', sans-serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #timeline-title .real_time{
+        margin-top: 18px;
+        margin-left: 10px;
+    }
+    #timeline-title .real_time>span{
+        float: left;
+    }
+
+    #timeline-title .time{
+        color: #0078ff;
+    }
+    #timeline-title img{
+        display: block;
+        float: left;
+    }
+    #timeline-title .real_time>a{
+        float: right;
+        margin-right: 10px;
+    }
+    #timeline-title .line{
+        background: #000;
+        float: left;
+        width: 98%;
+        height: 1px;
+        margin-top: 10px;
+        margin-bottom: 18px;
+    }
+    #timeline-title .timeline1{
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: 1rem;
+        margin-left: 10px;
+    }
+    #timeline-title .timeline1>a{
+        float: left;
+    }
+    #timeline-title .resettext{
+        font-size: 12px;
+    }
+    #timeline-title .reset{
+        margin-top: 6px;
+        width: 10px;
+        height: 10px;
+    }
+    #timeline-title .bubble{
+        background: url("../jpg/speechbubble.png") no-repeat 0 10px;
+        float: right;
+        width: 400px;
+        height: 81px;
+        position: relative;
+    }
+    #timeline-title .text{
+        position: absolute;
+        top: 21px;
+        left: 13px;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    #timeline-title .text:hover{
+        text-decoration: underline;
+    }
+    #timeline-title .travel-bar{
+        width: 100%;
+        height: 20px;
+        position: absolute;
+        bottom: 0px;
+    }
+    #timeline-title i{
+        float: left;
+        font-size: 13px;
+        font-weight: 400;
+
+    }
+    #timeline-title .traveler{
+        float: left;
+    }
+
+    #timeline-title .stamp_comment_cnt img{
+        float: right;
+    }
+    #timeline-title .stamp_comment_cnt input{
+        float: right;
+        width: 20px;
+        padding-left: 5px;
+    }
+
+    .area{
+        margin-top: 75px;
+    }
+
 }
