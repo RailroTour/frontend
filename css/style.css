@@ -1,0 +1,1325 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/*데스크탑*/
+@media screen and (min-width: 769px){
+    #wrap{
+        width: 100%;
+        min-width: 1020px;
+    }
+    .section{
+        width:1020px;
+        margin: 0 auto;
+    }
+    .clear{
+        clear:both;
+        height: 0;
+        overflow: hidden;
+    }
+
+
+    main{}
+    ul.slider{}
+    ul.slider li{
+        width: 100%;
+        height: 700px;
+    }
+    li.slideimg1{
+        background: url(../jpg/slider-1.jpg) no-repeat center;
+    }
+    li.slideimg2{
+        background: url(../jpg/slider-2.jpg) no-repeat center;
+    }
+    li.slideimg3{
+        background: url(../jpg/slider-3.jpg) no-repeat center;
+    }
+
+    #content{ /* 내용 부분 */
+
+    }
+
+    #banner{}
+    #ban01{
+        float: left;
+        width: 510px;
+        height: 255px;
+    }
+    .ban-textbox{
+        width: 255px;
+        float: left;
+        background: #1a92de;
+    }
+
+    .ban-textbox a{
+        display: block;
+        height: 255px;
+        box-sizing: border-box; /* 현재 높이값을 벗어나지 않는 선에서 여백이 들어감 */
+    }
+    
+    .ban-textbox a img{
+        width: 100%;
+    }
+    .ban-textbox span{
+        display: block;
+        letter-spacing: -1px;
+        color: #fff;
+        text-align: center;
+        font-family: 'NanumSquare', sans-serif;
+    }
+
+    .ban-imgbox{
+        float: right;
+        width: 255px;
+    }
+    .ban-imgbox a{
+        display: block;
+    }
+    .ban-imgbox img{}
+
+    #ban02{
+        width: 510px;
+        float: right;
+    }
+    #ban02-1{
+        float: left;
+        width: 255px;
+        height: 510px;
+        background: #fff;
+    }
+    #ban02-1 .ban-textbox{
+        background: #333;
+        position: relative;
+    }
+
+    #ban02-1 .bottom{
+        border:16px solid transparent;
+        position: absolute;
+        top: -32px;
+        border-bottom-color: #333;
+        left: 43.8%;
+    }
+
+    .ban-iconbox{}
+    .ban-iconbox ul{}
+    .ban-iconbox li{
+        width:127px;
+        float: left;
+    }
+    .ban-iconbox a{
+        display: block;
+        height: 127px;
+        background: url(../jpg/b_menu.png) no-repeat;
+    }
+    .ban-iconbox span{
+        display: block;
+        text-align: center;
+        padding-top: 100px;
+        font-weight: bold;
+    }
+
+    .ban-iconbox li.one{
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+    .ban-iconbox li.two{
+        border-bottom: 1px solid #ccc;
+    }
+    .ban-iconbox li.three{
+        border-right: 1px solid #ccc;
+    }
+
+    .ban-iconbox li a img{
+        width: 127px;
+    }
+    
+    .ban-iconbox li.one a{
+        background-position: 0 0px;
+    }
+    .ban-iconbox li.two a{
+        background-position: -127px 0px;
+    }
+    .ban-iconbox li.three a{
+        background-position: -254px 0px;
+    }
+    .ban-iconbox li.four a{
+        background-position: -381px 0px;
+    }
+
+    .ban-iconbox li:hover a{
+        background-color: #0078ff;
+        color: #fff;
+    }
+    .ban-iconbox li.one:hover a{
+        background-position: 0px -127px;
+    }
+    .ban-iconbox li.two:hover a{
+        background-position: -127px -127px;
+    }
+    .ban-iconbox li.three:hover a{
+        background-position: -254px -127px;
+    }
+    .ban-iconbox li.four:hover a{
+        background-position: -381px -127px;
+    }
+
+    /* 실시간 급상승 검색어와 사용자 맞춤 코스 추천 검색 부분 */
+    #ban02-2{
+        float: right;
+        width: 253px;
+        height: 510px;
+        border:1px solid #ccc;
+        border-top: none;
+    }
+    #ban02-2 .rank{
+        height: 40px;
+        background: #fff;
+        position: relative;
+        border-bottom: 1px solid #ccc;
+    }
+    #ban02-2 #rank-list{
+      padding: 8px 6px;
+    }
+    #ban02-2 #rank-list a {
+        color: #000;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'NanumSquare', sans-serif;
+    }
+
+    #ban02-2 #rank-list dl {
+        overflow: hidden;
+        width: 160px;
+        height: 26px;
+        margin: 0;
+    }
+
+    #ban02-2 #rank-list dt {
+        display: none;
+    }
+
+    #ban02-2 #rank-list dd {
+        position: relative;
+        margin: 0;
+    }
+
+    #ban02-2 #rank-list ol {
+        position: absolute;
+        top: 0;
+        left: 7px;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    #ban02-2 #rank-list li {
+        height: 26px;
+        line-height: 26px;
+    }
+    #ban02-2 #rank-list .rank-color{
+        color: #5498ff;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .hoverrank-list .real_time_rank{
+        font-size: 16px;
+        font-weight: bold;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+    }
+    .hoverrank-list .top:hover a{
+        text-decoration: underline;
+    }
+    .hoverrank-list .top{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .rank:hover .hoverrank-list{ 
+      display: block;
+        z-index: 99;
+    }
+    .hoverrank-list .last_update{
+        color: #797979;
+        padding-top: 10px;
+        border-top: 1px solid #ccc;
+        margin-top: 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .hoverrank-list{
+          position: absolute;
+          width: 253px;
+          border: 2px solid #6ac0ff;
+          top: 0;
+          background: #fff;
+          box-sizing: border-box;
+          padding: 15px;
+          display: none;
+          font-family: 'NanumSquare', sans-serif;
+          overflow: hidden;
+    }
+    #ban02-2 .hoverrank-list li:first-child{
+        font-family: 'NanumSquare', sans-serif;
+    }
+
+    #ban02-2 .CustomSearch{
+        float: left;
+        width: 100%;
+        font-family: 'NanumSquare', sans-serif;
+    }
+
+    #ban02-2 .CustomSearch .Search-Title{
+        font-size: 15px;
+        padding: 15px 12px 12px 18px;
+        font-weight: bold;
+    }
+    #ban02-2 .CustomSearch .People{
+        font-size: 1.2rem;
+        padding: 18px 37px;
+        font-weight: bold;
+    }
+    #ban02-2 .CustomSearch .Peo-select{
+        width: 133px;
+        overflow: hidden;
+        margin: 0 60px;
+    }
+    #ban02-2 .CustomSearch .Peo-select>*{
+        float: left;
+    }
+    #ban02-2 .CustomSearch .Peo-select #minus{
+        cursor: pointer;
+        width: 18px;
+        height: 18px;
+        background: url('../jpg/마이너스.png');
+        font-size: 0px;
+        margin-right: 20px;
+    }
+    #ban02-2 .CustomSearch .Peo-select .input_cover{
+        margin: 0 12px;
+    }
+    #ban02-2 .CustomSearch .Peo-select #plus{
+        cursor: pointer;
+        width:18px;
+        height: 18px;
+        background: url('../jpg/플러스.png');
+        font-size: 0px;
+        margin-left: 11px;
+
+    }
+    #ban02-2 .CustomSearch .Peo-select img{
+        width: 19px;
+    }
+    input{
+        border:none;
+    }
+    #ban02-2 .CustomSearch .Peo-select #count{
+        width: 13px;
+    }
+    #ban02-2 .CustomSearch .day{
+        font-size: 1.5rem;
+        padding: 50px 37px 18px;
+        font-weight: bold;
+    }
+    #ban02-2 .CustomSearch .r-button{
+        width: 100%;
+    }
+    #ban02-2 .CustomSearch .r-button input:nth-child(2){
+        margin-left: 45px;
+    }
+    #ban02-2 .CustomSearch .tema{
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 100px 37px 18px;
+    }
+    #ban02-2 .CustomSearch .tema_group{
+        width: 100%;
+    }
+
+    .tema_slide{
+        float: left;
+        position: relative;
+    }
+    .tema_slide img{
+        display: block;
+    }
+    .tema_slide .tema_name{
+        display: block;
+        margin: 5px 12px;
+    }
+    .tema_slide .tema_slide_group{
+        overflow: hidden;
+        width: 50px;
+        position: absolute;
+        left: 48px;
+    }
+    .tema3{
+        padding-top: 15px;
+    }
+
+    .CustomSearch .search{
+        width: 135px;
+        background: #0078ff;
+        color: white;
+        display: block;
+        text-align: center;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .r-button select{
+        width: 100px;
+        padding-left: 1rem;
+        border: none;
+        background: #3e3e3e;
+        color:#ccc;
+        height: 25px;
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto;
+    }
+    .tema_group select{
+        width: 100px;
+        padding-left: 1rem;
+        border: none;
+        background: #3e3e3e;
+        color:#ccc;
+        height: 25px;
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    
+    
+    
+    
+    
+    #ban03{
+        width:510px;
+        height: 510px;
+        float: left;
+        position: relative;
+    }
+
+    .textbox03{
+        padding: 2rem;
+    }
+    .textbox03 h2{
+        font-size: 3rem;
+        font-weight: normal;
+    }
+    .textbox03 span{
+        display: block;
+        width: 40px;
+        border-top: 2px solid #222;
+        margin: 2.5rem 0 1.5rem;
+    }
+    .textbox03 h3{
+        font-size: 2.3rem;
+    }
+    .textbox03 p{
+        font-size: 1.2rem;
+        color: #666;
+        margin-top: 1.5rem;
+    }
+    #ban03 img{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #ban04{
+        float: left;
+        width: 509px;
+        height: 255px;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+
+
+    #timeline-title{
+        font-family: 'NanumSquare', sans-serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #timeline-title .real_time{
+        margin-top: 18px;
+        margin-left: 10px;
+    }
+    #timeline-title .real_time>span{
+        float: left;
+    }
+
+    #timeline-title .time{
+        color: #0078ff;
+    }
+    #timeline-title img{
+        display: block;
+        float: left;
+    }
+    #timeline-title .real_time>a{
+        float: right;
+        margin-right: 10px;
+    }
+    #timeline-title .line{
+        background: #000;
+        float: left;
+        width: 98%;
+        height: 1px;
+        margin-top: 10px;
+        margin-bottom: 18px;
+    }
+    #timeline-title .timeline1{
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: 1rem;
+        margin-left: 10px;
+    }
+    #timeline-title .timeline1>a{
+        float: left;
+    }
+    #timeline-title .resettext{
+        font-size: 12px;
+    }
+    #timeline-title .reset{
+        margin-top: 6px;
+        width: 10px;
+        height: 10px;
+    }
+    #timeline-title .bubble{
+        background: url("../jpg/speechbubble.png") no-repeat 0 10px;
+        float: right;
+        width: 400px;
+        height: 81px;
+        position: relative;
+    }
+    #timeline-title .text{
+        position: absolute;
+        top: 21px;
+        left: 13px;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    #timeline-title .text:hover{
+        text-decoration: underline;
+    }
+    #timeline-title .travel-bar{
+        width: 100%;
+        height: 20px;
+        position: absolute;
+        bottom: 0px;
+    }
+    #timeline-title i{
+        float: left;
+        font-size: 13px;
+        font-weight: 400;
+
+    }
+    #timeline-title .traveler{
+        float: left;
+    }
+
+    #timeline-title .stamp_comment_cnt img{
+        float: right;
+    }
+    #timeline-title .stamp_comment_cnt input{
+        float: right;
+        width: 20px;
+        padding-left: 5px;
+    }
+
+    .area{
+        margin-top: 75px;
+    }
+
+
+
+    #intro{
+        padding: 8rem 0;
+        width: 100%;
+    }
+
+    #intro-title{
+        text-align: center;
+        letter-spacing: -1px;
+    }
+    #bg_fixed{
+        background: url(../jpg/bg_banner.jpg) center fixed no-repeat; height: 138px; 
+        position: relative; 
+        overflow: hidden;
+        background-size: 100% 100%;
+        margin-top: 30px;
+    }
+
+    #intro-title h3{
+        font-size: 1.7rem;
+    }
+
+    #intro-title h2{
+        font-size: 2.5rem;
+        color: white;
+        margin: 1.3rem auto;
+    }
+    #intro-title p{
+        font-size: 1.2rem;
+        color: white;
+        margin-top: 5px;
+    }
+
+    #intro-banner{
+        margin-top: 5rem;
+    }
+    #intro-banner .planner_view_group{
+        overflow: hidden;
+        width: 1080px;
+        margin: 80px auto;
+    }
+    #intro-banner .planner_view{
+        width: 245px;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        float: left;
+        margin-right: 30px;
+    }
+
+    #intro-banner .planner_view:hover{
+        border: 1px solid #375dff;
+    }
+
+    #intro-banner .planner_view:last-Child{
+        margin-right: 0;
+    }
+
+
+    #intro-banner .content-center{
+        position: relative;
+        height: 90px;
+    }
+    #intro-banner .content-center .group{
+        position: absolute;
+        background: white;
+    }
+    #intro-banner .content-center .group1, .group3, .group5, .group7{
+        z-index: 4
+    }
+    #intro-banner .round_cover{
+        width: 30px;
+        margin: 10px auto;
+        overflow: hidden;
+    }
+    #intro-banner .round{
+        float: left;
+        width: 10px;
+        height: 10px;
+        background: #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #intro-banner .round.bu1{
+        background: blue;
+        margin-right: 10px;
+    }
+    #intro-banner .planner_view .title{
+        margin: 14px;
+        overflow: hidden;
+    }
+    #intro-banner .planner_view .title img{
+        float: left;
+    }
+    #intro-banner .planner_view .traveler{
+        float: left;
+        margin-left: 5px;
+        color: #b5b5b5;
+        line-height: 1.1rem;
+    }
+    #intro-banner .planner_view .date{
+        color: #b5b5b5;
+        float: right;
+    }
+    #intro-banner .planner_view .name{
+        float: left;
+        color: #111;
+    }
+
+    #intro-banner .planner_view .cover_bg{
+        display: block;
+        margin: 5px auto;
+    }
+    #intro-banner .planner_view .travel_title{
+        width: 90%;
+        border-bottom: 1px solid #ccc;
+        color: #006cff;
+        font-weight: bold;
+        font-size: 1.1rem;
+        letter-spacing: -1px;
+        margin: 10px auto;
+        padding-bottom: 8px;
+    }
+    #intro-banner .planner_view .content-center{
+        margin: 0 auto;
+        overflow: hidden;
+        width: 90%;
+        padding-bottom: 20px;
+    }
+    #intro-banner .planner_view .travel_content{
+        float: left;
+        font-size: 0.8rem;
+        margin-top: 9px;
+    }
+    #intro-banner .planner_view .travel_content:nth-child(2){
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    #intro-banner .planner_view .travel_content>span{
+        font-size: 1rem;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    #intro-banner .planner_view .bottom_title{
+        border-top: 1px solid #ccc;
+        padding-top: 5px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #intro-banner .planner_view .bottom_title .tag{
+        float: left;
+    }
+    #intro-banner .planner_view .bottom_title .shopping{
+        float: right;
+        padding-bottom: 5px;
+    }
+
+
+    #intro-banner .view{
+        width: 200px;
+        margin: 0 auto;
+    }
+    #intro-banner .view a{
+        display: block;
+        background: #4f93ff;
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 1rem;
+        font-weight: bold;
+        border-radius: 25px;
+        color: white;
+        border: 2px solid #4f93ff;
+    }
+    #intro-banner .view:hover a{
+        background: #fff;
+        color: #4f93ff;
+    }
+
+
+}
+
+/*모바일*/
+@media screen and (max-width: 768px){
+    #wrap{
+        width: 100%;
+    }
+
+    .section{
+        overflow: hidden;
+    }
+    
+/*    BX슬라이더 부분*/
+    ul.slider{}
+    ul.slider li{
+        width: 100%;
+        height: 0;
+        padding-top: 66.64%;
+    }
+    li.slideimg1{
+        background: url(../jpg/slider-1.jpg) no-repeat center/cover;
+    }
+    li.slideimg2{
+        background: url(../jpg/slider-2.jpg) no-repeat center/cover;
+    }
+    
+/*    내일로 소개 부분*/
+    #ban01{
+        width: 100%;
+        height: auto;
+        max-width: 768px;
+        display: block;
+    }
+    .ban-textbox{
+        width: 50%;
+        height: auto;
+        background: #1a92de;
+        float: left;
+    }
+    .ban-textbox a{
+        display: block;
+        box-sizing: border-box; /* 현재 높이값을 벗어나지 않는 선에서 여백이 들어감 */
+    }
+    .ban-textbox a img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .ban-textbox span{
+        display: block;
+        letter-spacing: -1px;
+        color: #fff;
+        text-align: center;
+        font-family: 'NanumSquare', sans-serif;
+    }
+    
+    .ban-imgbox{
+        width: 50%;
+        float: left;
+    }
+    .ban-imgbox a{
+        width: 100%;
+        display: block;
+    }
+    .ban-imgbox img{
+        width: 100%;
+        height: auto;
+    }
+    
+/*    관광지, 맛집, 코스, 트레버 부분*/
+    
+    #ban02{
+        width: 100%;
+        display: block;
+        max-width: 768px;
+        max-height: 555px;
+        overflow: hidden;
+        position: relative;
+    }
+    #ban02-1{
+        float: left;
+        width: 50%;
+        height: auto;
+    }
+    #ban02-1 .ban-textbox{
+        display: none;
+        background: #333;
+        position: relative;
+    }
+
+    #ban02-1 .bottom{
+        display: none;
+        border:16px solid transparent;
+        position: absolute;
+        top: -32px;
+        border-bottom-color: #333;
+        left: 43.8%;
+    }
+
+    .ban-iconbox{}
+    .ban-iconbox ul{}
+    .ban-iconbox li{
+        width: 50%;
+        height: auto;
+        float: left;
+    }
+    .ban-iconbox a{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .ban-iconbox img{
+        width: 100%;
+        height: auto;
+        border: 0.5px solid #ccc;
+    }
+
+    
+    /* 실시간 급상승 검색어와 사용자 맞춤 코스 추천 검색 부분 */
+    #ban02-2{
+        width: 50%;
+        height: 100%;
+        border-top: none;
+        overflow: hidden;
+        max-height: 555px;
+    }
+    #ban02-2 .rank{
+        height: 40px;
+        background: #fff;
+        position: relative;
+        border-bottom: 1px solid #ccc;
+    }
+    #ban02-2 #rank-list{
+      padding: 8px 6px;
+    }
+    #ban02-2 #rank-list a {
+        color: #000;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'NanumSquare', sans-serif;
+    }
+
+    #ban02-2 #rank-list dl {
+        overflow: hidden;
+        width: 160px;
+        height: 26px;
+        margin: 0;
+    }
+
+    #ban02-2 #rank-list dt {
+        display: none;
+    }
+
+    #ban02-2 #rank-list dd {
+        position: relative;
+        margin: 0;
+    }
+
+    #ban02-2 #rank-list ol {
+        position: absolute;
+        top: 0;
+        left: 7px;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    #ban02-2 #rank-list .rank-color{
+        color: #5498ff;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+
+    .hoverrank-list{
+          position: absolute;
+          width: 253px;
+          border: 2px solid #6ac0ff;
+          top: 0;
+          background: #fff;
+          box-sizing: border-box;
+          padding: 15px;
+          display: none;
+          font-family: 'NanumSquare', sans-serif;
+          overflow: hidden;
+    }
+    
+    #ban02-2 .hoverrank-list li:first-child{
+        font-family: 'NanumSquare', sans-serif;
+    }
+    
+/*    사용자 맞춤 플래너 검색*/
+    
+    #ban02-2 .CustomSearch{
+        width: 100%;
+        font-family: 'NanumSquare', sans-serif;
+    }
+
+    #ban02-2 .CustomSearch .Search-Title{
+        font-size: 12px;
+        padding: 10px 12px;
+        font-weight: bold;
+    }
+    #ban02-2 .CustomSearch .area{
+        font-size: 1.2rem;
+        padding: 10px 37px;
+        font-weight: bold;
+    }
+    #ban02-2 .CustomSearch .Peo-select{
+        width: 133px;
+        overflow: hidden;
+        margin: 0 auto;
+        
+    }
+    #ban02-2 .CustomSearch .Peo-select>*{
+        float: left;
+    }
+    #ban02-2 .CustomSearch .Peo-select #minus{
+        cursor: pointer;
+        width: 18px;
+        height: 18px;
+        background: url('../jpg/마이너스.png');
+        font-size: 0px;
+        margin-right: 20px;
+    }
+    #ban02-2 .CustomSearch .Peo-select .input_cover{
+        margin: 0 12px;
+    }
+    #ban02-2 .CustomSearch .Peo-select #plus{
+        cursor: pointer;
+        width:18px;
+        height: 18px;
+        background: url('../jpg/플러스.png');
+        font-size: 0px;
+        margin-left: 11px;
+
+    }
+    #ban02-2 .CustomSearch .Peo-select img{
+        width: 19px;
+    }
+    input{
+        border:none;
+    }
+    #ban02-2 .CustomSearch .Peo-select #count{
+        width: 13px;
+    }
+    #ban02-2 .CustomSearch .day{
+        font-size: 1.2rem;
+        padding: 10px 37px;
+        font-weight: bold;
+    }
+    #ban02-2 .CustomSearch .r-button{
+        width: 100%;
+    }
+    #ban02-2 .CustomSearch .r-button input:nth-child(2){
+        margin-left: 45px;
+    }
+    #ban02-2 .CustomSearch .tema{
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 10px 37px;
+    }
+    #ban02-2 .CustomSearch .tema_group{
+        width: 100%;
+    }
+    .r-button select{
+        width: 100px;
+        padding-left: 1rem;
+        border: none;
+        background: #3e3e3e;
+        color:#ccc;
+        height: 25px;
+        border-radius: 20px;
+        margin: 0 auto;
+        display: block;
+    }
+    .tema_group select{
+        width: 100px;
+        padding-left: 1rem;
+        border: none;
+        background: #3e3e3e;
+        color:#ccc;
+        height: 25px;
+        border-radius: 20px;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .search{
+        width: 135px;
+        background: #0078ff;
+        color: white;
+        display: block;
+        text-align: center;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+    
+    
+/*    자동 슬라이드 배너광고*/
+    #ban03{
+        width: 100%;
+        min-height: 100vw;
+    }
+    #ban03 .imgbox{
+    }
+    #ban03 .imgbox img{
+        width: 100%;
+        height: auto;
+    }
+    #ban03 img{
+        position: absolute;
+        object-fit: cover;
+    }
+
+/*    실시간 여행기*/
+    #ban04{
+        width: 100%;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        display: block;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    #timeline-title{
+        font-family: 'NanumSquare', sans-serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+
+    }
+    #timeline-title .real_time{
+        margin-top: 18px;
+        margin-left: 10px;
+    }
+    #timeline-title .real_time>span{
+        float: left;
+    }
+
+    #timeline-title .time{
+        color: #0078ff;
+    }
+    #timeline-title img{
+        display: block;
+        float: left;
+    }
+    #timeline-title .real_time>a{
+        float: right;
+        margin-right: 10px;
+    }
+    #timeline-title .line{
+        background: #000;
+        float: left;
+        width: 98%;
+        height: 1px;
+        margin-top: 10px;
+        margin-bottom: 18px;
+    }
+    #timeline-title .timeline1{
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: 1rem;
+        margin-left: 10px;
+    }
+    #timeline-title .timeline1>a{
+        
+    }
+    #timeline-title .timeline1>a>img{
+        width: 20%;
+        height: auto;
+    }
+    #timeline-title .resettext{
+        font-size: 12px;
+    }
+    #timeline-title .reset{
+        margin-top: 6px;
+        width: 10px;
+        height: 10px;
+    }
+    #timeline-title .bubble{
+
+        width: 70%;
+        position: relative;
+        float: left;
+        margin-left: 10px;
+        overflow: hidden;
+    }
+    #timeline-title .bubble a{
+        padding-top: 10px;
+        display: block;
+        width: 100%;
+    }
+    #timeline-title .bubble a .text{
+        font-size: 3vw;
+        font-weight: 500;
+        background-color: #ccc;
+        border-radius: 5px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #timeline-title .text:hover{
+        text-decoration: underline;
+    }
+    #timeline-title .travel-bar{
+        width: 100%;
+        height: 20px;
+    }
+    #timeline-title .travel-bar{
+        width: 100%;
+        margin-top: 5vw;
+        display: block;
+        overflow: hidden;
+    }
+    #timeline-title i{
+        float: left;
+        font-size: 3vw;
+        font-weight: 400;
+
+    }
+    #timeline-title .traveler{
+        float: left;
+    }
+    #timeline-title .stamp_comment_cnt a{
+        width: 100%;
+        display: inline;
+    }
+    #timeline-title .stamp_comment_cnt img{
+        width: 2vw;
+        float: right;
+    }
+    #timeline-title .stamp_comment_cnt input{
+        float: right;
+        width: 20px;
+        padding-left: 5px;
+    }
+
+    .area{
+        margin-top: 75px;
+    }
+
+    
+/*    추천 여행 코스 스크룰*/
+    #bg_fixed{
+        background: url(../jpg/bg_banner.jpg) center fixed no-repeat; height: 138px; 
+        position: relative; 
+        overflow: hidden;
+        background-size: cover;
+        margin-top: 50px;
+    }
+    
+    #intro-title h2{
+        font-size: 2.5rem;
+        color: white;
+        margin: 1.3rem auto;
+        display: block;
+        text-align: center;
+    }
+    #intro-title p{
+        font-size: 1.2rem;
+        color: white;
+        margin-top: 5px;
+        text-align: center;
+    }
+    
+/*    추천 여행 코스*/
+    
+    #intro-banner{
+        overflow: hidden;
+    }
+    #intro-banner .planner_view_group{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        overflow: hidden;
+        width: 100%;
+        margin: 0px auto;
+    }
+    #intro-banner .planner_view{
+        width: 245px;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    #intro-banner .planner_view:hover{
+        border: 1px solid #375dff;
+    }
+
+
+    #intro-banner .content-center{
+        position: relative;
+        height: 90px;
+    }
+    #intro-banner .content-center .group{
+        position: absolute;
+        background: white;
+    }
+    #intro-banner .content-center .group1, .group3, .group5, .group7{
+        z-index: 4
+    }
+    #intro-banner .round_cover{
+        width: 30px;
+        margin: 10px auto;
+        overflow: hidden;
+    }
+    #intro-banner .round{
+        float: left;
+        width: 10px;
+        height: 10px;
+        background: #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #intro-banner .round.bu1{
+        background: blue;
+        margin-right: 10px;
+    }
+    #intro-banner .planner_view .title{
+        margin: 14px;
+        overflow: hidden;
+    }
+    #intro-banner .planner_view .title img{
+        float: left;
+    }
+    #intro-banner .planner_view .traveler{
+        float: left;
+        margin-left: 5px;
+        color: #b5b5b5;
+        line-height: 1.1rem;
+    }
+    #intro-banner .planner_view .date{
+        color: #b5b5b5;
+        float: right;
+    }
+    #intro-banner .planner_view .name{
+        float: left;
+        color: #111;
+    }
+
+    #intro-banner .planner_view .cover_bg{
+        display: block;
+        margin: 5px auto;
+    }
+    #intro-banner .planner_view .travel_title{
+        width: 90%;
+        border-bottom: 1px solid #ccc;
+        color: #006cff;
+        font-weight: bold;
+        font-size: 1.1rem;
+        letter-spacing: -1px;
+        margin: 10px auto;
+        padding-bottom: 8px;
+    }
+    #intro-banner .planner_view .content-center{
+        margin: 0 auto;
+        overflow: hidden;
+        width: 90%;
+        padding-bottom: 20px;
+    }
+    #intro-banner .planner_view .travel_content{
+        float: left;
+        font-size: 0.8rem;
+        margin-top: 9px;
+    }
+    #intro-banner .planner_view .travel_content:nth-child(2){
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    #intro-banner .planner_view .travel_content>span{
+        font-size: 1rem;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    #intro-banner .planner_view .bottom_title{
+        border-top: 1px solid #ccc;
+        padding-top: 5px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #intro-banner .planner_view .bottom_title .tag{
+        float: left;
+        padding-bottom: 5px;
+    }
+
+
+    #intro-banner .view{
+        width: 200px;
+        margin: 0 auto;
+    }
+    #intro-banner .view a{
+        display: block;
+        background: #4f93ff;
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 1rem;
+        font-weight: bold;
+        border-radius: 25px;
+        color: white;
+        border: 2px solid #4f93ff;
+    }
+    #intro-banner .view:hover a{
+        background: #fff;
+        color: #4f93ff;
+    }
+}
