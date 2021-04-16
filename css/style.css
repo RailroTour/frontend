@@ -1018,18 +1018,22 @@
 /*    자동 슬라이드 배너광고*/
     #ban03{
         width: 100%;
+        min-height: 100vw;
+    }
+    #ban03 .imgbox{
     }
     #ban03 .imgbox img{
         width: 100%;
         height: auto;
     }
     #ban03 img{
+        position: absolute;
+        object-fit: cover;
     }
 
 /*    실시간 여행기*/
     #ban04{
-        width: 509px;
-        height: 255px;
+        width: 100%;
         border-right: 1px solid #ccc;
         border-bottom: 1px solid #ccc;
         display: block;
@@ -1041,9 +1045,7 @@
         font-family: 'NanumSquare', sans-serif;
         font-weight: bold;
         font-size: 1.5rem;
-        margin-top: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
+
     }
     #timeline-title .real_time{
         margin-top: 18px;
@@ -1079,7 +1081,11 @@
         margin-left: 10px;
     }
     #timeline-title .timeline1>a{
-        float: left;
+        
+    }
+    #timeline-title .timeline1>a>img{
+        width: 20%;
+        height: auto;
     }
     #timeline-title .resettext{
         font-size: 12px;
@@ -1090,18 +1096,26 @@
         height: 10px;
     }
     #timeline-title .bubble{
-        background: url("../jpg/speechbubble.png") no-repeat 0 10px;
-        float: right;
-        width: 400px;
-        height: 81px;
+
+        width: 70%;
         position: relative;
+        float: left;
+        margin-left: 10px;
+        overflow: hidden;
     }
-    #timeline-title .text{
-        position: absolute;
-        top: 21px;
-        left: 13px;
-        font-size: 13px;
+    #timeline-title .bubble a{
+        padding-top: 10px;
+        display: block;
+        width: 100%;
+    }
+    #timeline-title .bubble a .text{
+        font-size: 3vw;
         font-weight: 500;
+        background-color: #ccc;
+        border-radius: 5px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     #timeline-title .text:hover{
         text-decoration: underline;
@@ -1109,20 +1123,28 @@
     #timeline-title .travel-bar{
         width: 100%;
         height: 20px;
-        position: absolute;
-        bottom: 0px;
+    }
+    #timeline-title .travel-bar{
+        width: 100%;
+        margin-top: 5vw;
+        display: block;
+        overflow: hidden;
     }
     #timeline-title i{
         float: left;
-        font-size: 13px;
+        font-size: 3vw;
         font-weight: 400;
 
     }
     #timeline-title .traveler{
         float: left;
     }
-
+    #timeline-title .stamp_comment_cnt a{
+        width: 100%;
+        display: inline;
+    }
     #timeline-title .stamp_comment_cnt img{
+        width: 2vw;
         float: right;
     }
     #timeline-title .stamp_comment_cnt input{
@@ -1135,4 +1157,169 @@
         margin-top: 75px;
     }
 
+    
+/*    추천 여행 코스 스크룰*/
+    #bg_fixed{
+        background: url(../jpg/bg_banner.jpg) center fixed no-repeat; height: 138px; 
+        position: relative; 
+        overflow: hidden;
+        background-size: cover;
+        margin-top: 50px;
+    }
+    
+    #intro-title h2{
+        font-size: 2.5rem;
+        color: white;
+        margin: 1.3rem auto;
+        display: block;
+        text-align: center;
+    }
+    #intro-title p{
+        font-size: 1.2rem;
+        color: white;
+        margin-top: 5px;
+        text-align: center;
+    }
+    
+/*    추천 여행 코스*/
+    
+    #intro-banner{
+        overflow: hidden;
+    }
+    #intro-banner .planner_view_group{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        overflow: hidden;
+        width: 100%;
+        margin: 0px auto;
+    }
+    #intro-banner .planner_view{
+        width: 245px;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    #intro-banner .planner_view:hover{
+        border: 1px solid #375dff;
+    }
+
+
+    #intro-banner .content-center{
+        position: relative;
+        height: 90px;
+    }
+    #intro-banner .content-center .group{
+        position: absolute;
+        background: white;
+    }
+    #intro-banner .content-center .group1, .group3, .group5, .group7{
+        z-index: 4
+    }
+    #intro-banner .round_cover{
+        width: 30px;
+        margin: 10px auto;
+        overflow: hidden;
+    }
+    #intro-banner .round{
+        float: left;
+        width: 10px;
+        height: 10px;
+        background: #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #intro-banner .round.bu1{
+        background: blue;
+        margin-right: 10px;
+    }
+    #intro-banner .planner_view .title{
+        margin: 14px;
+        overflow: hidden;
+    }
+    #intro-banner .planner_view .title img{
+        float: left;
+    }
+    #intro-banner .planner_view .traveler{
+        float: left;
+        margin-left: 5px;
+        color: #b5b5b5;
+        line-height: 1.1rem;
+    }
+    #intro-banner .planner_view .date{
+        color: #b5b5b5;
+        float: right;
+    }
+    #intro-banner .planner_view .name{
+        float: left;
+        color: #111;
+    }
+
+    #intro-banner .planner_view .cover_bg{
+        display: block;
+        margin: 5px auto;
+    }
+    #intro-banner .planner_view .travel_title{
+        width: 90%;
+        border-bottom: 1px solid #ccc;
+        color: #006cff;
+        font-weight: bold;
+        font-size: 1.1rem;
+        letter-spacing: -1px;
+        margin: 10px auto;
+        padding-bottom: 8px;
+    }
+    #intro-banner .planner_view .content-center{
+        margin: 0 auto;
+        overflow: hidden;
+        width: 90%;
+        padding-bottom: 20px;
+    }
+    #intro-banner .planner_view .travel_content{
+        float: left;
+        font-size: 0.8rem;
+        margin-top: 9px;
+    }
+    #intro-banner .planner_view .travel_content:nth-child(2){
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    #intro-banner .planner_view .travel_content>span{
+        font-size: 1rem;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    #intro-banner .planner_view .bottom_title{
+        border-top: 1px solid #ccc;
+        padding-top: 5px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #intro-banner .planner_view .bottom_title .tag{
+        float: left;
+        padding-bottom: 5px;
+    }
+
+
+    #intro-banner .view{
+        width: 200px;
+        margin: 0 auto;
+    }
+    #intro-banner .view a{
+        display: block;
+        background: #4f93ff;
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 1rem;
+        font-weight: bold;
+        border-radius: 25px;
+        color: white;
+        border: 2px solid #4f93ff;
+    }
+    #intro-banner .view:hover a{
+        background: #fff;
+        color: #4f93ff;
+    }
 }
