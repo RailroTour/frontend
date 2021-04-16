@@ -32,7 +32,7 @@ $(document).ready(function(){ //서브메뉴 애니메이션 부분
         else{
             $("#group_from").submit();
         }
-    })
+    });
     $('.all-agree').click(function(){
         if($('.all-agree').is(":checked")==true){
             $('.agree5').attr("checked", true);
@@ -165,23 +165,23 @@ iconstart()
   
   // 버튼코드
   var sIndex = 1;
-  show(sIndex)
+  show(sIndex);
   
   function plus(n){
-    show(sIndex+=n)
+    show(sIndex+=n);
   }
   
   function show(n){
     
-    var slides = document.getElementsByClassName('myS')
+    var slides = document.getElementsByClassName('myS');
     
-    if(n > slides.length ){ sIndex = 1 }
-    if(n < 1){ sIndex = slides.length }
+    if(n > slides.length ){ sIndex = 1; }
+    if(n < 1){ sIndex = slides.length; }
     
     for(i=0; i<slides.length; i++){
-      slides[i].style.display='none'
+      slides[i].style.display='none';
     }
-    slides[ sIndex-1 ].style.display='block'
+    slides[ sIndex-1 ].style.display='block';
   }
     
 
