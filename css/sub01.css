@@ -73,7 +73,7 @@
 }
 .listmenu ul.listbox{
     position: absolute;
-    width: 160px;
+    width: 200px;
     box-shadow: 0 3px 10px #999;
     display: none;
     background-color: white;
