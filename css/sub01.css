@@ -76,6 +76,7 @@
     width: 160px;
     box-shadow: 0 3px 10px #999;
     display: none;
+    background-color: white;
 }
 .listmenu li:hover a{
     background: #eee;
