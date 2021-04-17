@@ -41,13 +41,14 @@
     font-weight: normal;
 }
 
-#sub-content{
-    
-}
 
 #sub-con-navi{
     border-bottom: 1px solid #ccc;
     overflow: hidden;
+}
+.sub-con-navi-box{
+     width:1020px;
+    margin: 0 auto;
 }
 .homebtn{
     float: left;
@@ -107,7 +108,7 @@
 
 @media screen and (max-width: 768px){
     .section{
-            width: 300px;
+        width: 300px;
     }
    
     #sub-con-body{
