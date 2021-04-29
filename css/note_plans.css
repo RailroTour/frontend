@@ -1,0 +1,472 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@media screen and (min-width: 769px){
+    #wrap{
+        width: 100%;
+        min-width: 1020px;
+    }
+    .section{
+        width:1020px;
+        margin: 0 auto;
+    }
+    #sub-imgbanner{
+        background: url(../jpg/subbg1.jpg) no-repeat center #89c4e4;
+        height: 180px;
+    }
+    #sub-imgbanner1{
+        height: 180px;
+        background: url(../jpg/subbg2.jpg) no-repeat center #fcb316;
+    }
+    .sub-img-text{
+        color: #fff;
+        letter-spacing: -1px;
+        padding-top: 3.5rem;
+        font-family: "Nanum Gothic", sans-serif;
+        float: right;
+    }
+    .sub-img-text h3{
+        font-size: 1.7rem;
+    }
+    .sub-img-text h2{
+        font-size: 3rem;
+        font-weight: normal;
+    }
+
+    #sub-content{
+
+    }
+    #sub-con-navi{
+        border-bottom: 1px solid #ccc;
+        overflow: hidden;
+        width: 100%;
+    }
+    .homebtn{
+        float: left;
+        border-right: 1px solid #ccc;
+    }
+    .homebtn a{
+        display: block;
+    }
+
+    .listmenu{
+        float: left;
+        border-right: 1px solid #ccc;
+    }
+    .listmenu button{
+        display: block;
+        background: #fff;
+        width: 200px;
+        text-align: left;
+        line-height: 50px;
+        padding-left: 20px;
+        background: url(../jpg/down_icon.jpg) no-repeat 170px center;
+        cursor: pointer;
+    }
+    .listmenu ul.listbox{
+        position: absolute;
+        width: 200px;
+        box-shadow: 0 3px 10px #999;
+        display: none;
+        background-color: white;
+    }
+    .listmenu li:hover a{
+        background: #eee;
+    }
+    .listmenu a{
+        display: block;
+        padding: 5px 20px;
+    }
+    
+
+    #sub-con-body{
+        padding: 5rem 0;
+    }
+
+    .s-c-b-title{
+        text-align: center;
+    }
+    .s-c-b-title h3{
+        font-size: 1.8rem;
+        font-style: italic;
+    }
+    .s-c-b-title h2{
+        font-size: 3rem;
+    }
+
+    .sub-img-text{
+        font-family: 'NanumSquare', sans-serif;
+    }
+    .s-c-b-title{
+        padding-bottom: 50px;
+        border-bottom: 1px solid #ccc;
+    }
+    .s-c-b-content{
+        padding-top: 30px;
+        overflow: hidden;
+    }
+    .s-c-b-content .plans_list_rows{
+        overflow: hidden;
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .s-c-b-content .plans_list_rows .list_item{
+        float: left;
+        width: 310px;
+        height: 295px;
+        overflow: hidden;
+        display: block;
+        cursor: pointer;
+    }
+    .s-c-b-content .plans_list_rows a{
+        overflow: hidden;
+        border: 1px solid #ccc;
+        float: left;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+    .s-c-b-content .plans_list_rows a:hover{
+        border: 1px solid #0080ff;
+    }
+    .list_item li:first-child{
+        overflow: hidden;
+    }
+    .list_item li:first-child img{
+        width: 346px;
+        height: 200px;
+        display: block;
+        transform: scale(1.0);
+        transition: all 0.5s ease-in-out;
+    }
+    .list_item:hover li:first-child img{
+        width: 346px;
+        height: 200px;
+        transform: scale(1.3);
+        transition: all 2.5s ease-in-out;
+    }
+    .list_item li:first-child{
+        position: relative;
+    }
+    .s-c-b-content .plans_list_rows .list_item .note_info{
+        background-color: rgba(0, 0, 0, 0.49);
+        position: absolute;
+        z-index: 20;
+        top: 140px;
+        width: 100%;
+        font-size: 1.2rem;
+        font-family: 'NanumSquare', sans-serif;
+        height: 45px;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    .list_item .note_info h1{
+        margin-left: 10px;
+    }
+    .list_item .note_info h1:first-child{
+        font-size: 1.3rem;
+        color: #009dff;
+    }
+    .list_item .note_info h1:nth-child(2){
+        margin-top: 5px;
+    }
+    .list_item li:nth-child(2){
+        width: 100%;
+        overflow: hidden;
+        display: block;
+    }
+    .list_item li:nth-child(2) div:first-child{
+        width: 100%;
+        height: 30px;
+    }
+    .list_item li:nth-child(2) .like{
+        margin-top: 5px;
+    }
+    .list_item li:nth-child(2) .like .tema{
+        float: left;
+        font-size: 1.1rem;
+        margin-left: 10px;
+    }
+    .list_item li:nth-child(2) .like img{
+        float: right;
+        margin-top: 5px;
+        margin-right: 3px;
+    }
+    .list_item li:nth-child(2) .like span{
+        float: right;
+        font-size: 1.5rem;
+        padding: 5px 5px 5px 5px;
+        font-size: 1.1rem;
+        color: #5c5c5c;
+    }
+    .list_item .route{
+        font-size: 1.2rem;
+        padding: 13px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        color: #5c5c5c;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+    }
+    .list_item .person{
+        padding: 10px;
+        padding-top: 5px;
+        overflow: hidden;
+        color: #5c5c5c;
+    }
+    .list_item .person span{
+        font-family: "Nanum Gothic", sans-serif;
+        font-size: 1.2rem;
+    }
+    #viewLoading{
+        margin: 0px auto;
+        display: none;
+        width: 80px;
+        margin-top: 50px;
+    }
+    .person .btn{
+        float: right;
+    }
+    .person .btn span{
+        font-family: "Nanum Gothic", sans-serif;
+        font-size: 1.0rem;
+        color: #0089ff;
+    }
+}
+
+/*모바일*/
+@media screen and (max-width: 768px){
+/*    로딩바*/
+    #viewLoading{
+        display: none;
+    }
+    
+/*    상단 로고 및 메뉴*/
+    #wrap{
+        width: 100%;
+        max-width: 768px;
+    }
+    .section{
+    }
+    #sub-imgbanner{
+        background: url(../jpg/subbg1.jpg) no-repeat #89c4e4;
+        height: 180px;
+    }
+    .sub-img-text{
+        color: #fff;
+        letter-spacing: -1px;
+        padding-top: 4rem;
+        font-family: "Nanum Gothic", sans-serif;
+        float: right;
+    }
+    .sub-img-text h3{
+        font-size: 1.5rem;
+    }
+    .sub-img-text h2{
+        font-size: 2.2rem;
+        margin-right: 10px;
+        font-weight: normal;
+        
+    }
+    
+    
+    #sub-content{
+
+    }
+
+    #sub-con-navi{
+        border-bottom: 1px solid #ccc;
+        overflow: hidden;
+        width: 100%;
+    }
+    .homebtn{
+        float: left;
+        border-right: 1px solid #ccc;
+    }
+    .homebtn a{
+        display: block;
+    }
+
+    .listmenu{
+        float: left;
+        border-right: 1px solid #ccc;
+    }
+    .listmenu button{
+        display: block;
+        background: #fff;
+        width: 200px;
+        text-align: left;
+        line-height: 50px;
+        padding-left: 20px;
+        background: url(../jpg/down_icon.jpg) no-repeat 170px center;
+        cursor: pointer;
+    }
+    .listmenu ul.listbox{
+        position: absolute;
+        width: 200px;
+        box-shadow: 0 3px 10px #999;
+        display: none;
+        background-color: white;
+    }
+    .listmenu li:hover a{
+        background: #eee;
+    }
+    .listmenu a{
+        display: block;
+        padding: 5px 20px;
+    }
+    
+    
+/*    플래너 목록*/
+    #sub-con-body{
+        padding: 5rem 0;
+    }
+    
+    .s-c-b-title{
+        text-align: center;
+    }
+    .s-c-b-title h3{
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+    .s-c-b-title h2{
+        font-size: 2.5rem;
+    }
+    
+    
+    .sub-img-text{
+        font-family: 'NanumSquare', sans-serif;
+    }
+    .s-c-b-title{
+        padding-bottom: 50px;
+        width: 100%;
+    }
+    .s-c-b-content{
+        overflow: hidden;
+        width: 100%;
+    }
+    .s-c-b-content .plans_list_rows{
+        overflow: hidden;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .s-c-b-content .plans_list_rows .list_item{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .s-c-b-content .plans_list_rows a{
+        overflow: hidden;
+        border: 1px solid #ccc;
+        width: 60%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .s-c-b-content .plans_list_rows a:hover{
+        border: 1px solid #0080ff;
+    }
+    .list_item li:first-child{
+        overflow: hidden;
+    }
+    .list_item li:first-child img{
+        width: 100%;
+        display: block;
+        transform: scale(1.0);
+        transition: all 0.5s ease-in-out;
+    }
+    .list_item:hover li:first-child img{
+        width: 100%;
+        transform: scale(1.3);
+        transition: all 2.5s ease-in-out;
+    }
+    .list_item li:first-child{
+        position: relative;
+    }
+    .s-c-b-content .plans_list_rows .list_item .note_info{
+        background-color: rgba(0, 0, 0, 0.49);
+        position: absolute;
+        z-index: 20;
+        top: 140px;
+        width: 100%;
+        font-size: 1.2rem;
+        font-family: 'NanumSquare', sans-serif;
+        height: 45px;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    .list_item .note_info h1{
+        margin-left: 10px;
+    }
+    .list_item .note_info h1:first-child{
+        font-size: 1.3rem;
+        color: #009dff;
+    }
+    .list_item .note_info h1:nth-child(2){
+        margin-top: 5px;
+    }
+    .list_item li:nth-child(2){
+        width: 100%;
+        overflow: hidden;
+        display: block;
+    }
+    .list_item li:nth-child(2) div:first-child{
+        width: 100%;
+        height: 30px;
+    }
+    .list_item li:nth-child(2) .like{
+        margin-top: 5px;
+    }
+    .list_item li:nth-child(2) .like .tema{
+        float: left;
+        font-size: 1.1rem;
+        margin-left: 10px;
+    }
+    .list_item li:nth-child(2) .like img{
+        float: right;
+        margin-top: 5px;
+        margin-right: 3px;
+    }
+    .list_item li:nth-child(2) .like span{
+        float: right;
+        font-size: 1.5rem;
+        padding: 5px 5px 5px 5px;
+        font-size: 1.1rem;
+        color: #5c5c5c;
+    }
+    .list_item .route{
+        font-size: 1.2rem;
+        padding: 13px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        color: #5c5c5c;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+    }
+    .list_item .person{
+        padding: 10px;
+        padding-top: 5px;
+        overflow: hidden;
+        color: #5c5c5c;
+    }
+    .list_item .person span{
+        font-family: "Nanum Gothic", sans-serif;
+        font-size: 1.2rem;
+    }
+    .person .btn{
+        float: right;
+    }
+    .person .btn span{
+        font-family: "Nanum Gothic", sans-serif;
+        font-size: 1.0rem;
+        color: #0089ff;
+    }
+}
