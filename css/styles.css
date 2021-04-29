@@ -2,6 +2,7 @@
 @import "login.css";
 @import "trip_cart.css";
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
 body {
     font-family: 'NanumSquare', sans-serif;
     overflow-x: hidden;/*스크롤바-x 제거*/
