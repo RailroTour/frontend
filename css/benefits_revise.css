@@ -1,0 +1,338 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/*    font-family: 'NanumSquare', sans-serif;
+        font-family: "Nanum Gothic", sans-serif;
+*/
+
+#wrap {
+    width: 100%;
+    min-width: 1020px;
+}
+
+.section {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+#sub-imgbanner {
+    background: url(../jpg/subbg2.jpg) no-repeat center #fcb316;
+    height: 180px;
+}
+
+#sub-imgbanner1 {
+    height: 180px;
+    background: url(../jpg/subbg2.jpg) no-repeat center #fcb316;
+}
+
+.sub-img-text {
+    color: #fff;
+    letter-spacing: -1px;
+    padding-top: 3.5rem;
+    font-family: "Nanum Gothic", sans-serif;
+    float: right;
+}
+
+.sub-img-text h3 {
+    font-size: 1.7rem;
+}
+
+.sub-img-text h2 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+
+#sub-content {}
+
+#sub-con-navi {
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.homebtn {
+    float: left;
+    border-right: 1px solid #ccc;
+}
+
+.homebtn a {
+    display: block;
+}
+
+.listmenu {
+    float: left;
+    border-right: 1px solid #ccc;
+}
+
+.listmenu button {
+    display: block;
+    background: #fff;
+    width: 200px;
+    text-align: left;
+    line-height: 50px;
+    padding-left: 20px;
+    background: url(../jpg/down_icon.jpg) no-repeat 170px center;
+    cursor: pointer;
+}
+
+.listmenu ul.listbox {
+    position: absolute;
+    width: 160px;
+    box-shadow: 0 3px 10px #999;
+    display: none;
+}
+
+.listmenu li:hover a {
+    background: #eee;
+}
+
+.listmenu a {
+    display: block;
+    padding: 5px 20px;
+}
+
+#sub-con-body {
+    padding: 5rem 0;
+}
+
+.s-c-b-title {
+    text-align: center;
+}
+
+.s-c-b-title h3 {
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+.s-c-b-title h2 {
+    font-size: 3rem;
+}
+
+
+/*글쓰기 폼 부분*/
+.edit_form {
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.edit_form h1 {
+    font-size: 1.5rem;
+    font-family: "Nanum Gothic", sans-serif;
+    border-top: 2px solid #005bff;
+    width: 51px;
+    padding: 8px 0px;
+    margin-top: 40px;
+}
+
+.edit_form .edit {
+    overflow: hidden;
+    border-top: 2px solid #005bff;
+    margin-top: 10px;
+}
+
+.edit_form .edit .title {
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 1.2rem;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+
+.edit_form .edit .title label {
+    background-color: #f6f6f6;
+    padding: 15px 0px;
+    float: left;
+    width: 130px;
+    text-align: left;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.edit_form .edit .title input {
+    border: 1px solid #ccc;
+    padding: 7px 5px;
+    float: left;
+    width: 82%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 11px;
+}
+
+.edit_form .edit .content {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+
+.edit_form .edit .content label {
+    padding: 150px 0px;
+    float: left;
+    background-color: #f6f6f6;
+    width: 130px;
+    text-align: left;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.edit_form .edit .content textarea {
+    border: 1px solid #ccc;
+    padding: 7px 5px;
+    float: left;
+    width: 82%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 11px;
+    height: 282px;
+    resize: none;
+}
+
+.edit_form .edit .file {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+
+.edit_form .edit .file > label {
+    padding: 80px 0px;
+    float: left;
+    background-color: #f6f6f6;
+    width: 130px;
+    text-align: left;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.edit_form .edit .file input[type="file"] {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.edit_form .edit .file .ex_filename {
+    padding: .5em 1.1rem;
+    color: #ffffff;
+    font-size: 1rem;
+    background-color: #007ef8;
+    cursor: pointer;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.edit_form .file div {
+    margin-left: 325px;
+    width: 520px;
+}
+
+.edit_form .file .upload-name {
+    display: inline-block;
+    padding: 0.5em 0.75em;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #f5f5f5;
+    border: 1px solid #ebebeb;
+    border-bottom-color: #e2e2e2;
+    border-radius: .25em;
+    appearance: none;
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 410px;
+}
+
+.edit_form .edit .btn {
+    width: 196px;
+    overflow: hidden;
+    margin: 0px auto;
+    margin-top: 40px;
+}
+
+
+.edit_form .edit .btn input {
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    font-family: "Nanum Gothic", sans-serif;
+    cursor: pointer;
+}
+
+.edit_form .edit .btn input:first-child {
+    background-color: #0078ff;
+    font-size: 1.2rem;
+}
+
+.edit_form .edit .btn input:nth-child(2) {
+    background-color: black;
+    margin-left: 15px;
+    font-size: 1.2rem;
+}
+
+
+/*모바일 기기에서*/
+@media screen and (max-width: 768px) {
+    #wrap {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    #wrap img {
+        height: auto;
+        width: 100%;
+    }
+
+    #sub-con-body {
+        width: 100%;
+        margin: 0 20px;
+
+    }
+
+    #sub-imgbanner {
+        background-size: 100% auto;
+    }
+
+    .section {
+        width: 20%;
+        width: 20%;
+        float: left;
+        margin-left: 250px;
+    }
+
+
+    .s-c-b-title {
+        width: 45%;
+    }
+
+    .edit_form {
+        width: 45%
+    }
+
+    .listmenu {
+        width: 22%;
+    }
+/*form 제목 부분 크기조정*/
+    .edit_form .edit .title input {
+    
+        width: 62%;
+
+    }
+    .edit_form .edit .content textarea {
+
+    width: 62%;
+
+}
+    
+element.style {
+}
+.edit_form .file div {
+    width: 400px;
+        margin-left: 150px;
+}
+    .edit_form .file .upload-name {
+
+    width: 215px;
+}
+}
+
+}

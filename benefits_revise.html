@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>서브페이지</title>
+    <link rel="stylesheet" href="./css/commen.css">
+    <link rel="stylesheet" href="./css/sub01.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/benefits_revise.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- 전체를 감싸는 부분 -->
+        <section id="sub-imgbanner">
+            <div class="section">
+                <div class="sub-img-text">
+                    <h3>Join tomorrow</h3>
+                    <h2>
+                        내일을 잇다, <b>내일로</b>
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <section id="sub-content">
+            <div id="sub-con-navi">
+                <div class="sub-con-navi-box">
+                    <div class="homebtn">
+                        <a href="../index.html">
+                            <img src="./jpg/home.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="listmenu">
+                        <button>내일로 소개</button>
+                        <ul class="listbox">
+                            <li><a href="#">내일로 소개</a></li>
+                            <li><a href="#">TOP 100</a></li>
+                            <li><a href="#">플래너</a></li>
+                            <li><a href="#">내 주변</a></li>
+                            <li><a href="sub02.html">고객센터</a></li>
+                        </ul>
+                    </div>
+                    <div class="listmenu">
+                        <button>내일로 란?</button>
+                        <ul class="listbox">
+                            <li><a href="#">내일로 소개</a></li>
+                            <li><a href="#">TOP 100</a></li>
+                            <li><a href="#">플래너</a></li>
+                            <li><a href="#">내 주변</a></li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div id="sub-con-body" class="section">
+                <div class="s-c-b-title">
+                    <h3>Community</h3>
+                    <h2>공지사항</h2>
+                </div>
+                <div class="edit_form">
+                  <h1>글쓰기</h1>
+                   <form action="" name="edit_form" method="post" class="edit" onsubmit="return checkForm();">
+                       <div class="title">
+                           <label for="title">제목</label>
+                           <input type="text" name="title" placeholder="제목을 입력하세요">
+                       </div>
+                       <div class="content">
+                           <label for="content">내용</label>
+                           <textarea name="content" id="" cols="30" rows="10" placeholder="내용을 입력하세요"></textarea>
+                       </div>
+                       <div class="file">
+                           <label for="file">파일 첨부</label>
+                           <div class="file_add">
+                                <input class="upload-name upload1" value="파일선택" disabled="disabled">
+                               <input type="file" name="file" id="ex_filename1" class="upload-hidden1">
+                               <label for="ex_filename1" class="ex_filename">업로드</label>
+                           </div>   
+                            <div class="file_add">
+                                <input class="upload-name upload2" value="파일선택" disabled="disabled">
+                               <input type="file" name="file" id="ex_filename2" class="upload-hidden2">
+                               <label for="ex_filename2" class="ex_filename">업로드</label>
+                           </div> 
+                          <div class="file_add">
+                            <input class="upload-name upload3" value="파일선택" disabled="disabled">
+                           <input type="file" name="file" id="ex_filename3" class="upload-hidden3">
+                           <label for="ex_filename3" class="ex_filename">업로드</label>
+                        </div> 
+                          <div class="file_add">
+                            <input class="upload-name upload4" value="파일선택" disabled="disabled">
+                           <input type="file" name="file" id="ex_filename4" class="upload-hidden4">
+                           <label for="ex_filename4" class="ex_filename">업로드</label>
+                        </div> 
+                          <div class="file_add">
+                        <input class="upload-name upload5" value="파일선택" disabled="disabled">
+                       <input type="file" name="file" id="ex_filename5" class="upload-hidden5">
+                       <label for="ex_filename5" class="ex_filename">업로드</label>
+                    </div>                        
+                       </div>
+                       <div class="btn">
+                            <input type="submit" value="작성하기">
+                           <input type="button" value="취소하기">
+                       </div>
+
+                   </form>
+                </div>
+                
+            </div>
+            
+        </section>
+
+        
+
+
+    </div>
+    <script src="./js/script.js"></script>
+</body></html>
