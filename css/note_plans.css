@@ -36,10 +36,10 @@
     #sub-content{
 
     }
-
     #sub-con-navi{
         border-bottom: 1px solid #ccc;
         overflow: hidden;
+        width: 100%;
     }
     .homebtn{
         float: left;
@@ -65,9 +65,10 @@
     }
     .listmenu ul.listbox{
         position: absolute;
-        width: 160px;
+        width: 200px;
         box-shadow: 0 3px 10px #999;
         display: none;
+        background-color: white;
     }
     .listmenu li:hover a{
         background: #eee;
@@ -76,6 +77,7 @@
         display: block;
         padding: 5px 20px;
     }
+    
 
     #sub-con-body{
         padding: 5rem 0;
