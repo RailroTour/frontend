@@ -6,6 +6,15 @@ $(document).ready(function(){
         $('.plan_nav').show();
         $(this).css('color', '#006cff');
         $('.view2').css('color', 'black');
+        
+        //PC이면
+        if($(window).width()>768){
+            $(".plan_nav").show();
+        }
+        //모바일이면
+        else{
+            $(".plan_nav").hide();
+        }
     })
     $('.select .view2').on('click', function(){
         $('.plan_route table').show();
@@ -13,6 +22,15 @@ $(document).ready(function(){
         $('.plan_nav').hide();
         $('.view1').css('color', 'black');
         $(this).css('color', '#006cff');
+        
+                //PC이면
+        if($(window).width()>768){
+            $(".plan_nav").show();
+        }
+        //모바일이면
+        else{
+            $(".plan_nav").hide();
+        }
     })
     $(window).scroll(function(event){
         for(var i=0; i<$('.plan_route .plan_info').length; i++){

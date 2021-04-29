@@ -527,6 +527,7 @@
         box-shadow: 0 3px 10px #999;
         display: none;
         background-color: white;
+        z-index: 9;
     }
     .listmenu li:hover a{
         background: #eee;
@@ -855,7 +856,7 @@
     .plan_route table{
         margin: 0;
         padding: 0;
-        width: 1020px;
+        width: 100%;
         overflow: hidden;
         background-color: white;
         display: none;
