@@ -221,6 +221,8 @@
         border-bottom: 3px solid #8b8b8b;
         width: 150px;
         background-color: white;
+        position: absolute;
+        margin-top: 300px;
     }
     .plan_nav .top_arrow{
         width: 100%;
@@ -405,26 +407,7 @@
         height: auto;
         float: left;
     }
-    .plan_info .day_route .info .kinds h1{
-        float: left;
-        font-size: 1.3rem;
-        color: black;
-        margin-left: 5px;
-        margin-right: 5px;
-        float: left;
-    }
-    .plan_info .day_route .info .kinds .like{
-        width: 23px;
-        height: auto;
-        float: left;
-    }
-    .plan_info .day_route .info .kinds h2{
-        float: left;
-        font-size: 1.2rem;
-        font-family: 'NanumSquare', sans-serif;
-        margin-top: 5px;
-        color: #5a5a5a;
-    }
+
     .plan_info .day_route .info .kinds a{
         float: right;
         margin-right: 20px;
@@ -433,14 +416,6 @@
     .plan_info .day_route .info .kinds a .info{
         width: 30px;
         height: auto;
-    }
-    .plan_info .day_route .info .arrow{
-        border: 10px solid transparent;
-        position: absolute;
-        border-right-color: #dddddd;
-        left: 141px;
-        top: 83px;
-        z-index: 5;
     }
     .plan_info .day_route .info .post{
         float: left;
@@ -702,72 +677,12 @@
     }
     #sub-con-body{
         position: relative;
-    }
-    #sub-con-body .plan_nav{
-        margin-left: -190px;
-        overflow: hidden;
-        border-top: 3px solid #8b8b8b;
-        border-bottom: 3px solid #8b8b8b;
-        width: 150px;
-        background-color: white;
-    }
-    .plan_nav .top_arrow{
         width: 100%;
-        height: 20px;
-        background: url('../mynote_jpg/arrow.png') no-repeat center;
-        background-size: 30px;
-        cursor: pointer;
-        padding-top: 5px;
-        transform: rotate(180deg);
-    }
-    .plan_nav .top_arrow:hover{
-        background: url('../mynote_jpg/arrow_hover.png') no-repeat center;
-        background-size: 30px;
-        transform: rotate(180deg);
-    }
-    .plan_nav .bottom_arrow{
-        width: 100%;
-        height: 20px;
-        background: url('../mynote_jpg/arrow.png') no-repeat center;
-        background-size: 30px;
-        cursor: pointer;
-        padding-bottom: 5px;
-    }
-    .plan_nav .bottom_arrow:hover{
-        background: url('../mynote_jpg/arrow_hover.png') no-repeat center;
-        background-size: 30px;
-    }
-    .plan_nav .nav_route{
-        width: 100%;
-        overflow: hidden;
-    }
-    .plan_nav .nav_route li{
-        text-align: center;
-        color: #898989;
-        font-size: 13px;
-        font-family: "Nanum Gothic", sans-serif;
-        cursor: pointer;
     }
 
-    .plan_nav .nav_route li hr{
-        border: none;
-        border-left: 2px dotted #ccc;
-        color: #fff;
-        background-color: #fff;
-        height: 20px;
-        width: 1px;
-        margin: 0 auto;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    .plan_nav .nav_route li:first-child{
-        padding-top: 10px;
-    }
-    .plan_nav .nav_route li:last-child{
-        padding-bottom: 10px;
-    }
+
     #sub-con-body .plan_route{
-        width: 1020px;
+        width: 100%;
         overflow: hidden;
         margin-top: 30px;
         margin-bottom: 50px;
@@ -788,66 +703,73 @@
     /* 일정 부분 */
     .plan_route{
         display: block;
+        width: 100%;
+        overflow: hidden;
     }
     .plan_route .plan_info{
-        margin-top: 50px;
+        margin-top: 30px;
         font-family: "Nanum Gothic", sans-serif;
         overflow: hidden;
     }
     .plan_route .plan_info .day_info{
-
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        overflow: hidden;
     }
     .plan_route .plan_info .day_info .day{
-        float: left;
         background-color: #0093ff;
         color: white;
-        width: 150px;
+        width: 20%;
         text-align: center;
-        font-size: 30px;
+        font-size: 4vw;
         font-weight: bold;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        float: left;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
     }
     .plan_route .plan_info .day_info .date_info{
-        float: left;
         background-color: #ffffff;
-        width: 869px;
-        font-size: 1.5rem;
+        width: 80%;
+        font-size: 4vw;
         font-weight: bold;
         color: #6c6c6c;
-        border-top: 1px solid #ccc;
-        border-bottom: 1px solid #ccc;
-        padding-top: 21px;
-        padding-bottom: 21px;
-        border-right: 1px solid #ccc;
+        float: left;
+
     }
     .plan_route .plan_info .day_info .date_info .date{
         float: right;
         margin-right: 20px;
         font-weight: normal;
-        font-size: 1.2rem;
+        font-size: 2.5vw;
+        height: 100%;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
     }
     .plan_route .plan_info .day_info .date_info .area{
         margin-left: 30px;
         color: black;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        display: inline-block;
     }
     .plan_info .day_route{
-        width: 1018px;
+        width: 100%;
         overflow: hidden;
         border-left: 1px solid #ccc;
         border-right: 1px solid #ccc;
+        padding-bottom: 10px;
     }
     .plan_info .day_route .route{
-        width: 1020px;
+        width: 100%;
         background-color: white;
         overflow: hidden;
         border-bottom: 1px solid #ccc;
     }
     .plan_info .day_route .route .number{
-       float: left;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        width: 150px;
+        float: left;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        width: 25%;
     }
     .plan_info .day_route .route span{
         background-color: #0080ff;
@@ -861,11 +783,11 @@
         font-weight: bold;
     }
     .plan_info .day_route .info{
-        width: 870px;
+        width: 70%;
         background-color: white;
         float: left;
         position: relative;
-        padding-bottom: 10px;
+
     }
     .plan_info .day_route .info a{
         overflow: hidden;
@@ -873,7 +795,7 @@
         float: left;
     }
     .plan_info .day_route .info a img{
-        width: 150px;
+        width: 30vw;
         height: auto;
     }
     .plan_info .day_route .info .title{
@@ -886,50 +808,23 @@
     }
     .plan_info .day_route .info .kinds{
         overflow: hidden;
-        margin-top: 8px;
         padding-left: 10px;
+        padding-top: 1vw;
     }
     .plan_info .day_route .info .kinds .food_tour_hash{
         width: 23px;
         height: auto;
         float: left;
     }
-    .plan_info .day_route .info .kinds h1{
-        float: left;
-        font-size: 1.3rem;
-        color: black;
-        margin-left: 5px;
-        margin-right: 5px;
-        float: left;
-    }
-    .plan_info .day_route .info .kinds .like{
-        width: 23px;
-        height: auto;
-        float: left;
-    }
-    .plan_info .day_route .info .kinds h2{
-        float: left;
-        font-size: 1.2rem;
-        font-family: 'NanumSquare', sans-serif;
-        margin-top: 5px;
-        color: #5a5a5a;
-    }
+
     .plan_info .day_route .info .kinds a{
         float: right;
-        margin-right: 20px;
-       margin-top: 7px;
+        margin-right: 0px;
+        display: none;
     }
     .plan_info .day_route .info .kinds a .info{
         width: 30px;
         height: auto;
-    }
-    .plan_info .day_route .info .arrow{
-        border: 10px solid transparent;
-        position: absolute;
-        border-right-color: #dddddd;
-        left: 141px;
-        top: 83px;
-        z-index: 5;
     }
     .plan_info .day_route .info .post{
         float: left;
@@ -939,8 +834,9 @@
         padding: 10px 5px 10px 5px;
         border-radius: 5px;
         font-size: 1.2rem;
-        max-width: 600px;
-        margin-top: -15px;
+        margin-top: 10px;
+        max-width: 45%;
+        margin-bottom: 10px;
     }
     .plan_info .day_route .line{
        border: none;
