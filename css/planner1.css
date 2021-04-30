@@ -4,7 +4,30 @@
 
 /*데스크탑*/
 @media screen and (min-width: 769px){
-
+    #sub-con-body{
+    
+    }
+    .planner-form{
+        overflow: hidden;
+        margin: 0 auto;
+        display: block;
+        width: 500px;
+        padding: 40px 0;
+    }
+    .basic-info-group{
+        font-size: 1.7rem;
+        font-weight: bold;
+        font-family: 'NanumSquare', sans-serif;
+    }
+    .basic-info-group .basic{
+        display: inline;
+        border-top: 3px solid #0076ff;
+        padding: 10px 0;
+    }
+    .basic-info-group .info{
+        display: inline;
+        padding: 10px 0;
+    }
 }
 
 /*모바일*/
