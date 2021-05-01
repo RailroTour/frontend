@@ -11,25 +11,49 @@
         overflow: hidden;
     }
     .travel-box .key{
-        padding: 30px 10px;
+        line-height: 145px;
         text-align: center;
-        width: 10%;
+        width: 20%;
         font-weight: bold;
-        font-size: 1vw;
-        border-right: 1px solid #ccc;
-        display: inline-block;
-    }
-    .travel-box .val{
+        font-size: 15px;
         float: left;
-        
+        border-right: 1px solid #ccc;
+    }
+    .travel-box .vals{
+        display: inline-block;
+        width: 78%;
+        float: left;
+        text-align: center;
+        padding: 5px 0px;
     }
 
-    .travel-box .val .area-item{
+    .travel-box .vals .area-item{
         display: inline-block;
-        width: 20%;
-        background-color: aqua;
         overflow: hidden;
-        float: left;
+        text-align: center;
+        background-color: #F9F9F9;
+        padding: 10px 5px;
+        border-radius: 5px;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    
+    .travel-box .vals .area-item .day-num{
+        border: none;
+        background-color: none;
+        text-align: center;
+        width: 20px;
+    }
+    .travel-box .vals .area-item .cancel-btn{
+        cursor: pointer;
+    }
+    .travel-box .vals .area-item .area-name{
+        font-weight: bold;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .travel-box .vals .area-item .adjust-btn{
+        cursor: pointer;
     }
 }
 @media screen and (max-width: 768px){
