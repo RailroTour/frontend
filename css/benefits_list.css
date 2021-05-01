@@ -13,99 +13,6 @@
         margin: 0 auto;
     }
 
-    #sub-imgbanner {
-        height: 180px;
-        background: url(../jpg/subbg2.jpg) no-repeat center #fcb316;
-    }
-
-    #sub-imgbanner1 {
-        height: 180px;
-        background: url(../jpg/subbg2.jpg) no-repeat center #fcb316;
-    }
-
-    .sub-img-text {
-        color: #fff;
-        letter-spacing: -1px;
-        padding-top: 3.5rem;
-        font-family: "Nanum Gothic", sans-serif;
-        float: right;
-    }
-
-    .sub-img-text h3 {
-        font-size: 1.7rem;
-    }
-
-    .sub-img-text h2 {
-        font-size: 3rem;
-        font-weight: normal;
-    }
-
-    #sub-content {}
-
-    #sub-con-navi {
-        border-bottom: 1px solid #ccc;
-        overflow: hidden;
-    }
-
-    .homebtn {
-        float: left;
-        border-right: 1px solid #ccc;
-    }
-
-    .homebtn a {
-        display: block;
-    }
-
-    .listmenu {
-        float: left;
-        border-right: 1px solid #ccc;
-    }
-
-    .listmenu button {
-        display: block;
-        background: #fff;
-        width: 200px;
-        text-align: left;
-        line-height: 50px;
-        padding-left: 20px;
-        background: url(../jpg/down_icon.jpg) no-repeat 170px center;
-        cursor: pointer;
-    }
-
-    .listmenu ul.listbox {
-        position: absolute;
-        width: 160px;
-        box-shadow: 0 3px 10px #999;
-        display: none;
-    }
-
-    .listmenu li:hover a {
-        background: #eee;
-    }
-
-    .listmenu a {
-        display: block;
-        padding: 5px 20px;
-    }
-
-    #sub-con-body {
-        padding: 5rem 0;
-    }
-
-    .s-c-b-title {
-        text-align: center;
-    }
-
-    .s-c-b-title h3 {
-        font-size: 1.8rem;
-        font-style: italic;
-    }
-
-    .s-c-b-title h2 {
-        font-size: 3rem;
-    }
-
-
 
     /* 서브페이지 2 공지사항 */
     .cover-search {
@@ -354,111 +261,27 @@
 /*모바일 기기에서*/
 @media screen and (max-width: 768px) {
 
+    #wrap {
+        width: 100%;
+        max-width: 768px;
+    }
+    
+    .section {
+        width: 100%;
+    }
+    
+    .s-c-b-title{
+        width: 100%;
+        display: block;
+    }
+    
     .cover-search .search-right {
         float: right;
         margin-top: 5%;
     }
 
-    .section {
-        width: 100%;
-    }
-
-    #sub-imgbanner {
-        height: 180px;
-        background: url(../jpg/subbg2.jpg) no-repeat center #fcb316;
-    }
-
-    #sub-imgbanner1 {
-        height: 180px;
-        background: url(../jpg/subbg2.jpg) no-repeat center #fcb316;
-    }
-
-    .sub-img-text {
-        color: #fff;
-        letter-spacing: -1px;
-        padding-top: 3.5rem;
-        font-family: "Nanum Gothic", sans-serif;
-        float: right;
-        width: 80%;
-    }
-
-    .sub-img-text h3 {
-        font-size: 1.7rem;
-    }
-
-    .sub-img-text h2 {
-        font-size: 3rem;
-        font-weight: normal;
-    }
-
-    #sub-content {}
-
-    #sub-con-navi {
-        border-bottom: 1px solid #ccc;
-        overflow: hidden;
-    }
-
-    .homebtn {
-        float: left;
-        border-right: 1px solid #ccc;
-    }
-
-    .homebtn a {
-        display: block;
-    }
-
-    .listmenu {
-        float: left;
-        border-right: 1px solid #ccc;
-    }
-
-    .listmenu button {
-        display: block;
-        background: #fff;
-        width: 200px;
-        text-align: left;
-        line-height: 50px;
-        padding-left: 20px;
-        background: url(../jpg/down_icon.jpg) no-repeat 170px center;
-        cursor: pointer;
-    }
-
-    .listmenu ul.listbox {
-        position: absolute;
-        width: 160px;
-        box-shadow: 0 3px 10px #999;
-        display: none;
-    }
-
-    .listmenu li:hover a {
-        background: #eee;
-    }
-
-    .listmenu a {
-        display: block;
-        padding: 5px 20px;
-    }
-
-    #sub-con-body {
-        padding: 5rem 0;
-        margin: 0;
-    }
-
-
-
-
-    .s-c-b-title h3 {
-        font-size: 1.8rem;
-        font-style: italic;
-    }
-
-    .s-c-b-title h2 {
-        font-size: 3rem;
-    }
-
     .s-c-b-cover {
-        width: 98%;
-        margin: auto;
+        width: 100%;
     }
 
 
@@ -712,13 +535,6 @@
         border: none;
     }
 
-    .s-c-b-title {
-        width: 70%;
-    }
 
-    .s-c-b-cover {
-        width: 60%;
-        margin: 5%;
-    }
 
 }
