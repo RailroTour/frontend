@@ -2,16 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>서브페이지</title>
+    <title>새 플래너 작성 : 기본 정보 입력</title>
     <link rel="stylesheet" href="./css/commen.css">
     <link rel="stylesheet" href="./css/sub-banner.css">
     <link rel="stylesheet" href="./css/planner1.css">
-
-   
+    <link rel="stylesheet" href="./css/toggle-switchy.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script>
- 
-
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+      $( "#datepicker" ).datepicker( "option", "dateFormat", "yy-mm-dd");
+  } );
+  </script>
 </head>
 <body>
     <div id="wrap"> <!-- 전체를 감싸는 부분 -->
@@ -71,15 +78,52 @@
                             <span class="title">플래너 명</span>
                             <span class="input-name"><input type="text" class="name"></span>
                         </li>
-                        <li><span>*</span><span>출발일</span><span><input type="text"></span></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li class="planner-name">
+                            <span class="title">출발일</span>
+                            <span class="input-name"><input type="text" id="datepicker" class="date name" readonly></span>
+                        </li>
+                        <li class="planner-name">
+                            <span class="title">기간</span>
+                            <span class="radio-group">
+                                <input type="radio" id="3day" name="days" value="3" checked/>
+                                <label for="3day"><span></span>3일</label>
+                                <input type="radio" id="7day" name="days" value="7"/>
+                                <label for="7day"><span></span>7일</label>
+                            </span>
+                        </li>
+                        <li class="planner-name">
+                            <span class="title">테마</span>
+                            <span class="radio-group">
+                                <input type="radio" id="health" name="tema" checked/>
+                                <label for="health"><span></span>힐링</label>
+                                <input type="radio" id="tour" name="tema" />
+                                <label for="tour"><span></span>관광</label>
+                                <input type="radio" id="experience" name="tema" />
+                                <label for="experience"><span></span>체험</label>
+                                <input type="radio" id="rest" name="tema" />
+                                <label for="rest"><span></span>휴식</label>
+                            </span>
+                        </li>
+                        <li class="planner-name">
+                            <span class="title">공개여부</span>
+                            <span class="radio-group">
+                                <label class="toggle-switchy" for="example_rounded_4" data-size="sm" data-style="rounded">
+								<input checked="" type="checkbox" id="example_rounded_4">
+								<span class="toggle">
+									<span class="switch"></span>
+								</span>
+							</label>
+                            </span>
+                        </li>
                     </ul>
+                    <div class="btn-group">
+                            <input type="button" value="만들기" class="create">
+                            <input type="button" value="취소" class="cancel">
+                    </div>
                 </form>
             </div>
         </section>
-        
+
     </div>
     <script src="./js/script.js"></script>
 </body>
