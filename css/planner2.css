@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@media screen and (min-width: 769px){
+    .travel-box{
+        overflow: hidden;
+        border: 1px solid #ccc;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 80px;
+        overflow: hidden;
+    }
+    .travel-box .key{
+        padding: 30px 10px;
+        text-align: center;
+        width: 10%;
+        font-weight: bold;
+        font-size: 1vw;
+        border-right: 1px solid #ccc;
+        display: inline-block;
+    }
+    .travel-box .val{
+        float: left;
+        
+    }
+
+    .travel-box .val .area-item{
+        display: inline-block;
+        width: 20%;
+        background-color: aqua;
+        overflow: hidden;
+        float: left;
+    }
+}
+@media screen and (max-width: 768px){
+}

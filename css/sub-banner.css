@@ -7,6 +7,7 @@
     #wrap{
         width: 100%;
         min-width: 1020px;
+        font-family: "Nanum Gothic", sans-serif;
     }
     .section{
         width:1020px;
@@ -121,14 +122,14 @@
         background: url(../jpg/subbg1.jpg) no-repeat center;
         width: 100%;
         height: 0;
-        padding-top: 40.64%;
+        padding-top: 30%;
         background-size: cover;
         position: relative;
     }
     #sub-imgbanner1{
         width: 100%;
         height: 0;
-        padding-top: 66.64%;
+        padding-top: 30%;
         background-size: cover;
         background: url(../jpg/subbg2.jpg) no-repeat center #fcb316;
     }
@@ -138,11 +139,12 @@
         font-family: "Nanum Gothic", sans-serif;
         position: absolute;
         right: 5%;
-        bottom: 45%;
+        bottom: 35%;
         text-align: right;
     }
     .sub-img-text h3{
         font-size: 1.7rem;
+        text-align: left;
     }
     .sub-img-text h2{
         font-size: 3rem;
