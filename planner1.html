@@ -9,16 +9,19 @@
     <link rel="stylesheet" href="./css/toggle-switchy.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#datepicker" ).datepicker();
-      $( "#datepicker" ).datepicker( "option", "dateFormat", "yy-mm-dd");
-  } );
-  </script>
+
+<link rel="stylesheet" href="./jquery-ui-1.12.1/jquery-ui.min.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="./jquery-ui-1.12.1/jquery-ui.min.js"></script>
+
+<script src="./jquery-ui-1.12.1/datepicker-ko.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(function(){
+	$("#datepicker").datepicker();
+});
+//]]>
+</script>
 </head>
 <body>
     <div id="wrap"> <!-- 전체를 감싸는 부분 -->
