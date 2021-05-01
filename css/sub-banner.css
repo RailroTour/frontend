@@ -52,6 +52,10 @@
         border-bottom: 1px solid #ccc;
         overflow: hidden;
     }
+    .sub-con-navi-box{
+        width:1020px;
+        margin: 0 auto;
+    }
     .homebtn{
         float: left;
         border-right: 1px solid #ccc;
@@ -76,7 +80,7 @@
     }
     .listmenu ul.listbox{
         position: absolute;
-        width: 160px;
+        width: 200px;
         box-shadow: 0 3px 10px #999;
         display: none;
     }
