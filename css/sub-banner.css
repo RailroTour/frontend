@@ -3,6 +3,7 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 /*데스크탑*/
+
 @media screen and (min-width: 769px) {
   #wrap {
     width: 100%;
@@ -20,7 +21,7 @@
 
   /* 서브페이지 1 */
   #sub-imgbanner {
-    background: url(../jpg/subbg1.jpg) no-repeat center #89c4e4;
+    background: url(../jpg/subbg2.jpg) no-repeat center #89c4e4;
     height: 180px;
   }
   #sub-imgbanner1 {
@@ -49,12 +50,10 @@
     border-bottom: 1px solid #ccc;
     overflow: hidden;
   }
-
   .sub-con-navi-box {
     width: 1020px;
     margin: 0 auto;
   }
-
   .homebtn {
     float: left;
     border-right: 1px solid #ccc;
