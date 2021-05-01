@@ -122,12 +122,13 @@
 
     /* 서브페이지 1 */
     #sub-imgbanner{
-        background: url(../jpg/subbg1.jpg) no-repeat center;
-        width: 100%;
-        height: 0;
-        padding-top: 40.64%;
-        background-size: cover;
-        position: relative;
+           background: url(../jpg/subbg1.jpg) no-repeat center;
+    width: 100%;
+    height: 180px;
+    /* padding-top: 40.64%; */
+    background-size: cover;
+    position: relative;
+    background-position: revert;
     }
     #sub-imgbanner1{
         width: 100%;
@@ -142,7 +143,7 @@
         font-family: "Nanum Gothic", sans-serif;
         position: absolute;
         right: 5%;
-        bottom: 45%;
+        bottom: 40%;
         text-align: right;
     }
     .sub-img-text h3{
