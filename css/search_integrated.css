@@ -3,742 +3,719 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 #content {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 #content .result_bar {
-    width: 100%;
-    background-color: #ccc;
-    overflow: hidden;
-    margin-top: 1px;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #0058ff;
+  width: 100%;
+  background-color: #ccc;
+  overflow: hidden;
+  margin-top: 1px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #0058ff;
 }
 
 #content .result_bar div {
-    width: 1020px;
-    margin: 0 auto;
-    padding: 20px 0;
-    font-size: 1.8rem;
-    font-weight: bold;
-
+  width: 1020px;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 #content .itemlist {
-    width: 1020px;
-    margin: 20px auto;
-    overflow: hidden;
+  width: 1020px;
+  margin: 20px auto;
+  overflow: hidden;
 }
 
 #content .itemlist .itembox {
-    float: left;
-    font-size: 1.2rem;
-    padding: 10px 30px;
-    background-color: #0080ff;
-    color: white;
-    margin-right: 1px;
+  float: left;
+  font-size: 1.2rem;
+  padding: 10px 30px;
+  background-color: #0080ff;
+  color: white;
+  margin-right: 1px;
 }
 
 #content .itemlist .selected {
-    background-color: white;
-    border-top: 2px solid #0080ff;
-    border-left: 1px solid #0080ff;
-    border-right: 1px solid #0080ff;
-    color: black;
-    padding-bottom: 8px;
+  background-color: white;
+  border-top: 2px solid #0080ff;
+  border-left: 1px solid #0080ff;
+  border-right: 1px solid #0080ff;
+  color: black;
+  padding-bottom: 8px;
 }
 
 #content .itemlist .itembox:hover a {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 #content .itemlist .Latest {
-    float: right;
-    border: 1px solid #ccc;
-    padding: 10px 10px;
-    background-color: white;
-    color: black;
-    width: 60px;
-    text-align: center;
+  float: right;
+  border: 1px solid #ccc;
+  padding: 10px 10px;
+  background-color: white;
+  color: black;
+  width: 60px;
+  text-align: center;
 }
 
 #content .itemlist .Accuracy {
-    float: right;
-    background-color: #727272;
-    border: 1px solid #ccc;
-    color: white;
-    padding: 10px 10px;
-    text-align: center;
-    width: 60px;
+  float: right;
+  background-color: #727272;
+  border: 1px solid #ccc;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  width: 60px;
 }
 
 #content .Contents {
-    width: 1020px;
-    margin: 0 auto;
+  width: 1020px;
+  margin: 0 auto;
 }
 
 .Contents .Tourist {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .Contents .Tourist .Tourist_Title {
-    overflow: hidden;
-    display: block;
+  overflow: hidden;
+  display: block;
 }
 
 .Contents .Tourist h1 {
-    font-size: 1.7rem;
-    font-family: "Nanum Gothic", sans-serif;
-    margin-bottom: 20px;
-    float: left;
+  font-size: 1.7rem;
+  font-family: "Nanum Gothic", sans-serif;
+  margin-bottom: 20px;
+  float: left;
 }
 
 .Contents .Tourist h2 {
-    font-size: 1.3rem;
-    float: right;
-    margin-top: 5px;
-    font-weight: normal;
+  font-size: 1.3rem;
+  float: right;
+  margin-top: 5px;
+  font-weight: normal;
 }
 
 .Contents .Tourist h2 img {
-    margin-left: 5px;
-    margin-bottom: 2px;
-    cursor: pointer;
+  margin-left: 5px;
+  margin-bottom: 2px;
+  cursor: pointer;
 }
 
 .Contents .Tourist .Tour_group {
-    border: 1px solid #ccc;
-    padding: 20px;
-    overflow: hidden;
-    float: left;
-    border-radius: 5px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    width: 440px;
-    height: 100px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  overflow: hidden;
+  float: left;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  width: 440px;
+  height: 100px;
 }
 
 .Contents .Tourist .Tour_group li {
-    float: left;
-    font-family: "Nanum Gothic", sans-serif;
-    font-size: 1.3rem;
+  float: left;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1.3rem;
 }
 
 .Contents .Tourist .Tour_group .TourImage {
-    float: left;
-    width: 148px;
-    height: 98px;
-    overflow: hidden;
+  float: left;
+  width: 148px;
+  height: 98px;
+  overflow: hidden;
 }
 
 .Contents .Tourist .Tour_group .TourImage img {
-    transition: 0.5s;
-    width: 148px;
-    height: auto;
+  transition: 0.5s;
+  width: 148px;
+  height: auto;
 }
 
 .Contents .Tourist .Tour_group .TourInfo {
-    float: left;
-    overflow: hidden;
-    margin-left: 30px;
-    width: 260px;
+  float: left;
+  overflow: hidden;
+  margin-left: 30px;
+  width: 260px;
 }
 
 .Contents .Tourist .Tour_group .TourInfo .TourTitle {
-    float: left;
-    display: block;
-    width: 150px;
-    font-weight: bold;
-    font-size: 1.5rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  float: left;
+  display: block;
+  width: 150px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .Contents .Tourist .Tour_group .TourContent {
-    display: block;
-    color: #626262;
-    font-size: 1.2rem;
-    margin-top: 15px;
-    width: 200px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-    line-height: 1.2;
-    height: 2.5em;
-    text-align: left;
-    word-wrap: break-word;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-
+  display: block;
+  color: #626262;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  line-height: 1.2;
+  height: 2.5em;
+  text-align: left;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .Tour_group .like_review {
-    float: right;
-    margin-top: 10px;
+  float: right;
+  margin-top: 10px;
 }
 
 .Tour_group .like_review img {
-    float: right;
-    width: 20px;
-    height: auto;
-    margin-right: 2px;
+  float: right;
+  width: 20px;
+  height: auto;
+  margin-right: 2px;
 }
 
 .Tour_group .like_review span {
-    float: right;
-    margin-right: 8px;
+  float: right;
+  margin-right: 8px;
 }
 
 .Contents .Tourist .Tour_group .shopping_add {
-    float: right;
-    cursor: pointer;
-    margin-top: 3px;
+  float: right;
+  cursor: pointer;
+  margin-top: 3px;
 }
 
 .Contents .Tourist .Tour_group:hover {
-    background-color: #2c4c8f;
-    color: white;
-    cursor: pointer;
+  background-color: #2c4c8f;
+  color: white;
+  cursor: pointer;
 }
 
 .Contents .Tourist .Tour_group:hover .TourContent {
-
-    color: white;
+  color: white;
 }
 
 .Contents .Tourist .Tour_group:hover .TourImage img {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .Contents .Restaurant {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .Contents .Travel_Course {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .Contents .Travel_Course .Tour_Course {
-    border: 1px solid #ccc;
-    overflow: hidden;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .Contents .Travel_Course .Tour_Course:hover {
-    border-color: #0076ff;
+  border-color: #0076ff;
 }
 
 .Contents .Travel_Course .Tour_Course .top {
-    margin: 0 auto;
-    overflow: hidden;
-    display: block;
-    padding: 0px 10px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: block;
+  padding: 0px 10px;
 }
 
 .Contents .Travel_Course .Tour_Course .top .circle {
-    background-color: #00baff;
-    float: left;
-    color: white;
-    padding: 15px 10px;
-    border-radius: 100%;
-    font-family: "Nanum Gothic", sans-serif;
-    font-size: 1.3rem;
+  background-color: #00baff;
+  float: left;
+  color: white;
+  padding: 15px 10px;
+  border-radius: 100%;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1.3rem;
 }
 
 .Contents .Travel_Course .Tour_Course .top .line {
-    float: left;
-    margin-top: 15px;
+  float: left;
+  margin-top: 15px;
 }
 
 .Contents .Travel_Course .Tour_Course .area_info {
-    padding: 0px 10px;
-    float: left;
+  padding: 0px 10px;
+  float: left;
 }
 
 .Contents .Travel_Course .Tour_Course .area_info .map_name {
-    font-family: "Nanum Gothic", sans-serif;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-left: 15px;
-    margin-top: 10px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-top: 10px;
 }
 
 .Contents .Travel_Course .Tour_Course .area_info .map_img {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .Contents .Travel_Course .Tour_Course .second {
-    margin-left: 75px;
+  margin-left: 75px;
 }
 
 .Contents .Railro_Note {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
-
 #intro-banner {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 #intro-banner .planner_view_group {
-    overflow: hidden;
-    width: 1080px;
+  overflow: hidden;
+  width: 1080px;
 }
 
 #intro-banner .planner_view {
-    width: 245px;
-    border: 1px solid #ccc;
-    overflow: hidden;
-    float: left;
+  width: 245px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  float: left;
 }
 
 #intro-banner .planner_view:hover {
-    border: 1px solid #375dff;
+  border: 1px solid #375dff;
 }
 
-#intro-banner .planner_view:last-Child {
-    margin-right: 0;
+#intro-banner .planner_view:last-child {
+  margin-right: 0;
 }
-
 
 #intro-banner .content-center {
-    position: relative;
-    height: 90px;
+  position: relative;
+  height: 90px;
 }
 
 #intro-banner .content-center .group {
-    position: absolute;
-    background: white;
+  position: absolute;
+  background: white;
 }
 
 #intro-banner .content-center .group1,
 .group3,
 .group5,
 .group7 {
-    z-index: 4
+  z-index: 4;
 }
 
 #intro-banner .round_cover {
-    width: 30px;
-    margin: 10px auto;
-    overflow: hidden;
+  width: 30px;
+  margin: 10px auto;
+  overflow: hidden;
 }
 
 #intro-banner .round {
-    float: left;
-    width: 10px;
-    height: 10px;
-    background: #ccc;
-    border-radius: 5px;
-    cursor: pointer;
+  float: left;
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 #intro-banner .round.bu1 {
-    background: blue;
-    margin-right: 10px;
+  background: blue;
+  margin-right: 10px;
 }
 
 #intro-banner .planner_view .title {
-    margin: 14px;
-    overflow: hidden;
+  margin: 14px;
+  overflow: hidden;
 }
 
 #intro-banner .planner_view .title img {
-    float: left;
+  float: left;
 }
 
 #intro-banner .planner_view .traveler {
-    float: left;
-    margin-left: 5px;
-    color: #b5b5b5;
-    line-height: 1.1rem;
+  float: left;
+  margin-left: 5px;
+  color: #b5b5b5;
+  line-height: 1.1rem;
 }
 
 #intro-banner .planner_view .date {
-    color: #b5b5b5;
-    float: right;
+  color: #b5b5b5;
+  float: right;
 }
 
 #intro-banner .planner_view .name {
-    float: left;
-    color: #111;
+  float: left;
+  color: #111;
 }
 
 #intro-banner .planner_view .cover_bg {
-    display: block;
-    margin: 5px auto;
+  display: block;
+  margin: 5px auto;
 }
 
 #intro-banner .planner_view .travel_title {
-    width: 90%;
-    border-bottom: 1px solid #ccc;
-    color: #006cff;
-    font-weight: bold;
-    font-size: 1.1rem;
-    letter-spacing: -1px;
-    margin: 10px auto;
-    padding-bottom: 8px;
+  width: 90%;
+  border-bottom: 1px solid #ccc;
+  color: #006cff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: -1px;
+  margin: 10px auto;
+  padding-bottom: 8px;
 }
 
 #intro-banner .planner_view .content-center {
-    margin: 0 auto;
-    overflow: hidden;
-    width: 90%;
-    padding-bottom: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 90%;
+  padding-bottom: 20px;
 }
 
 #intro-banner .planner_view .travel_content {
-    float: left;
-    font-size: 0.8rem;
-    margin-top: 9px;
+  float: left;
+  font-size: 0.8rem;
+  margin-top: 9px;
 }
 
 #intro-banner .planner_view .travel_content:nth-child(2) {
-    margin-left: 8px;
-    margin-right: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 #intro-banner .planner_view .travel_content > span {
-    font-size: 1rem;
-    display: block;
-    margin-bottom: 5px;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .plans_list_rows {
-    overflow: hidden;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 30px;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .plans_list_rows .list_item {
-    float: left;
-    width: 310px;
-    height: 295px;
-    overflow: hidden;
-    display: block;
-    cursor: pointer;
+  float: left;
+  width: 310px;
+  height: 295px;
+  overflow: hidden;
+  display: block;
+  cursor: pointer;
 }
 
 .plans_list_rows a {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    float: left;
-    margin-left: 20px;
-    margin-bottom: 30px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 30px;
 }
 
 .list_item li:first-child {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .list_item li:first-child img {
-    width: 346px;
-    height: 200px;
-    display: block;
-    transform: scale(1.0);
-    transition: all 0.5s ease-in-out;
+  width: 346px;
+  height: 200px;
+  display: block;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
 }
 
 .list_item:hover li:first-child img {
-    width: 346px;
-    height: 200px;
-    transform: scale(1.35);
-    transition: all 2.5s ease-in-out;
+  width: 346px;
+  height: 200px;
+  transform: scale(1.35);
+  transition: all 2.5s ease-in-out;
 }
 
 .list_item li:first-child {
-    position: relative;
+  position: relative;
 }
 
 .plans_list_rows .list_item .note_info {
-    background-color: rgba(0, 0, 0, 0.49);
-    position: absolute;
-    z-index: 20;
-    top: 140px;
-    width: 100%;
-    font-size: 1.2rem;
-    font-family: 'NanumSquare', sans-serif;
-    height: 45px;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.49);
+  position: absolute;
+  z-index: 20;
+  top: 140px;
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: "NanumSquare", sans-serif;
+  height: 45px;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 .list_item .note_info h1 {
-    width: 100%;
-    margin-bottom: 0;
-    margin-left: 10px;
+  width: 100%;
+  margin-bottom: 0;
+  margin-left: 10px;
 }
 
 .list_item .note_info h1:first-child {
-    font-size: 1.2rem;
-    color: #009dff;
+  font-size: 1.2rem;
+  color: #009dff;
 }
 
 .list_item .note_info h1:nth-child(2) {
-    font-size: 1.2rem;
-    margin-top: 5px;
+  font-size: 1.2rem;
+  margin-top: 5px;
 }
 
 .list_item li:nth-child(2) {
-    width: 100%;
-    overflow: hidden;
-    display: block;
+  width: 100%;
+  overflow: hidden;
+  display: block;
 }
 
 .list_item li:nth-child(2) div:first-child {
-    width: 100%;
-    height: 30px;
+  width: 100%;
+  height: 30px;
 }
 
 .list_item li:nth-child(2) .like {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .list_item li:nth-child(2) .like .tema {
-    float: left;
-    font-size: 1.1rem;
-    margin-left: 10px;
+  float: left;
+  font-size: 1.1rem;
+  margin-left: 10px;
 }
 
 .list_item li:nth-child(2) .like img {
-    float: right;
-    margin-top: 5px;
-    margin-right: 3px;
+  float: right;
+  margin-top: 5px;
+  margin-right: 3px;
 }
 
 .list_item li:nth-child(2) .like span {
-    float: right;
-    font-size: 1.5rem;
-    padding: 5px 5px 5px 5px;
-    font-size: 1.1rem;
-    color: #5c5c5c;
+  float: right;
+  font-size: 1.5rem;
+  padding: 5px 5px 5px 5px;
+  font-size: 1.1rem;
+  color: #5c5c5c;
 }
 
 .list_item .route {
-    font-size: 1.2rem;
-    padding: 13px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    color: #5c5c5c;
-    display: inline-block;
-    width: 290px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
+  font-size: 1.2rem;
+  padding: 13px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  color: #5c5c5c;
+  display: inline-block;
+  width: 290px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .list_item .person {
-    padding: 10px;
-    padding-top: 5px;
-    overflow: hidden;
-    color: #5c5c5c;
+  padding: 10px;
+  padding-top: 5px;
+  overflow: hidden;
+  color: #5c5c5c;
 }
 
 .list_item .person span {
-    font-family: "Nanum Gothic", sans-serif;
-    font-size: 1.2rem;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1.2rem;
 }
 
 .Tourist .user {
-    background-color: white;
-    overflow: hidden;
-    width: 225px;
-    height: 100px;
-    margin-left: 20px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 40px;
-    float: left;
+  background-color: white;
+  overflow: hidden;
+  width: 225px;
+  height: 100px;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 40px;
+  float: left;
 }
 
 .Tourist .user .user_img {
-    width: 80px;
-    height: 80px;
-    border: 1px solid #ccc;
-    border-radius: 100px;
-    overflow: hidden;
-    margin-left: 7px;
-    margin-top: 8px;
-    float: left;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-left: 7px;
+  margin-top: 8px;
+  float: left;
 }
 
 .Tourist .user .user_img img {
-    width: 80px;
-    margin: 0 auto;
-    height: auto;
-    display: block;
+  width: 80px;
+  margin: 0 auto;
+  height: auto;
+  display: block;
 }
 
 .Tourist .user .name {
-    float: left;
-    margin-left: 10px;
-    margin-top: 20px;
-    font-size: 1.2rem;
-    font-family: "Nanum Gothic", sans-serif;
-    width: 110px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  float: left;
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-family: "Nanum Gothic", sans-serif;
+  width: 110px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .Tourist .user .note_num {
-    float: left;
-    margin-left: 10px;
-    margin-top: 5px;
-    color: #5f5f5f;
-    font-family: "Nanum Gothic", sans-serif;
-    width: 110px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 5px;
+  color: #5f5f5f;
+  font-family: "Nanum Gothic", sans-serif;
+  width: 110px;
 }
 
 .Tourist .user .follow {
-    width: 50px;
-    float: left;
-    margin-left: 10px;
-    font-family: 'NanumSquare', sans-serif;
-    padding: 1px 2px 1px 2px;
-    text-align: center;
-    margin-top: 5px;
-    border-radius: 5px;
+  width: 50px;
+  float: left;
+  margin-left: 10px;
+  font-family: "NanumSquare", sans-serif;
+  padding: 1px 2px 1px 2px;
+  text-align: center;
+  margin-top: 5px;
+  border-radius: 5px;
 }
 
 .Contents .page_num_group {
-    overflow: hidden;
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .Contents .page_num_group a {
-    margin: 0 auto;
-    text-align: center;
-    display: inline-block;
-    font-size: 1.2rem;
-    font-family: 'NanumSquare', sans-serif;
-    font-weight: bold;
-    padding: 3px 6px 4px 6px;
-    margin-right: 5px;
-    vertical-align: middle;
-    color: #4b4b4b;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-family: "NanumSquare", sans-serif;
+  font-weight: bold;
+  padding: 3px 6px 4px 6px;
+  margin-right: 5px;
+  vertical-align: middle;
+  color: #4b4b4b;
 }
 
 .Contents .page_num_group > .selected {
-    color: rgb(0, 186, 255);
-    border: 2px solid rgb(0, 186, 255);
+  color: rgb(0, 186, 255);
+  border: 2px solid rgb(0, 186, 255);
 }
 
 .Contents .page_num_group a:first-child {
-    border: 1px solid #ccc;
-    color: #646464;
+  border: 1px solid #ccc;
+  color: #646464;
 }
 
 .Contents .page_num_group a:last-child {
-    border: 1px solid #ccc;
-    color: #646464;
+  border: 1px solid #ccc;
+  color: #646464;
 }
 
 /*모바일 기기에서*/
 @media screen and (max-width: 768px) {
-    #content .result_bar div {
-        width: 90%;
-    }
+  #content .result_bar div {
+    width: 90%;
+  }
 
-    .Contents .page_num_group {
+  .Contents .page_num_group {
+    width: 100%;
+  }
 
-        width: 100%;
+  #content .itemlist {
+    width: 98%;
+  }
 
-    }
+  #content .itemlist .itembox {
+    margin-top: 2px;
+  }
 
-    #content .itemlist {
-        width: 98%;
+  #content .Contents {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-    }
+  .Contents .Tourist .Tourist_Title {
+    width: 90%;
+    margin-left: 10px;
+  }
 
-    #content .itemlist .itembox {
-
-        margin-top: 2px;
-
-    }
-
-    #content .Contents {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .Contents .Tourist .Tourist_Title {
-
-        width: 90%;
-        margin-left: 10px;
-    }
-
-    .Contents .Tourist .Tour_group {
-
-        width: 80%;
-        height: auto;
-    }
-
-    .Contents .Tourist .Tour_group .TourInfo {
-
-        width: 53%;
-        margin-left: 20px;
-        /* height: 50%; */
-        height: 100%;
-        margin-left: 20px;
-        margin-top: 5px;
-    }
-
-
-    .Contents .Tourist .Tour_group .TourContent {
-
-        width: 70%;
-    }
-
-    .Contents .Tourist .Tour_group {
-
-        padding: 20px;
-
-    }
-
-    .Tour_group .like_review {
-        width: 50%;
-        float: right;
-        margin-top: 10px;
-    }
-
-
-    .plans_list_rows .list_item {
-        float: left;
-        width: 100%;
-    }
-
-    .list_item li:first-child img {
-        width: 100%;
-    }
-
-    .Contents .Tourist .Tour_group .TourImage {
-        float: left;
-        width: 40%;
-        height: 98px;
-        overflow: hidden;
-    }
-
-    .plans_list_rows {
-        width: 100%;
-        height: auto;
-    }
-    .plans_list_rows a {
-        width: 85%;
+  .Contents .Tourist .Tour_group {
+    width: 80%;
     height: auto;
-    }
+  }
 
+  .Contents .Tourist .Tour_group .TourInfo {
+    width: 53%;
+    margin-left: 20px;
+    /* height: 50%; */
+    height: 100%;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
 
+  .Contents .Tourist .Tour_group .TourContent {
+    width: 70%;
+  }
 
+  .Contents .Tourist .Tour_group {
+    padding: 20px;
+  }
 
+  .Tour_group .like_review {
+    width: 50%;
+    float: right;
+    margin-top: 10px;
+  }
+
+  .plans_list_rows .list_item {
+    float: left;
+    width: 100%;
+  }
+
+  .list_item li:first-child img {
+    width: 100%;
+  }
+
+  .Contents .Tourist .Tour_group .TourImage {
+    float: left;
+    width: 40%;
+    height: 98px;
+    overflow: hidden;
+  }
+
+  .plans_list_rows {
+    width: 100%;
+    height: auto;
+  }
+  .plans_list_rows a {
+    width: 85%;
+    height: auto;
+  }
 }
