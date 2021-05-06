@@ -134,7 +134,7 @@
     .travel-box .key{
         text-align: center;
         width: 20%;
-        height: 100%;
+        padding:100px 0;
         font-weight: bold;
         font-size: 15px;
         float: left;
@@ -145,7 +145,7 @@
         width: 78%;
         float: left;
         text-align: center;
-        padding: 5px 0px;
+        padding: 10px 0px;
     }
 
     .travel-box .vals .area-item{
