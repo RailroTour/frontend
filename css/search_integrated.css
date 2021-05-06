@@ -646,81 +646,99 @@
 
 /*모바일 기기에서*/
 @media screen and (max-width: 768px) {
-  #content .result_bar div {
-    width: 90%;
-   }
+    #content .result_bar div {
+        width: 90%;
+    }
+
     .Contents .page_num_group {
 
         width: 100%;
 
     }
-    #content .itemlist {
-    width: 98%;
 
-}
-#content .itemlist .itembox {
-  
-    margin-top: 2px;
-    
-}
+    #content .itemlist {
+        width: 98%;
+
+    }
+
+    #content .itemlist .itembox {
+
+        margin-top: 2px;
+
+    }
+
     #content .Contents {
-    width: 90%;
-    margin: 0 auto;
-}
+        width: 90%;
+        margin: 0 auto;
+    }
 
     .Contents .Tourist .Tourist_Title {
 
-    width: 90%;
-    margin-left: 10px;
-}
-.Contents .Tourist .Tour_group {
+        width: 90%;
+        margin-left: 10px;
+    }
 
-    width: 80%;
+    .Contents .Tourist .Tour_group {
+
+        width: 80%;
         height: auto;
-}
-.Contents .Tourist .Tour_group .TourInfo {
+    }
+
+    .Contents .Tourist .Tour_group .TourInfo {
 
         width: 53%;
-    margin-left: 20px;
-    /* height: 50%; */
-    height: 100%;
-    margin-left: 20px;
-    margin-top: 5px;
-}
-    
-
-.Contents .Tourist .Tour_group .TourContent {
-
-    width: 70%;}
-    .Contents .Tourist .Tour_group {
-    
-    padding: 20px;
-  
-}
-    .Tour_group .like_review {
-    width: 50%;
-    float: right;
-    margin-top: 10px;
-}
-
-  
-    .plans_list_rows a{
-        width: 400px;
+        margin-left: 20px;
+        /* height: 50%; */
+        height: 100%;
+        margin-left: 20px;
+        margin-top: 5px;
     }
+
+
+    .Contents .Tourist .Tour_group .TourContent {
+
+        width: 70%;
+    }
+
+    .Contents .Tourist .Tour_group {
+
+        padding: 20px;
+
+    }
+
+    .Tour_group .like_review {
+        width: 50%;
+        float: right;
+        margin-top: 10px;
+    }
+
+
     .plans_list_rows .list_item {
-    float: left;
-        width: 100%;}
+        float: left;
+        width: 100%;
+    }
+
     .list_item li:first-child img {
-        width: 100%;}
-    
-.Contents .Tourist .Tour_group .TourImage {
-    float: left;
-    width: 40%;
-    height: 98px;
-    overflow: hidden;}
-  
+        width: 100%;
+    }
+
+    .Contents .Tourist .Tour_group .TourImage {
+        float: left;
+        width: 40%;
+        height: 98px;
+        overflow: hidden;
+    }
+
+    .plans_list_rows {
+        width: 100%;
+        height: auto;
+    }
+    .plans_list_rows a {
+        width: 85%;
+    height: auto;
+    }
+
 
 
 
 }
-
