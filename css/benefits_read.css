@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-
+@media screen and (min-width: 769px) {
 #wrap {
     width: 100%;
     min-width: 1020px;
@@ -103,7 +103,9 @@
 .s-c-b-title h2 {
     font-size: 3rem;
 }
-
+.s-c-b-cover {
+        width: 100%;
+    }
 
 
 /* 서브페이지 2 공지사항 */
@@ -348,48 +350,356 @@
     cursor: pointer;
     border: none;
 }
+}
 
 /*모바일 기기에서*/
 @media screen and (max-width: 768px) {
     #wrap {
-        width: 100%;
-        margin: 0 auto;
-
-    }
-
-    #wrap img {
-        height: auto;
-        width: 100%;
-    }
-
-    #sub-con-body {
-        width: 100%;
-        margin: 0 20px;
-
-    }
-
-    #sub-imgbanner {
-        background-size: 100% auto;
-    }
-
-    .section {
-        width: 20%;
-        width: 20%;
-        float: left;
-        margin-left: 180px;
-    }
-
-    
-    .s-c-b-title {
-        width: 45%;
-    }
-
-    .view_form{
-        width: 45%
-    }
-    .listmenu{
-        width: 22%;
-    }
+    width: 100%;
+    max-width: 768px;
 }
 
+.section {
+    width: 100%;
+    
+}
+
+#sub-imgbanner {
+    height: 180px;
+    background: url(../jpg/subbg2.jpg) no-repeat center #fcb316;
+}
+
+#sub-imgbanner1 {
+    height: 180px;
+    background: url(../jpg/subbg2.jpg) no-repeat center #fcb316;
+}
+
+.sub-img-text {
+    color: #fff;
+    letter-spacing: -1px;
+    padding-top: 3.5rem;
+    font-family: "Nanum Gothic", sans-serif;
+    float: right;
+}
+
+.sub-img-text h3 {
+    font-size: 1.7rem;
+}
+
+.sub-img-text h2 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+#sub-content {}
+
+#sub-con-navi {
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.homebtn {
+    float: left;
+    border-right: 1px solid #ccc;
+}
+
+.homebtn a {
+    display: block;
+}
+
+.listmenu {
+    float: left;
+    border-right: 1px solid #ccc;
+}
+
+.listmenu button {
+    display: block;
+    background: #fff;
+    width: 200px;
+    text-align: left;
+    line-height: 50px;
+    padding-left: 20px;
+    background: url(../jpg/down_icon.jpg) no-repeat 170px center;
+    cursor: pointer;
+}
+
+.listmenu ul.listbox {
+    position: absolute;
+    width: 160px;
+    box-shadow: 0 3px 10px #999;
+    display: none;
+}
+
+.listmenu li:hover a {
+    background: #eee;
+}
+
+.listmenu a {
+    display: block;
+    padding: 5px 20px;
+}
+
+#sub-con-body {
+    padding: 5rem 0;
+}
+
+.s-c-b-title {
+     width: 100%;
+        display: block;
+}
+
+.s-c-b-title h3 {
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+.s-c-b-title h2 {
+    font-size: 3rem;
+}
+
+
+
+/* 서브페이지 2 공지사항 */
+.cover-search {
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.cover-search p {
+    float: left;
+}
+
+.cover-search .search-right {
+    float: right;
+    margin-top: 5%;
+
+}
+
+.search-right > * {
+    float: left;
+}
+
+.cover-search select {
+    width: 100px;
+    padding-left: 20px;
+    height: 30px;
+    color: #999;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.cover-search input {
+    height: 28px;
+    border: 1px solid #ccc;
+}
+
+.cover-search a {
+    width: 40px;
+    height: 30px;
+    background: #0080ff;
+    font-size: 1rem;
+    line-height: 26px;
+    text-align: center;
+    color: white;
+}
+
+.cover-table {}
+
+.cover-table table {
+    width: 100%;
+    border-top: 2px solid #0080ff;
+}
+
+.cover-table thead {}
+
+.cover-table tbody {}
+
+/*
+.cover-table tr.tdbgcolor td{
+	background: #fbfff5;
+	font-weight: bold;
+}
+*/
+.cover-table th {
+    font-size: 1.2rem;
+    height: 40px;
+    background: #eee;
+    border-bottom: 1px solid #ccc;
+}
+
+.cover-table td:nth-child(2) {
+    text-align: left;
+}
+
+.cover-table td {
+    text-align: center;
+    font-size: 1.2rem;
+    height: 35px;
+    border-bottom: 1px solid #ccc;
+}
+
+.cover-table td a:hover {
+    text-decoration: underline;
+}
+
+.cover-btn {
+    overflow: hidden;
+    margin: 2rem auto;
+    width: 100%;
+}
+
+.cover-btn .bt_group {
+    margin: 0 auto;
+    display: block;
+    width: 400px;
+}
+
+.cover-btn .bt_group button {
+    margin-left: 2px;
+    padding: 5px 2px;
+}
+
+.cover-btn .bt_group button > a {
+    padding: 5px 5px;
+}
+
+.cover-btn .post {
+    float: right;
+    background-color: #0080ff;
+    color: white;
+    margin-left: 50px;
+    width: 70px;
+}
+
+.cover-btn > button a {
+    display: block;
+    line-height: 30px;
+    height: 30px;
+}
+
+.view_form {
+    border-top: 2px solid #0076ff;
+    margin-top: 80px;
+}
+
+.view_form .title {
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 15px 10px;
+    overflow: hidden;
+}
+
+.view_form .title h1 {
+    float: left;
+}
+
+.view_form .title a {
+    float: right;
+    font-size: 1rem;
+    margin-right: 5px;
+    font-weight: normal;
+}
+
+.view_form .post_info {
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+.view_form .post_info li {
+    float: left;
+    margin-right: 20px;
+    font-size: 1rem;
+    padding: 5px 0;
+}
+
+.view_form .download {
+    margin-top: 10px;
+    overflow: hidden;
+    padding: 10px 10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: #f2f2f2;
+}
+
+.view_form .download a {
+    cursor: pointer;
+}
+
+.view_form .download a:hover h1 {
+    text-decoration: underline;
+}
+
+.view_form .download img {
+    float: left;
+}
+
+.view_form .download h1 {
+    float: left;
+    margin-left: 10px;
+}
+
+.view_form .content {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+.view_form .content p {
+    font-family: "Nanum Gothic", sans-serif;
+    font-size: 1.1rem;
+    color: #454545
+}
+
+.view_form .bt_group {
+    margin-top: 30px;
+    overflow: hidden;
+    margin-bottom: 100px;
+    display: block;
+}
+
+.view_form .bt_group button a {
+    display: block;
+    padding: 10px 20px;
+}
+
+.view_form .bt_group .Previous {
+    float: left;
+    background-color: black;
+    color: white;
+}
+
+.view_form .bt_group .next {
+    margin-left: 10px;
+    float: left;
+    background-color: black;
+    color: white;
+}
+
+.view_form .bt_group .list {
+    float: right;
+    background-color: #006cff;
+    color: white;
+}
+
+.view_form .bt_group .delete {
+    float: right;
+    background-color: #ff3d3d;
+    color: white;
+    margin-right: 10px;
+}
+
+.search-right .search_btn {
+    padding: 0px 10px;
+    height: 30px;
+    color: white;
+    background-color: #00acff;
+    font-family: "Nanum Gothic", sans-serif;
+    float: left;
+    cursor: pointer;
+    border: none;
+}
 }
