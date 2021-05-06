@@ -11,7 +11,7 @@
         overflow: hidden;
     }
     .travel-box .key{
-        line-height: 145px;
+        line-height: 160px;
         text-align: center;
         width: 20%;
         font-weight: bold;
@@ -31,7 +31,7 @@
         display: inline-block;
         overflow: hidden;
         text-align: center;
-        background-color: #F9F9F9;
+        background-color: #ededed;
         padding: 10px 5px;
         border-radius: 5px;
         margin-left: 5px;
@@ -68,7 +68,7 @@
         padding-bottom: 10px;
         padding-left: 15px;
         padding-right: 15px;
-        line-height: 40px;
+        line-height: 50px;
     }
     .areas{
         overflow: hidden;
@@ -85,6 +85,7 @@
         overflow: hidden;
         position: relative;
         border-radius: 10px;
+        color: white;
     }
     .areas .area .area-img{
     }
@@ -97,11 +98,148 @@
     }
     .areas .area .do{
         position: absolute;
-        
+        bottom: 5%;
+        right: 35%;
     }
     .areas .area .si-gun-gu{
-
+        position: absolute;
+        bottom: 2%;
+        right: 5%;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .detail-schedule-btn{
+        margin: 0 auto;
+        color: white;
+        background-color: #53C3FF;
+        border-radius: 10px;
+        text-align: center;
+        width: 30%;
+        display: block;
+        font-size: 2rem;
+        margin-top: 50px;
+        padding: 20px 0px;
+        cursor: pointer;
     }
 }
 @media screen and (max-width: 768px){
+    .travel-box{
+        overflow: hidden;
+        border: 1px solid #ccc;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 80px;
+        overflow: hidden;
+    }
+    .travel-box .key{
+        line-height: 160px;
+        text-align: center;
+        width: 20%;
+        font-weight: bold;
+        font-size: 15px;
+        float: left;
+        border-right: 1px solid #ccc;
+    }
+    .travel-box .vals{
+        display: inline-block;
+        width: 78%;
+        float: left;
+        text-align: center;
+        padding: 5px 0px;
+    }
+
+    .travel-box .vals .area-item{
+        display: inline-block;
+        overflow: hidden;
+        text-align: center;
+        background-color: #ededed;
+        padding: 10px 5px;
+        border-radius: 5px;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    
+    .travel-box .vals .area-item .day-num{
+        border: none;
+        background-color: none;
+        text-align: center;
+        width: 20px;
+    }
+    .travel-box .vals .area-item .cancel-btn{
+        cursor: pointer;
+    }
+    .travel-box .vals .area-item .area-name{
+        font-weight: bold;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .travel-box .vals .area-item .adjust-btn{
+        cursor: pointer;
+    }
+    .travel-area{
+        margin-top: 0px;
+        border-top: none;
+        
+    }
+    .travel-area .vals .radio{
+
+    }
+    .travel-area .vals{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        line-height: 50px;
+    }
+    .areas{
+        overflow: hidden;
+        margin: 0 auto;
+        width: 60%;
+        padding-top: 50px;
+    }
+    .areas .area{
+        cursor: pointer;
+        margin-bottom: 10px;
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+        color: white;
+    }
+    .areas .area .area-img{
+    }
+    .areas .area .black-cover{
+        background-color: rgba(0, 0, 0, 0.27);
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 0;
+    }
+    .areas .area .do{
+        position: absolute;
+        bottom: 5%;
+        right: 35%;
+    }
+    .areas .area .si-gun-gu{
+        position: absolute;
+        bottom: 2%;
+        right: 5%;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .detail-schedule-btn{
+        margin: 0 auto;
+        color: white;
+        background-color: #53C3FF;
+        border-radius: 10px;
+        text-align: center;
+        width: 30%;
+        display: block;
+        font-size: 2rem;
+        margin-top: 50px;
+        padding: 20px 0px;
+        cursor: pointer;
+    }
 }
