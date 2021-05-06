@@ -126,15 +126,15 @@
     .travel-box{
         overflow: hidden;
         border: 1px solid #ccc;
-        width: 70%;
+        width: 100%;
         margin: 0 auto;
         margin-top: 80px;
         overflow: hidden;
     }
     .travel-box .key{
-        line-height: 160px;
         text-align: center;
         width: 20%;
+        height: 100%;
         font-weight: bold;
         font-size: 15px;
         float: left;
@@ -193,9 +193,9 @@
     }
     .areas{
         overflow: hidden;
-        margin: 0 auto;
-        width: 60%;
+        width: 100%;
         padding-top: 50px;
+        text-align: center;
     }
     .areas .area{
         cursor: pointer;
@@ -235,9 +235,9 @@
         background-color: #53C3FF;
         border-radius: 10px;
         text-align: center;
-        width: 30%;
+        width: 50%;
         display: block;
-        font-size: 2rem;
+        font-size: 5vw;
         margin-top: 50px;
         padding: 20px 0px;
         cursor: pointer;
