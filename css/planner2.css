@@ -55,6 +55,53 @@
     .travel-box .vals .area-item .adjust-btn{
         cursor: pointer;
     }
+    .travel-area{
+        margin-top: 0px;
+        border-top: none;
+        
+    }
+    .travel-area .vals .radio{
+
+    }
+    .travel-area .vals{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        line-height: 40px;
+    }
+    .areas{
+        overflow: hidden;
+        margin: 0 auto;
+        width: 60%;
+        padding-top: 50px;
+    }
+    .areas .area{
+        cursor: pointer;
+        margin-bottom: 10px;
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+    }
+    .areas .area .area-img{
+    }
+    .areas .area .black-cover{
+        background-color: rgba(0, 0, 0, 0.27);
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 0;
+    }
+    .areas .area .do{
+        position: absolute;
+        
+    }
+    .areas .area .si-gun-gu{
+
+    }
 }
 @media screen and (max-width: 768px){
 }
