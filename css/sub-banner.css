@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/*데스크탑*/
+@media screen and (min-width: 769px) {
+  #wrap {
+    width: 100%;
+    min-width: 1020px;
+  }
+  .section {
+    width: 1020px;
+    margin: 0 auto;
+  }
+  .clear {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+  }
+
+  /* 서브페이지 1 */
+  #sub-imgbanner {
+    height: 180px;
+    background: url(../jpg/subbg2.jpg) no-repeat center #fcb316;
+  }
+  #sub-imgbanner1 {
+    height: 180px;
+    background: url(../jpg/subbg2.jpg) no-repeat center #fcb316;
+  }
+  .sub-img-text {
+    color: #fff;
+    letter-spacing: -1px;
+    padding-top: 3.5rem;
+    font-family: "Nanum Gothic", sans-serif;
+    float: right;
+  }
+  .sub-img-text h3 {
+    font-size: 1.7rem;
+  }
+  .sub-img-text h2 {
+    font-size: 3rem;
+    font-weight: normal;
+  }
+
+  #sub-content {
+  }
+
+  #sub-con-navi {
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+  }
+  .sub-con-navi-box {
+    width: 1020px;
+    margin: 0 auto;
+  }
+  .homebtn {
+    float: left;
+    border-right: 1px solid #ccc;
+  }
+  .homebtn a {
+    display: block;
+  }
+
+  .listmenu {
+    float: left;
+    border-right: 1px solid #ccc;
+  }
+  .listmenu button {
+    display: block;
+    background: #fff;
+    width: 200px;
+    text-align: left;
+    line-height: 50px;
+    padding-left: 20px;
+    background: url(../jpg/down_icon.jpg) no-repeat 170px center;
+    cursor: pointer;
+  }
+  .listmenu ul.listbox {
+    position: absolute;
+    width: 200px;
+    box-shadow: 0 3px 10px #999;
+    display: none;
+  }
+  .listmenu li:hover a {
+    background: #eee;
+  }
+  .listmenu a {
+    display: block;
+    padding: 5px 20px;
+  }
+
+  #sub-con-body {
+    padding: 5rem 0;
+  }
+
+  .s-c-b-title {
+    text-align: center;
+  }
+  .s-c-b-title h3 {
+    font-size: 1.8rem;
+    font-style: italic;
+  }
+  .s-c-b-title h2 {
+    font-size: 3rem;
+  }
+}
+
+/*모바일*/
+@media screen and (max-width: 768px) {
+  #wrap {
+    width: 100%;
+    max-width: 768px;
+    overflow: hidden;
+  }
+
+  .section {
+    overflow: hidden;
+  }
+
+  /* 서브페이지 1 */
+  #sub-imgbanner {
+    background: url(../jpg/subbg2.jpg) no-repeat center;
+    width: 100%;
+    height: 180px;
+    /* padding-top: 40.64%; */
+    background-size: cover;
+    position: relative;
+    background-position: revert;
+  }
+  #sub-imgbanner1 {
+    width: 100%;
+    height: 0;
+    padding-top: 66.64%;
+    background-size: cover;
+    background: url(../jpg/subbg2.jpg) no-repeat center #fcb316;
+  }
+  .sub-img-text {
+    color: #fff;
+    letter-spacing: -1px;
+    font-family: "Nanum Gothic", sans-serif;
+    position: absolute;
+    right: 5%;
+
+    bottom: 40%;
+
+    text-align: right;
+  }
+  .sub-img-text h3 {
+    font-size: 1.7rem;
+  }
+  .sub-img-text h2 {
+    font-size: 3rem;
+    font-weight: normal;
+  }
+
+  #sub-content {
+  }
+
+  #sub-con-navi {
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+  }
+  .homebtn {
+    float: left;
+    border-right: 1px solid #ccc;
+  }
+  .homebtn a {
+    display: block;
+  }
+
+  .listmenu {
+    float: left;
+    border-right: 1px solid #ccc;
+  }
+  .listmenu button {
+    display: block;
+    background: #fff;
+    width: 200px;
+    text-align: left;
+    line-height: 50px;
+    padding-left: 20px;
+    background: url(../jpg/down_icon.jpg) no-repeat 170px center;
+    cursor: pointer;
+  }
+  .listmenu ul.listbox {
+    position: absolute;
+    width: 200px;
+    box-shadow: 0 3px 10px #999;
+    display: none;
+    background-color: white;
+  }
+  .listmenu li:hover a {
+    background: #eee;
+  }
+  .listmenu a {
+    display: block;
+    padding: 5px 20px;
+  }
+
+  #sub-con-body {
+    padding: 5rem 0;
+  }
+
+  .s-c-b-title {
+    text-align: center;
+  }
+  .s-c-b-title h3 {
+    font-size: 1.8rem;
+    font-style: italic;
+  }
+  .s-c-b-title h2 {
+    font-size: 3rem;
+  }
+}
