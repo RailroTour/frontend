@@ -277,7 +277,7 @@
     
     .cover-search .search-right {
         float: right;
-        margin-top: 5%;
+        
     }
 
     .s-c-b-cover {
@@ -288,8 +288,12 @@
 
     /* 서브페이지 2 공지사항 */
     .cover-search {
-        overflow: hidden;
-        margin-bottom: 2rem;
+        align-items: center;
+    justify-content: space-between;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 2rem;
+        
     }
 
     .cover-search p {
