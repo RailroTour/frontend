@@ -347,7 +347,7 @@
         margin-top: 8px;
         margin-bottom: 8px;
         width: 280px;
-        background: url(../planner_Step2_JPG/search.png) no-repeat right;
+        background: url(../planner3-img/search.png) no-repeat right;
         background-size: 22px;
         border: 1px solid #ccc;
     }
@@ -436,6 +436,10 @@
     .search_data .info_group .title{
         font-weight: bold;
         font-size: 1.1rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 150px;
     }
     .search_data .info_group .sub_title{
         margin-top: 7px;
