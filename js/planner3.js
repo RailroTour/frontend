@@ -10,7 +10,29 @@ $(document).ready(function(){
     //처음화면 리스트 로딩
     getTourData(areaCode, contentTypeId, sigunguCode, api_key);
     
-    $(".day_arrange>button").on("click", function(){
+    $(document).on('click', "#route_add>.route>.btn_group", function(){//여행 코스 삭제
+        const index = $(this).parent().index();
+
+        for(let i=index; i<$("#route_add>.route").length; i++){
+            let number = $("#route_add>.route").eq(i).find('.curcle').text();
+            $("#route_add>.route").eq(i).children('.curcle').text(number-1);
+        }
+        $(this).parent().remove();
+    });
+    
+    $(document).on("click", ".search_result>.all>.search_data>.add_btn", function() { //여행 코스 추가
+        const title = $(this).siblings('.info_group').children('.title').text();
+        const img = $(this).siblings('.img').children('img').attr('src');
+        const contentTypeId = $(this).parent().data('contenttypeid');
+        const mapx = $(this).parent().data('mapx');
+        const mapy = $(this).parent().data('mapy');
+        const id = $(this).parent().data('id');
+        const num = $("#route_add>.route").length;
+        $("#route_add").append(route_add(img, title, id, mapx, mapy, contentTypeId, num+1));
+        
+    });
+    
+    $(".day_arrange>button").on("click", function(){ //일차 변경
         areaCode = $(this).data('area');
         sigunguCode = $(this).data('sigungu');
         $(".day_arrange>button").removeClass('selected');
@@ -157,8 +179,26 @@ function search_tour_element(img, title, id, mapx, mapy, contentTypeId){
         tour_type='숙박'
     }
     
-    return '<div class="search_data" data-mapx='+mapx+' data-mapy='+mapy+'><a href="./'+id+'" class="img"><img src="'+img+'" alt="" width="100px" height="100px"></a><ul class="info_group"><input type="hidden" class="content_id" value="0"><li class="title">'+title+'</li><li class="sub_title">'+tour_type+'</li></ul><div class="add_btn"><img src="./map_image/add.png" alt="" class="route_add_btn"></div></div>'
+    return '<div class="search_data" data-mapx='+mapx+' data-mapy='+mapy+' data-contentTypeId='+contentTypeId+' data-id='+id+'><a href="./'+id+'" class="img"><img src="'+img+'" alt="" width="100px" height="100px"></a><ul class="info_group"><input type="hidden" class="content_id" value="0"><li class="title">'+title+'</li><li class="sub_title">'+tour_type+'</li></ul><div class="add_btn"><img src="./map_image/add.png" alt="" class="route_add_btn"></div></div>'
 }
+
+function route_add(img, title, id, mapx, mapy, contentTypeId, num){
+    let tour_type;
+    if(contentTypeId==12){
+        tour_type='관광지';
+    }
+    else if(contentTypeId==39){
+        tour_type='음식점'
+    }
+    else if(contentTypeId==32){
+        tour_type='숙박'
+    }
+    else if(contentTypeId==40){
+        tour_type='교통'
+    }
+    return '<div class="route" data-id='+id+' data-mapx='+mapx+' data-mapy='+mapy+' data-contentTypeId='+contentTypeId+'><div class="curcle">'+num+'</div><img src='+img+' alt="" width="80px" height="75px"><ul class="route_info"><li class="title">'+title+'</li><li class="kind">'+tour_type+'</li></ul><div class="btn_group"><img src="./jpg/cancel_btn.png" alt="" class="delete_btn"></div></div>'
+}
+
 
 function rgb2hex(rgb) {
      if (  rgb.search("rgb") == -1 ) {
