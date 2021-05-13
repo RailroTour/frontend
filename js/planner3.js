@@ -10,7 +10,14 @@ $(document).ready(function(){
     //처음화면 리스트 로딩
     getTourData(areaCode, contentTypeId, sigunguCode, api_key);
     
-    $(".day_group>.refresh").on("click", function(){
+    $(".day_arrange>button").on("click", function(){
+        areaCode = $(this).data('area');
+        sigunguCode = $(this).data('sigungu');
+        $(".day_arrange>button").removeClass('selected');
+        $(this).addClass('selected');
+    });
+    
+    $(".day_group>.refresh").on("click", function(){ //일정 초기화
         let clear = confirm("모든 일정을 삭제하시겠습니까?");
         if(clear == true){
             $("#route_add>.route").remove();

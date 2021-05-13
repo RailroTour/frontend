@@ -134,7 +134,7 @@
         border-top: 1px solid #ccc;
         padding: 15px 10px;
     }
-    section .side_left .edit_day .day_arrange button:first-child{
+    section .side_left .edit_day .day_arrange button.selected{
         background-color: #1a7ad9;
     }
     section .side_left .edit_day .day_arrange button:last-child{
@@ -192,11 +192,10 @@
         float: left;
     }
     .edit_route .top .day_group{
-        float: left;
         margin-top: 6%;
         margin-bottom: 6%;
-        margin-left: 15%;
         font-size: 1.1rem;
+        text-align: center;
     }
     .edit_route .top .day{
         float: left;
@@ -213,12 +212,13 @@
         float: left;
     }
     .edit_route .top .refresh{
-        float: right;
         margin-left: 10px;
         cursor: pointer;
-        display: block;
     }
-
+    .edit_route .top .day_group .course{
+        text-align: center;
+        font-size: 1.3rem;
+    }
     .edit_route .bottom{
         overflow: auto;
         width: 100%;
