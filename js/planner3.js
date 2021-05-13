@@ -4,6 +4,8 @@ let contentTypeId = 12;
 let areaCode = $(".day_arrange>button").first().data('area');
 let sigunguCode = $(".day_arrange>button").first().data('sigungu');
 
+let none_img = 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Roundel_of_None.svg/600px-Roundel_of_None.svg.png';
+
 $(document).ready(function(){
     //처음화면 리스트 로딩
     getTourData(areaCode, contentTypeId, sigunguCode, api_key);
@@ -172,8 +174,9 @@ function setCenter(mapy, mapx) {
 }
 
 function getTourData(areaCode, contentTypeId, sigunguCode, api_key){
-    $.get('http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaBasedList', {
+    xhr = $.get('http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaBasedList', {
             pageNo: 1,
+            numOfRows: 10000,
             MobileOS: 'ETC',
             MobileApp: 'railro',
             ServiceKey: api_key,
@@ -190,11 +193,11 @@ function getTourData(areaCode, contentTypeId, sigunguCode, api_key){
             let totalCount = data.response.body.totalCount;
             data = data.response.body.items.item;
             let markers = [];
-                    
+                  
             for(let i=0; i<cnt; i++){ 
                 $(".search_result>.all").append( //요소들 추가
                     search_tour_element(
-                        data[i].firstimage2,
+                        data[i].firstimage2==undefined ? none_img:data[i].firstimage2,
                         data[i].title,
                         data[i].contentid,
                         data[i].mapx,
@@ -203,45 +206,6 @@ function getTourData(areaCode, contentTypeId, sigunguCode, api_key){
                     )
                 );
 
-            }
-        
-            if(totalCount>10){
-                for(let i=2; i<=totalCount/10+1; i++){
-                    $.get('http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaBasedList', {
-                            pageNo: i,
-                            MobileOS: 'ETC',
-                            MobileApp: 'railro',
-                            ServiceKey: api_key,
-                            listYN: 'Y',
-                            arrange: 'O',
-                            contentTypeId: contentTypeId,
-                            areaCode: areaCode,
-                            sigunguCode: sigunguCode,
-                            _type: 'json'
-                        }, function(data){
-                            console.log('success : '+data);
-                            data = data.response.body.items.item;
-                            let markers = [];
-
-                            for(let i=0; i<cnt; i++){ 
-                                console.log(data[i].firstimage2 == undefined);
-                                $(".search_result>.all").append( //요소들 추가
-                                    
-                                    search_tour_element(
-                                        data[i].firstimage2 == undefined ? 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Roundel_of_None.svg/600px-Roundel_of_None.svg.png':data[i].firstimage2,
-                                        data[i].title,
-                                        data[i].contentid,
-                                        data[i].mapx,
-                                        data[i].mapy,
-                                        contentTypeId
-                                    )
-                                );
-
-                            }
-                            
-                        }
-                    );
-                }
             }
         }
     );
