@@ -261,6 +261,10 @@
     .bottom .route .route_info .title{
         font-size: 1.1rem;
         font-weight: bold;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+        overflow:hidden;
+        width: 120px;
     }
 
     .bottom .route .route_info .kind{
