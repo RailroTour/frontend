@@ -5,12 +5,18 @@ let areaCode = $(".day_arrange>button").first().data('area');
 let sigunguCode = $(".day_arrange>button").first().data('sigungu');
 
 let none_img = 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Roundel_of_None.svg/600px-Roundel_of_None.svg.png';
+let rooms_marker_img = '../marker_img/RoomsMarker.png';
+let food_marker_img = '../marker_img/FoodMarker.png';
+let tour_marker_img = '../marker_img/TourMarker.png';
+
+var course_markers = [];
 
 $(document).ready(function(){
     //처음화면 리스트 로딩
     getTourData(areaCode, contentTypeId, sigunguCode, api_key);
     
-    $(document).on('click', "#route_add>.route>.btn_group", function(){//여행 코스 삭제
+    //여행 코스 삭제
+    $(document).on('click', "#route_add>.route>.btn_group", function(){
         const index = $(this).parent().index();
 
         for(let i=index; i<$("#route_add>.route").length; i++){
@@ -20,7 +26,8 @@ $(document).ready(function(){
         $(this).parent().remove();
     });
     
-    $(document).on("click", ".search_result>.all>.search_data>.add_btn", function() { //여행 코스 추가
+    //여행 코스 추가
+    $(document).on("click", ".search_result>.all>.search_data>.add_btn", function() { 
         const title = $(this).siblings('.info_group').children('.title').text();
         const img = $(this).siblings('.img').children('img').attr('src');
         const contentTypeId = $(this).parent().data('contenttypeid');
@@ -30,23 +37,44 @@ $(document).ready(function(){
         const num = $("#route_add>.route").length;
         $("#route_add").append(route_add(img, title, id, mapx, mapy, contentTypeId, num+1));
         
+        let imageSize = new kakao.maps.Size(42, 43);
+        let add_markerImage;
+        if(contentTypeId==12){
+            markerImage = new kakao.maps.MarkerImage(tour_marker_img, imageSize);
+        }
+        else if(contentTypeId==39){
+            markerImage = new kakao.maps.MarkerImage(food_marker_img, imageSize);
+        }
+        else if(contentTypeId==32){
+            markerImage = new kakao.maps.MarkerImage(food_marker_img, imageSize);
+        }
+        
+    
+        var imageSize1 = new kakao.maps.Size(43, 42)
+        
     });
     
-    $(".day_arrange>button").on("click", function(){ //일차 변경
+    //일차 변경
+    $(".day_arrange>button").on("click", function(){ 
         areaCode = $(this).data('area');
         sigunguCode = $(this).data('sigungu');
         $(".day_arrange>button").removeClass('selected');
         $(this).addClass('selected');
+        
+        $(".search_result>.all>.search_data").remove();
+        getTourData(areaCode, contentTypeId, sigunguCode, api_key);
     });
     
-    $(".day_group>.refresh").on("click", function(){ //일정 초기화
+    //일정 초기화
+    $(".day_group>.refresh").on("click", function(){ 
         let clear = confirm("모든 일정을 삭제하시겠습니까?");
         if(clear == true){
             $("#route_add>.route").remove();
         }
     });
     
-    $(".kind_select>div").on("click", function(){ // 검색타입 변경
+    // 검색타입 변경
+    $(".kind_select>div").on("click", function(){ 
         $(this).css("color", "#009dff");
         $(".kind_select>div").not($(this)).css("color", "#ccc");
         $(".search_result>.all>.search_data").remove();
