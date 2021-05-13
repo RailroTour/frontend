@@ -1,6 +1,13 @@
 const tour_api = "http://api.visitkorea.or.kr/openapi/service/rest/KorService/searchKeyword";
 const api_key = "JXL40bCK2WGOu/E1WOGjuALpADt64Wb2mQVwNpxiA0bre/V8GozZggM2O01/PaTTyNm0A2JahebDf/PGwW8jbg==";
+let contentTypeId = 12;
+let areaCode = $(".day_arrange>button").first().data('area');
+let sigunguCode = $(".day_arrange>button").first().data('sigungu');
+
 $(document).ready(function(){
+    //처음화면 리스트 로딩
+    getTourData(areaCode, contentTypeId, sigunguCode, api_key);
+    
     $(".day_group>.refresh").on("click", function(){
         let clear = confirm("모든 일정을 삭제하시겠습니까?");
         if(clear == true){
@@ -11,23 +18,29 @@ $(document).ready(function(){
     $(".kind_select>div").on("click", function(){ // 검색타입 변경
         $(this).css("color", "#009dff");
         $(".kind_select>div").not($(this)).css("color", "#ccc");
-        
+        $(".search_result>.all>.search_data").remove();
         if($(this).attr("id")=="train"){
             $(".hash_add").show();
+            contentTypeId = 40;
         }
         else if($(this).attr("id")=="cart"){
             $(".hash_add").hide();
+            contentTypeId = 41;
         }
         else if($(this).attr("id")=="tour"){
             $(".hash_add").hide();
-            
+            contentTypeId = 12;
+            getTourData(areaCode, contentTypeId, sigunguCode, api_key);
         }
         else if($(this).attr("id")=="food"){
             $(".hash_add").hide();
-            
+            contentTypeId = 39;
+            getTourData(areaCode, contentTypeId, sigunguCode, api_key);
         }
         else if($(this).attr("id")=="rooms"){
             $(".hash_add").hide();
+            contentTypeId = 32;
+            getTourData(areaCode, contentTypeId, sigunguCode, api_key);
             
         }
     });
@@ -111,7 +124,8 @@ $(document).ready(function(){
                                 data[i].title,
                                 data[i].contentid,
                                 data[i].mapx,
-                                data[i].mapy
+                                data[i].mapy,
+                                contentTypeId
                             )
                         );
                         
@@ -122,8 +136,19 @@ $(document).ready(function(){
     })
 });
 
-function search_tour_element(img, title, id, mapx, mapy){
-    return '<div class="search_data" data-mapx='+mapx+' data-mapy='+mapy+'><a href="./'+id+'" class="img"><img src="'+img+'" alt="" width="100px" height="100px"></a><ul class="info_group"><input type="hidden" class="content_id" value="0"><li class="title">'+title+'</li><li class="sub_title">관광지</li></ul><div class="add_btn"><img src="./map_image/add.png" alt="" class="route_add_btn"></div></div>'
+function search_tour_element(img, title, id, mapx, mapy, contentTypeId){
+    let tour_type;
+    if(contentTypeId==12){
+        tour_type='관광지';
+    }
+    else if(contentTypeId==39){
+        tour_type='음식점'
+    }
+    else if(contentTypeId==32){
+        tour_type='숙박'
+    }
+    
+    return '<div class="search_data" data-mapx='+mapx+' data-mapy='+mapy+'><a href="./'+id+'" class="img"><img src="'+img+'" alt="" width="100px" height="100px"></a><ul class="info_group"><input type="hidden" class="content_id" value="0"><li class="title">'+title+'</li><li class="sub_title">'+tour_type+'</li></ul><div class="add_btn"><img src="./map_image/add.png" alt="" class="route_add_btn"></div></div>'
 }
 
 function rgb2hex(rgb) {
@@ -144,4 +169,80 @@ function setCenter(mapy, mapx) {
     
     // 지도 중심을 이동 시킵니다
     map.setCenter(moveLatLon);
+}
+
+function getTourData(areaCode, contentTypeId, sigunguCode, api_key){
+    $.get('http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaBasedList', {
+            pageNo: 1,
+            MobileOS: 'ETC',
+            MobileApp: 'railro',
+            ServiceKey: api_key,
+            listYN: 'Y',
+            arrange: 'O',
+            contentTypeId: contentTypeId,
+            areaCode: areaCode,
+            sigunguCode: sigunguCode,
+            _type: 'json'
+        }, function(data){
+            console.log('success : '+data);
+        
+            const cnt = data.response.body.items.item.length;
+            let totalCount = data.response.body.totalCount;
+            data = data.response.body.items.item;
+            let markers = [];
+                    
+            for(let i=0; i<cnt; i++){ 
+                $(".search_result>.all").append( //요소들 추가
+                    search_tour_element(
+                        data[i].firstimage2,
+                        data[i].title,
+                        data[i].contentid,
+                        data[i].mapx,
+                        data[i].mapy,
+                        contentTypeId
+                    )
+                );
+
+            }
+        
+            if(totalCount>10){
+                for(let i=2; i<=totalCount/10+1; i++){
+                    $.get('http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaBasedList', {
+                            pageNo: i,
+                            MobileOS: 'ETC',
+                            MobileApp: 'railro',
+                            ServiceKey: api_key,
+                            listYN: 'Y',
+                            arrange: 'O',
+                            contentTypeId: contentTypeId,
+                            areaCode: areaCode,
+                            sigunguCode: sigunguCode,
+                            _type: 'json'
+                        }, function(data){
+                            console.log('success : '+data);
+                            data = data.response.body.items.item;
+                            let markers = [];
+
+                            for(let i=0; i<cnt; i++){ 
+                                console.log(data[i].firstimage2 == undefined);
+                                $(".search_result>.all").append( //요소들 추가
+                                    
+                                    search_tour_element(
+                                        data[i].firstimage2 == undefined ? 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Roundel_of_None.svg/600px-Roundel_of_None.svg.png':data[i].firstimage2,
+                                        data[i].title,
+                                        data[i].contentid,
+                                        data[i].mapx,
+                                        data[i].mapy,
+                                        contentTypeId
+                                    )
+                                );
+
+                            }
+                            
+                        }
+                    );
+                }
+            }
+        }
+    );
 }
