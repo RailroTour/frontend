@@ -775,12 +775,16 @@
         padding-bottom: 10px;
     }
     #sub-con-body .more_info .location #wordcloud{
-        float: left;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
     }
+/*
     #sub-con-body .more_info .location #map{
         width: 500px;
         height: 300px;
     }
+*/
     .comment{
         position: relative;
         margin-top: 30px;
