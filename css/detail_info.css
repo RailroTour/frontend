@@ -1,0 +1,2357 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/*데스크탑*/
+@media screen and (min-width: 769px){
+    .listmenu button{
+        background-image: none;
+    }
+    #sub-con-navi{
+        border-top: 1px solid #ccc;
+    }
+
+    #img_banner{
+        border-top: 1px solid #ccc;
+    }
+    #img_banner .more_info{
+        width: 1020px;
+        overflow: hidden;
+        margin: 0 auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    #img_banner .more_info .img{
+        width: 510px;
+        float: left;
+        position: relative;
+    }
+    #img_banner .more_info .text{
+        width: 510px;
+        float: left;
+    }
+    .more_info .img .img_collection{
+        overflow: hidden;
+        width: 510px;
+        height: 380px;
+    }
+    .more_info .img .img_collection li{
+        overflow: hidden;
+        width: 510px;
+        height: auto;
+        display: none;
+    }
+    .more_info .img .img_collection li img{
+        width: 510px;
+        height: auto;
+    }
+    .more_info .img .btn_group{
+        position: absolute;
+        z-index: 20;
+        top: 330px;
+        right: 0;
+    }
+    .more_info .img .btn_group li{
+        float: left;
+        background-color: #646767;
+        padding: 10px;
+        cursor: pointer;
+        border: 0.1px solid white;
+    }
+    .more_info .img .btn_group li img{
+        width: 30px;
+        height: auto;
+    }
+    .more_info .img .btn_group .Next{
+        transform: rotate(180deg);
+    }
+    .text_group{
+        overflow: hidden;
+        width: 510px;
+    }
+    .text_group li{
+        margin-left: 30px;
+        font-family: "Nanum Gothic", sans-serif;
+    }
+    .text_group .title{
+        margin-top: 10px;
+        overflow: hidden;
+    }
+    .text_group .title span:first-child{
+        float: left;
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+    .text_group .title span:last-child{
+        float: right;
+        padding: 8px 10px 8px 10px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: 'NanumSquare', sans-serif;
+        margin-top: 5px;
+    }
+    .text_group .rotate{
+        border-top: 3px solid #00a7ff;
+        margin-top: 10px;
+        padding-top: 15px;
+        font-size: 1.2rem;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .text_group .rotate div:first-child{
+        float: left;
+        width: 140px;
+        font-weight: bold;
+    }
+    .text_group .rotate div:last-child{
+        float: left;
+        width: 340px;
+    }
+    .text_group .menu{
+        padding-top: 15px;
+        font-size: 1.2rem;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .text_group .menu div:first-child{
+        float: left;
+        width: 140px;
+        font-weight: bold;
+    }
+    .text_group .menu div:last-child{
+        float: left;
+        width: 340px;
+    }
+    .text_group .open_time{
+        padding-top: 15px;
+        font-size: 1.2rem;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .text_group .open_time div:first-child{
+        float: left;
+        width: 140px;
+        font-weight: bold;
+    }
+    .text_group .open_time div:last-child{
+        float: left;
+        width: 340px;
+    }
+    .text_group .rest{
+        padding-top: 15px;
+        font-size: 1.2rem;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .text_group .rest div:first-child{
+        float: left;
+        width: 140px;
+        font-weight: bold;
+    }
+    .text_group .rest div:last-child{
+        float: left;
+        width: 340px;
+    }
+    .text_group .phone{
+        padding-top: 15px;
+        font-size: 1.2rem;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .text_group .phone div:first-child{
+        float: left;
+        width: 140px;
+        font-weight: bold;
+    }
+    .text_group .phone div:last-child{
+        float: left;
+        width: 340px;
+    }
+    .text_group .homepage{
+        padding-top: 15px;
+        font-size: 1.2rem;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .text_group .homepage div:first-child{
+        float: left;
+        width: 140px;
+        font-weight: bold;
+    }
+    .text_group .homepage div:last-child{
+        float: left;
+        width: 340px;
+    }
+    #sub-con-body{
+
+    }
+    .section .more_info{
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+    /*개요*/
+    .more_info .overview{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        overflow: hidden;
+    }
+    .more_info .overview span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .overview span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+    /*홈페이지 주소*/
+    .more_info .url{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .url span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .url span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+    /*우편번호*/
+    .more_info .post{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .post span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .post span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*수용인원*/
+    .more_info .people{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .people span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .people span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+    /*유모차 대여 여부*/
+    .more_info .stroller{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .stroller span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .stroller span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+    /*신용카드 가능 여부*/
+    .more_info .credit_card{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .credit_card span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .credit_card span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+    /*애완동물 가능 여부*/
+    .more_info .animal{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .animal span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .animal span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*체험가능 연령*/
+    .more_info .available_age{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .available_age span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .available_age span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*체험 안내*/
+    .more_info .experience{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .experience span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .experience span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*문의 및 안내*/
+    .more_info .question{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .question span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .question span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*개장일*/
+    .more_info .open{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .open span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .open span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*주차시설*/
+    .more_info .parking{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .parking span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .parking span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*쉬는날*/
+    .more_info .rest_day{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .rest_day span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .rest_day span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*이용시기*/
+    .more_info .use{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .use span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .use span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*이용시간*/
+    .more_info .use_time{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .use_time span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .use_time span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*할인정보*/
+    .more_info .discount{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .discount span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .discount span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*대표메뉴*/
+    .more_info .representative_menu{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .representative_menu span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .representative_menu span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*어린이 놀이방 여부*/
+    .more_info .kid{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .kid span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .kid span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*개업일*/
+    .more_info .opening{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .opening span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .opening span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*포장 가능*/
+    .more_info .packing{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .packing span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .packing span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*예약 안내*/
+    .more_info .reserv{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .reserv span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .reserv span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*규모*/
+    .more_info .scale{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .scale span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .scale span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*좌석수*/
+    .more_info .seats{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .seats span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .seats span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*금연/흡연 여부*/
+    .more_info .smoking{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .smoking span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .smoking span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*취급메뉴*/
+    .more_info .handling_menu{
+        width: 1000px;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .handling_menu span:first-child{
+        width: 200px;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .handling_menu span:nth-child(2){
+        width: 795px;
+        display:inline-block;
+        padding-right: 5px;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+    /*지도*/
+    #sub-con-body .more_info .location{
+        font-weight: bold;
+        font-size: 2.0rem;
+        overflow: hidden;
+        display: block;
+        border-top: 1px solid #ccc;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    #sub-con-body .more_info .location #wordcloud{
+        float: left;
+    }
+    #sub-con-body .more_info .location #map{
+        width: 500px;
+        height: 300px;
+    }
+    .comment{
+        position: relative;
+        margin-top: 30px;
+    }
+    .comment #comment_add{
+        width: 1000px;
+        background-color: #f9f9f9;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 0px 20px;
+        padding-top: 5px;
+        overflow: hidden;
+
+    }
+    .comment #comment_add textarea{
+        resize: none;
+        width: 850px;
+        height: 70px;
+        font-size: 1.2rem;
+        float: left;
+        font-family: 'NanumSquare', sans-serif;
+    /*
+        padding-top: 15px;
+        padding-bottom: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    */
+        padding: 10px 10px;
+    }
+    .comment #comment_add #submit{
+        height: 91px;
+        border: none;
+        width: 100px;
+        padding: 10px 15px;
+        margin-left: 10px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        background-color: #303f61;
+        color: white;
+        font-family: "Nanum Gothic", sans-serif;
+    }
+    .comment #comment_add .imgfile{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 5px;
+        float: left;
+    }
+    #comment_add .imgfile .img_add{
+        width: 50px;
+        color: #969696;
+        padding: 2px;
+        text-align: center;
+        font-size: 1.1em;
+        cursor: pointer;
+        float: left;
+        margin-top: 28px;
+    }
+    #comment_add .imgfile .img_add img{
+        margin-right: 3px;
+        display: inline;
+    }
+    #comment_add .tag{
+        width: 1020px;
+        padding: 15px 0px;
+        font-size: 1.3rem;
+        font-family: "Nanum Gothic", sans-serif;
+        overflow: hidden;
+    }
+    #comment_add .tag .title{
+        font-weight: bold;
+        margin-left: 10px;
+        float: left;
+        padding: 0px 2px;
+    }
+    #comment_add .tag ul{
+        padding: 0px 5px;
+        width: 940px;
+    }
+    #comment_add .tag ul .tags{
+        padding: 2px 6px;
+        font-size: 1.2rem;
+        color: #525252;
+        background-color: #ebebeb;
+        display: inline;
+        border-radius: 5px;
+        float: left;
+        cursor: pointer;
+        position: relative;
+        margin-right: 3px;
+        margin-bottom: 3px;
+    }
+    #comment_add .tag ul .tags img{
+        width: 10px;
+        display: none;
+    }
+    #comment_add .tag ul .tags:hover img{
+        display: block;
+        float: left;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #comment_add .tag ul .input_tag{
+        font-size: 1.2rem;
+        background-color: inherit;
+        padding: 2px 4px;
+        width: 120px;
+        float: left;
+    }
+    input:focus {
+          outline: none;
+    }
+    .imgfile .preview{
+        width: 55px;
+        height: 55px;
+        overflow: hidden;
+        font-size: 1.3rem;
+        text-align: center;
+        background: url('../Food_More_Infomation_IMG/2.jpg') no-repeat center;
+        background-size: 55px 55px;
+        cursor: pointer;
+        opacity:0.5;
+        float: left;
+        margin-right: 3px;
+    }
+    .imgfile .preview li{
+        padding: 17px 0;
+        font-weight: bold;
+        font-family: "Nanum Gothic", sans-serif;
+        color: #ffffff;
+    }
+
+    /* 좋아요 버튼 */
+
+    .like_btn{
+        float: left;
+        margin-top: -6px;
+        cursor: pointer;
+    }
+
+    .review_list{
+        margin-top: 50px;
+    }
+    .review_list .analysis{
+        padding: 30px 25px;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        position: relative;
+        margin-top: 30px;
+    }
+    .review_list .analysis .like_total{
+        overflow: hidden;
+        float: left;
+        width: 95px;
+    }
+    .review_list .analysis .like_total .total{
+        background-color: black;
+        color: white;
+        padding: 15px 15px;
+        font-size: 3.0rem;
+        font-family: "Nanum Gothic", sans-serif;
+        font-weight: bold;
+        overflow: hidden;
+        float: left;
+        text-align: center;
+    }
+    .review_list .analysis .like_total .text{
+        text-align: center;
+        font-family: 'NanumSquare', sans-serif;
+        font-size: 1.2rem;
+        float: left;
+        padding-top: 5px;
+        padding-left: 13px;
+        color: #3e3e3e;
+    }
+
+    /*-------------------------------------------------------------------------*/
+    /*  Skill bar style
+    /*-------------------------------------------------------------------------*/
+    .zt-span6{
+        float: left;
+        overflow: hidden;
+        width: 860px;
+        margin-left: 10px;
+        font-family: 'NanumSquare', sans-serif;
+    }
+    .analysis h3{
+        display: block;
+        padding: 5px;
+        width: 300px;
+        text-align: center;
+        position: absolute;
+        left:50%;
+        transform:translateX(-50%);
+        bottom: 10%;
+    }
+    .analysis h3 strong{
+        font-size: 1.3rem;
+        font-weight: normal;
+    }
+        .zt-skill-bar {
+            color: #fff;
+            font-size: 11px;
+            line-height: 25px;
+            height: 25px;
+            margin-bottom: 5px;
+
+            background-color: rgba(0,0,0,0.1);
+
+            -webkit-border-radius: 2px;
+               -moz-border-radius: 2px;
+                -ms-border-radius: 2px;
+                    border-radius: 2px;
+
+        }
+
+        .zt-skill-bar * {
+            webkit-transition: all 0.5s ease;
+              -moz-transition: all 0.5s ease;
+               -ms-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                   transition: all 0.5s ease;
+        }
+
+        .zt-skill-bar div {
+            background-color: #ffc600;
+            position: relative;
+            padding-left: 25px;
+            width: 0;
+
+            -webkit-border-radius: 2px;
+               -moz-border-radius: 2px;
+               -ms- border-radius: 2px;
+                    border-radius: 2px;
+        }
+
+        .zt-skill-bar span {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            padding: 0 5px 0 10px;
+            background-color: #1a1a1a;
+
+            -webkit-border-radius: 0 2px 2px 0;
+               -moz-border-radius: 0 2px 2px 0;
+                -ms-border-radius: 0 2px 2px 0;
+                    border-radius: 0 2px 2px 0;
+        }
+
+        .zt-skill-bar span:before {
+            content: "";
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            top: 50%;
+            left: -3px;
+            margin-top: -3px;
+            background-color: #1a1a1a;
+
+            -webkit-transform: rotate(45deg);
+               -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+        }
+
+    .review1{
+        margin: 0 auto;
+        width: 200px;
+        text-align: center;
+        font-size: 1.5rem;
+        padding-top: 30px;
+    }
+    .review2{
+        margin: 0 auto;
+        width: 200px;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .review_info{
+        font-size: 1.3rem;
+        margin-top: 120px;
+    }
+    .review_info span:first-child{
+        font-weight: bold;
+    }
+    .review_info span:nth-child(2){
+        margin-left: 5px;
+        margin-right: 5px;
+        color: #696969;
+    }
+    .review_info span:nth-child(3){
+        color: #696969;
+    }
+    .latest_review{
+        margin-top: 70px;
+        font-size: 1.5rem;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+    }
+    .latest_review span{
+        font-weight: bold;
+    }
+    .review{
+        padding: 40px 5px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+        position: relative;
+    }
+    .review .imgs{
+        overflow: hidden;
+    }
+    .review .imgs img{
+        cursor: pointer;
+    }
+    .review .contents{
+        font-family: 'NanumSquare', sans-serif;
+        font-size: 1.2rem;
+        padding: 30px 5px;
+        width: 800px;
+        overflow: hidden;
+        display: block;
+    }
+    .hashtags{
+        color: #3c3c3c;
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+    .hashtags span{
+        color: #525252;
+        background-color: #ebebeb;
+        border-radius: 5px;
+        padding: 2px 6px;
+    }
+    .review .btn{
+        position: absolute;
+        font-size: 1.3rem;
+        right: 0;
+        margin-right: 10px;
+        top: 0;
+        margin-top: 8px;
+    }
+    .review .btn button{
+        cursor: pointer;
+    }
+    .review .btn span{
+        font-size: 1rem;
+        color: #404040;
+    }
+    .review .profile{
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        font-size: 1.2rem;
+        font-family: "Nanum Gothic", sans-serif;
+    }
+    .review .profile div:nth-child(2n-1){
+        color: #9f9f9f;
+        padding-bottom: 8px;
+        padding-left: 5px;
+        margin-top: 10px;
+    }
+    .review .profile div:nth-child(2n){
+        font-weight: 1.8;
+        padding-bottom: 8px;
+        padding-left: 5px;
+        border-bottom: 1px solid #ccc;
+        margin-top: -5px;
+    }
+    .review .profile div:last-child{
+        border: none;
+    }
+
+    .page_num_group{
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .page_num_group a{
+        margin: 0 auto;
+        text-align: center;
+        display: inline-block;
+        font-size: 1.2rem;
+        font-family: 'NanumSquare', sans-serif;
+        font-weight: bold;
+        padding: 3px 6px 4px 6px;
+        margin-right: 5px;
+        vertical-align: middle;
+        color: #4b4b4b;
+    }
+    .page_num_group>.selected{
+        color: rgb(0, 186, 255);
+        border: 2px solid  rgb(0, 186, 255);
+    }
+    .page_num_group .select{
+        border: 1px solid #ccc;
+        color: #646464;
+    }
+    .page_num_group a{
+        border: 1px solid #ccc;
+        color: #646464;
+    }
+}
+
+
+/*모바일*/
+@media screen and (max-width: 768px){
+    .listmenu button{
+        background-image: none;
+    }
+    #sub-con-navi{
+        border-top: 1px solid #ccc;
+        width: 100%;
+    }
+
+    #img_banner{
+        border-top: 1px solid #ccc;
+    }
+    #img_banner .more_info{
+        width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    #img_banner .more_info .img{
+        width: 50%;
+        height: 50%;
+        float: left;
+        position: relative;
+        overflow: hidden;
+    }
+    #img_banner .more_info .text{
+        width: 50%;
+        float: left;
+    }
+    .more_info .img .img_collection{
+        overflow: hidden;
+        width: 100%;
+        padding-top: 10%;
+    }
+    .more_info .img .img_collection li{
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+    .more_info .img .img_collection li img{
+        width: 100%;
+        height: auto;
+    }
+    .more_info .img .btn_group{
+        position: absolute;
+        z-index: 20;
+        bottom: 0;
+        right: 0;
+    }
+    .more_info .img .btn_group li{
+        float: left;
+        background-color: #646767;
+        padding: 10px;
+        cursor: pointer;
+        border: 0.1px solid white;
+    }
+    .more_info .img .btn_group li img{
+        width: 30px;
+        height: auto;
+    }
+    .more_info .img .btn_group .Next{
+        transform: rotate(180deg);
+    }
+    .text_group{
+        overflow: hidden;
+        width: 100%;
+    }
+    .text_group li{
+        margin-left: 10px;
+        font-family: "Nanum Gothic", sans-serif;
+    }
+    .text_group .title{
+        margin-top: 10px;
+        overflow: hidden;
+    }
+    .text_group .title span:first-child{
+        float: left;
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+    .text_group .title span:last-child{
+        float: right;
+        padding: 8px 10px 8px 10px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: 'NanumSquare', sans-serif;
+        margin-top: 5px;
+    }
+    .text_group .rotate{
+        border-top: 3px solid #00a7ff;
+        margin-top: 10px;
+        padding-top: 15px;
+        font-size: 1.2rem;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+        overflow: hidden;
+        width: 100%;
+    }
+    .text_group .rotate div:first-child{
+        display: inline-block;
+        font-weight: bold;
+        width: 35%;
+    }
+    .text_group .rotate div:last-child{
+        display: inline-block;
+        width: 60%;
+    }
+    .text_group .menu{
+        padding-top: 15px;
+        font-size: 1.2rem;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .text_group .menu div:first-child{
+        display: inline-block;
+        width: 35%;
+        font-weight: bold;
+        float: left;
+    }
+    .text_group .menu div:last-child{
+        display: inline-block;;
+        width: 60%;
+    }
+    .text_group .open_time{
+        padding-top: 15px;
+        font-size: 1.2rem;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .text_group .open_time div:first-child{
+        float: left;
+        width: 35%;
+        font-weight: bold;
+    }
+    .text_group .open_time div:last-child{
+        float: left;
+        width: 60%;
+    }
+    .text_group .rest{
+        padding-top: 15px;
+        font-size: 1.2rem;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .text_group .rest div:first-child{
+        float: left;
+        width: 35%;
+        font-weight: bold;
+    }
+    .text_group .rest div:last-child{
+        float: left;
+        width: 60%;
+    }
+    .text_group .phone{
+        padding-top: 15px;
+        font-size: 1.2rem;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .text_group .phone div:first-child{
+        float: left;
+        width: 35%;
+        font-weight: bold;
+    }
+    .text_group .phone div:last-child{
+        float: left;
+        width: 60%;
+    }
+    .text_group .homepage{
+        padding-top: 15px;
+        font-size: 1.2rem;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .text_group .homepage div:first-child{
+        float: left;
+        width: 35%;
+        font-weight: bold;
+    }
+    .text_group .homepage div:last-child{
+        float: left;
+        width: 60%;
+    }
+    #sub-con-body{
+
+    }
+    .section .more_info{
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+    /*개요*/
+    .more_info .overview{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        overflow: hidden;
+    }
+    .more_info .overview span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .overview span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+    /*홈페이지 주소*/
+    .more_info .url{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .url span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .url span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+    /*우편번호*/
+    .more_info .post{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .post span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .post span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*수용인원*/
+    .more_info .people{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .people span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .people span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+    /*유모차 대여 여부*/
+    .more_info .stroller{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .stroller span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .stroller span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+    /*신용카드 가능 여부*/
+    .more_info .credit_card{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .credit_card span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .credit_card span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+    /*애완동물 가능 여부*/
+    .more_info .animal{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .animal span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .animal span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*체험가능 연령*/
+    .more_info .available_age{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .available_age span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .available_age span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*체험 안내*/
+    .more_info .experience{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .experience span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .experience span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*문의 및 안내*/
+    .more_info .question{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .question span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .question span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*개장일*/
+    .more_info .open{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .open span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .open span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*주차시설*/
+    .more_info .parking{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .parking span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .parking span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*쉬는날*/
+    .more_info .rest_day{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .rest_day span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .rest_day span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*이용시기*/
+    .more_info .use{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .use span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .use span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*이용시간*/
+    .more_info .use_time{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .use_time span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .use_time span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*할인정보*/
+    .more_info .discount{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .discount span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .discount span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*대표메뉴*/
+    .more_info .representative_menu{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .representative_menu span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .representative_menu span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*어린이 놀이방 여부*/
+    .more_info .kid{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .kid span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .kid span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*개업일*/
+    .more_info .opening{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .opening span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .opening span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*포장 가능*/
+    .more_info .packing{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .packing span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .packing span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*예약 안내*/
+    .more_info .reserv{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .reserv span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .reserv span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*규모*/
+    .more_info .scale{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .scale span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .scale span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*좌석수*/
+    .more_info .seats{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .seats span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .seats span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*금연/흡연 여부*/
+    .more_info .smoking{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .smoking span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .smoking span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    /*취급메뉴*/
+    .more_info .handling_menu{
+        width: 100%;
+        display: block;
+        font-size: 1.5rem;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+    }
+    .more_info .handling_menu span:first-child{
+        width: 40%;
+        font-weight: bold;
+        float: left;
+        padding: 20px 0;
+    }
+    .more_info .handling_menu span:nth-child(2){
+        width: 60%;
+        display:inline-block;
+        padding-top: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+    /*지도*/
+    #sub-con-body .more_info .location{
+        font-weight: bold;
+        font-size: 2.0rem;
+        overflow: hidden;
+        display: block;
+        border-top: 1px solid #ccc;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    #sub-con-body .more_info .location #wordcloud{
+        width: 100%;
+    }
+    .comment{
+        position: relative;
+        margin-top: 30px;
+    }
+    .comment #comment_add{
+        width: 100%;
+        background-color: #f9f9f9;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding-top: 5px;
+        overflow: hidden;
+
+    }
+    .comment #comment_add textarea{
+        resize: none;
+        width: 80%;
+        height: 70px;
+        font-size: 1.2rem;
+        float: left;
+        font-family: 'NanumSquare', sans-serif;
+    /*
+        padding-top: 15px;
+        padding-bottom: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    */
+    }
+    .comment #comment_add #submit{
+        float: left;
+        border: none;
+        width: 15%;
+        height: 72px;
+        padding: 10px 10px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        background-color: #303f61;
+        color: white;
+        font-family: "Nanum Gothic", sans-serif;
+    }
+    .comment #comment_add .imgfile{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 5px;
+        float: left;
+    }
+    #comment_add .imgfile .img_add{
+        width: 50px;
+        color: #969696;
+        padding: 2px;
+        text-align: center;
+        font-size: 1.1em;
+        cursor: pointer;
+        float: left;
+        margin-top: 28px;
+    }
+    #comment_add .imgfile .img_add img{
+        margin-right: 3px;
+        display: inline;
+    }
+    #comment_add .tag{
+        width: 100%;
+        padding: 15px 0px;
+        font-size: 1.3rem;
+        font-family: "Nanum Gothic", sans-serif;
+        overflow: hidden;
+    }
+    #comment_add .tag .title{
+        font-weight: bold;
+        margin-left: 10px;
+        float: left;
+        padding: 0px 2px;
+    }
+    #comment_add .tag ul{
+        padding: 0px 5px;
+        width: 100%;
+    }
+    #comment_add .tag ul .tags{
+        padding: 2px 6px;
+        font-size: 1.2rem;
+        color: #525252;
+        background-color: #ebebeb;
+        display: inline-block;
+        border-radius: 5px;
+        float: left;
+        cursor: pointer;
+        position: relative;
+        margin-right: 3px;
+        margin-bottom: 3px;
+    }
+    #comment_add .tag ul .tags img{
+        width: 10px;
+        display: none;
+    }
+    #comment_add .tag ul .tags:hover img{
+        display: block;
+        float: left;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #comment_add .tag ul .input_tag{
+        font-size: 1.2rem;
+        background-color: inherit;
+        padding: 2px 4px;
+        width: 120px;
+        float: left;
+    }
+    input:focus {
+          outline: none;
+    }
+    .imgfile .preview{
+        width: 55px;
+        height: 55px;
+        overflow: hidden;
+        font-size: 1.3rem;
+        text-align: center;
+        background: url('../Food_More_Infomation_IMG/2.jpg') no-repeat center;
+        background-size: 55px 55px;
+        cursor: pointer;
+        opacity:0.5;
+        float: left;
+        margin-right: 3px;
+    }
+    .imgfile .preview li{
+        padding: 17px 0;
+        font-weight: bold;
+        font-family: "Nanum Gothic", sans-serif;
+        color: #ffffff;
+    }
+
+    /* 좋아요 버튼 */
+
+    .like_btn{
+        float: left;
+        margin-top: -6px;
+        cursor: pointer;
+    }
+
+    .review_list{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .review_list .analysis{
+        padding: 30px 25px;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        position: relative;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .review_list .analysis .like_total{
+        overflow: hidden;
+        float: left;
+        width: 20%;
+        max-width: 200px;
+        text-align: center;
+    }
+    .review_list .analysis .like_total .total{
+        background-color: black;
+        color: white;
+        padding: 15px 15px;
+        font-size: 3.0rem;
+        font-family: "Nanum Gothic", sans-serif;
+        font-weight: bold;
+        overflow: hidden;
+        float: left;
+        text-align: center;
+    }
+    .review_list .analysis .like_total .text{
+        text-align: center;
+        font-family: 'NanumSquare', sans-serif;
+        font-size: 1.2rem;
+        float: left;
+        padding-top: 5px;
+        padding-left: 13px;
+        color: #3e3e3e;
+    }
+
+    /*-------------------------------------------------------------------------*/
+    /*  Skill bar style
+    /*-------------------------------------------------------------------------*/
+    .zt-span6{
+        overflow: hidden;
+        width: 75%;
+        font-family: 'NanumSquare', sans-serif;
+    }
+    .analysis h3{
+        display: block;
+        padding: 5px;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        left:50%;
+        transform:translateX(-50%);
+        bottom: 10%;
+    }
+    .analysis h3 strong{
+        font-size: 1.3rem;
+        font-weight: normal;
+    }
+        .zt-skill-bar {
+            color: #fff;
+            font-size: 11px;
+            line-height: 25px;
+            height: 25px;
+            margin-bottom: 5px;
+
+            background-color: rgba(0,0,0,0.1);
+
+            -webkit-border-radius: 2px;
+               -moz-border-radius: 2px;
+                -ms-border-radius: 2px;
+                    border-radius: 2px;
+
+        }
+
+        .zt-skill-bar * {
+            webkit-transition: all 0.5s ease;
+              -moz-transition: all 0.5s ease;
+               -ms-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                   transition: all 0.5s ease;
+        }
+
+        .zt-skill-bar div {
+            background-color: #ffc600;
+            position: relative;
+            padding-left: 25px;
+            width: 0;
+
+            -webkit-border-radius: 2px;
+               -moz-border-radius: 2px;
+               -ms- border-radius: 2px;
+                    border-radius: 2px;
+        }
+
+        .zt-skill-bar span {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            padding: 0 5px 0 10px;
+            background-color: #1a1a1a;
+
+            -webkit-border-radius: 0 2px 2px 0;
+               -moz-border-radius: 0 2px 2px 0;
+                -ms-border-radius: 0 2px 2px 0;
+                    border-radius: 0 2px 2px 0;
+        }
+
+        .zt-skill-bar span:before {
+            content: "";
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            top: 50%;
+            left: -3px;
+            margin-top: -3px;
+            background-color: #1a1a1a;
+
+            -webkit-transform: rotate(45deg);
+               -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+        }
+
+    .review1{
+        margin: 0 auto;
+        width: 200px;
+        text-align: center;
+        font-size: 1.5rem;
+        padding-top: 30px;
+    }
+    .review2{
+        margin: 0 auto;
+        width: 200px;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .review_info{
+        font-size: 1.3rem;
+        margin-top: 120px;
+    }
+    .review_info span:first-child{
+        font-weight: bold;
+    }
+    .review_info span:nth-child(2){
+        margin-left: 5px;
+        margin-right: 5px;
+        color: #696969;
+    }
+    .review_info span:nth-child(3){
+        color: #696969;
+    }
+    .latest_review{
+        margin-top: 70px;
+        font-size: 1.5rem;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+    }
+    .latest_review span{
+        font-weight: bold;
+    }
+    .review{
+        padding: 40px 5px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+        position: relative;
+        width: 100%;
+    }
+    .review .imgs{
+        overflow: hidden;
+    }
+    .review .imgs img{
+        cursor: pointer;
+    }
+    .review .contents{
+        font-family: 'NanumSquare', sans-serif;
+        font-size: 1.2rem;
+        padding: 30px 0;
+        width: 75%;
+        overflow: hidden;
+        display: block;
+    }
+    .hashtags{
+        color: #3c3c3c;
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .hashtags span{
+        color: #525252;
+        background-color: #ebebeb;
+        border-radius: 5px;
+        padding: 2px 6px;
+    }
+    .review .btn{
+        position: absolute;
+        font-size: 1.3rem;
+        right: 0;
+        margin-right: 10px;
+        top: 0;
+        margin-top: 8px;
+    }
+    .review .btn button{
+        cursor: pointer;
+    }
+    .review .btn span{
+        font-size: 1rem;
+        color: #404040;
+    }
+    .review .profile{
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        font-size: 1.2rem;
+        font-family: "Nanum Gothic", sans-serif;
+    }
+    .review .profile div:nth-child(2n-1){
+        color: #9f9f9f;
+        padding-bottom: 8px;
+        padding-left: 5px;
+        margin-top: 10px;
+    }
+    .review .profile div:nth-child(2n){
+        font-weight: 1.8;
+        padding-bottom: 8px;
+        padding-left: 5px;
+        border-bottom: 1px solid #ccc;
+        margin-top: -5px;
+    }
+    .review .profile div:last-child{
+        border: none;
+    }
+
+    .page_num_group{
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .page_num_group a{
+        margin: 0 auto;
+        text-align: center;
+        display: inline-block;
+        font-size: 1.2rem;
+        font-family: 'NanumSquare', sans-serif;
+        font-weight: bold;
+        padding: 3px 6px 4px 6px;
+        margin-right: 5px;
+        vertical-align: middle;
+        color: #4b4b4b;
+    }
+    .page_num_group>.selected{
+        color: rgb(0, 186, 255);
+        border: 2px solid  rgb(0, 186, 255);
+    }
+    .page_num_group .select{
+        border: 1px solid #ccc;
+        color: #646464;
+    }
+    .page_num_group a{
+        border: 1px solid #ccc;
+        color: #646464;
+    }
+}
