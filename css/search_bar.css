@@ -1,0 +1,65 @@
+input:-ms-input-placeholder {
+    color: #a8a8a8;
+}
+input::-webkit-input-placeholder {
+    color:#a8a8a8;
+}
+input::-moz-placeholder{
+    color:#a8a8a8;
+}
+#content>.search_bar{
+    height: 40px;
+    border: 1px solid #1b5ac2;
+    background: #ffffff;
+    overflow: hidden;
+    width:1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+#content>.search_bar>.search_input{
+    font-size: 16px;
+    padding: 10px;
+    border: 0px;
+    outline: none;
+    width: 85%;
+    float: left;
+}
+#content>.search_bar>.search_btn{
+    width: 10%;
+    height: 100%;
+    border: 0px;
+    background: #1b5ac2;
+    outline: none;
+    float: right;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/*모바일*/
+@media screen and (max-width: 768px) {
+    #content>.search_bar{
+        height: 40px;
+        border: 1px solid #1b5ac2;
+        background: #ffffff;
+        overflow: hidden;
+        width:100%;
+        margin: 0 auto;
+    }
+    #content>.search_bar>.search_input{
+        font-size: 16px;
+        padding: 10px;
+        border: 0px;
+        outline: none;
+        width: 85%;
+        float: left;
+    }
+    #content>.search_bar>.search_btn{
+        width: 10%;
+        height: 100%;
+        border: 0px;
+        background: #1b5ac2;
+        outline: none;
+        float: right;
+        color: #ffffff;
+    }
+}
