@@ -1,0 +1,269 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/*    font-family: 'NanumSquare', sans-serif;
+        font-family: "Nanum Gothic", sans-serif;
+*/
+/*데스크탑*/
+@media screen and (min-width: 769px) {
+    #wrap{
+        width: 100%;
+        min-width: 1020px;
+    }
+    .section{
+        width:1020px;
+        margin: 0 auto;
+    }
+    .clear{
+        clear:both;
+        height: 0;
+        overflow: hidden;
+    }
+
+    #sub-imgbanner{
+        background: url(../jpg/subbg1.jpg) no-repeat center #89c4e4;
+        height: 180px;
+    }
+    #sub-imgbanner1{
+        height: 180px;
+        background: url(../jpg/subbg2.jpg) no-repeat center #fcb316;
+    }
+    .sub-img-text{
+        color: #fff;
+        letter-spacing: -1px;
+        padding-top: 3.5rem;
+        font-family: "Nanum Gothic", sans-serif;
+        float: right;
+    }
+    .sub-img-text h3{
+        font-size: 1.7rem;
+    }
+    .sub-img-text h2{
+        font-size: 3rem;
+        font-weight: normal;
+    }
+
+    #sub-con-body{
+        padding: 5rem 0;
+    }
+
+    #sub-imgbanner{
+        background-image: url(../mypage_img/privacy.png);
+        background-position: center;
+        font-family: 'NanumSquare', sans-serif;
+    }
+    .m-menu .selected{
+        border-bottom: 3px solid #25b3ff;
+        color: #25b3ff;
+    }
+    #sub-con-body .mypage{
+        overflow: hidden;
+        margin: 0 auto;
+        width: 900px;
+    }
+    #sub-con-body .mypage .box1{
+        float: left;
+        width: 230px;
+        padding: 30px 25px;
+        font-size: 2.5rem;
+        font-family: 'NanumSquare', sans-serif;
+        font-weight: bold;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        color: #494949;
+        letter-spacing: -1px;
+        cursor:context-menu;
+        margin-left: 15px;
+        height: 200px;
+        position: relative;
+    }
+    #sub-con-body .mypage .box1 div{
+        font-size: 1.2rem;
+        font-weight:bolder;
+        color: #848383;
+        font-family: "Nanum Gothic", sans-serif;
+
+    }
+    #sub-con-body .mypage .box1 .text1{
+        margin-top: 10px;
+        font-weight: 700;
+        font-family: 'NanumSquare', sans-serif;
+    }
+    #sub-con-body .mypage .box1 .text2{
+        margin-top: 5px;
+        font-weight: 700;
+        font-family: 'NanumSquare', sans-serif;
+        color: #0079ff;
+    }
+    #sub-con-body .mypage .box1 .text3{
+        margin-top: 5px;
+        font-weight: 700;
+        font-family: 'NanumSquare', sans-serif;
+    }
+    #sub-con-body .mypage .box1 .text3 span{
+        color: #0079ff;
+    }
+    #sub-con-body .mypage .box1 .text5{
+        margin-top: 80px;
+        font-family: "Nanum Gothic", sans-serif;
+        font-size: 1rem;
+        color: #858585;
+        font-weight: bolder;
+    }
+    #sub-con-body .mypage .box1 .text4{
+        margin-top: 40px;
+        font-family: "Nanum Gothic", sans-serif;
+        font-size: 1rem;
+        color: #858585;
+        font-weight: bolder;
+    }
+    .mypage .btn{
+        font-size: 1.2rem;
+        padding: 5px 3px;
+        background-color: #0079ff;
+        color: white;
+        border-radius: 20px;
+        width: 50px;
+        text-align: center;
+        cursor: pointer;
+        position: absolute;
+        left: 1.5em;
+        bottom: 5em;
+    }
+    #sub-con-body .mypage .box1 .text6{
+        margin-top: 80px;
+        font-family: "Nanum Gothic", sans-serif;
+        font-size: 1rem;
+        color: #858585;
+        font-weight: bolder;
+    }
+}
+
+/*모바일*/
+@media screen and (max-width: 768px) {
+    #wrap{
+        width: 100%;
+        max-width: 768px;
+    }
+    .section{
+        width:100%;
+        overflow: hidden;
+    }
+
+    #sub-imgbanner{
+        background: url(../jpg/subbg1.jpg) no-repeat center #89c4e4;
+
+    }
+
+    .sub-img-text{
+        color: #fff;
+        letter-spacing: -1px;
+        padding-top: 4rem;
+        font-family: "Nanum Gothic", sans-serif;
+        float: right;
+    }
+    .sub-img-text h3{
+        font-size: 3vw;
+    }
+    .sub-img-text h2{
+        font-size: 6vw;
+        font-weight: normal;
+    }
+
+    #sub-con-body{
+        padding: 5rem 0;
+    }
+
+    #sub-imgbanner{
+        background-image: url(../mypage_img/privacy.png);
+        background-position: center;
+        background-size: 100px 100px;
+        font-family: 'NanumSquare', sans-serif;
+        width: 100%;
+        height: 180px;
+    }
+    .m-menu .selected{
+        border-bottom: 3px solid #25b3ff;
+        color: #25b3ff;
+    }
+    #sub-con-body .mypage{
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+    }
+    #sub-con-body .mypage .box1{
+        width: 50%;
+        padding: 30px 25px;
+        font-size: 2.5rem;
+        font-family: 'NanumSquare', sans-serif;
+        font-weight: bold;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        color: #494949;
+        letter-spacing: -1px;
+        cursor:context-menu;
+        height: auto;
+        position: relative;
+        display: inline-block;
+    }
+    #sub-con-body .mypage .box1 div{
+        font-size: 15px;
+        font-weight:bolder;
+        color: #848383;
+        font-family: "Nanum Gothic", sans-serif;
+
+    }
+    #sub-con-body .mypage .box1 .text1{
+        margin-top: 10px;
+        font-weight: 700;
+        font-family: 'NanumSquare', sans-serif;
+    }
+    #sub-con-body .mypage .box1 .text2{
+        margin-top: 5px;
+        font-weight: 700;
+        font-family: 'NanumSquare', sans-serif;
+        color: #0079ff;
+    }
+    #sub-con-body .mypage .box1 .text3{
+        margin-top: 5px;
+        font-weight: 700;
+        font-family: 'NanumSquare', sans-serif;
+    }
+    #sub-con-body .mypage .box1 .text3 span{
+        color: #0079ff;
+    }
+    #sub-con-body .mypage .box1 .text5{
+        margin-top: 30px;
+        font-family: "Nanum Gothic", sans-serif;
+        font-size: 1rem;
+        color: #858585;
+        font-weight: bolder;
+    }
+    #sub-con-body .mypage .box1 .text4{
+        margin-top: 40px;
+        font-family: "Nanum Gothic", sans-serif;
+        font-size: 1rem;
+        color: #858585;
+        font-weight: bolder;
+    }
+    .mypage .btn{
+        font-size: 1.2rem;
+        padding: 5px 3px;
+        background-color: #0079ff;
+        color: white;
+        border-radius: 20px;
+        width: 50px;
+        text-align: center;
+        cursor: pointer;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    #sub-con-body .mypage .box1 .text6{
+        margin-top: 30px;
+        font-family: "Nanum Gothic", sans-serif;
+        font-size: 1rem;
+        color: #858585;
+        font-weight: bolder;
+    }
+    
+}
