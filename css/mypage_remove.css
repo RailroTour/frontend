@@ -1,0 +1,313 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/*    font-family: 'NanumSquare', sans-serif;
+        font-family: "Nanum Gothic", sans-serif;
+*/
+/*데스크탑*/
+@media screen and (min-width: 769px) {
+    #wrap{
+        width: 100%;
+        min-width: 1020px;
+    }
+    .section{
+        width:1020px;
+        margin: 0 auto;
+    }
+    
+    #sub-imgbanner{
+        background: url(../jpg/subbg1.jpg) no-repeat center #89c4e4;
+        height: 180px;
+    }
+    
+    .sub-img-text{
+        color: #fff;
+        letter-spacing: -1px;
+        padding-top: 3.5rem;
+        font-family: "Nanum Gothic", sans-serif;
+        float: right;
+    }
+    .sub-img-text h3{
+        font-size: 1.7rem;
+    }
+    .sub-img-text h2{
+        font-size: 3rem;
+        font-weight: normal;
+    }
+
+    #sub-con-body{
+        padding: 5rem 0;
+    }
+
+    #sub-imgbanner{
+        background-image: url(../mypage_img/privacy.png);
+        background-position: center;
+        font-family: 'NanumSquare', sans-serif;
+    }
+    
+    .notify{
+        overflow: hidden;
+        width: 1020px;
+        margin: 0 auto;
+        font-size: 2rem;
+        font-family: "Nanum Gothic", sans-serif;
+        font-weight: bold;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .notify .title{
+        padding-top: 25px;
+        padding-bottom: 25px;
+       margin-left: 20px;
+    }
+        .notify .title .textcolor{
+        color: #0079ff;
+    }
+    /* 회원탈퇴 페이지 */
+
+    .explanation{
+        overflow: hidden;
+        border:1px solid #ccc;
+        margin-top: 30px;
+        border-radius: 5px;
+    }
+    .explanation ul:first-child{
+        overflow: hidden;
+        padding: 20px 0px 20px 25px;
+        width: 500px;
+        float: left;
+    }
+    .explanation ul:nth-child(2){
+        overflow: hidden;
+    }
+    .explanation ul:nth-child(2) li{
+        float: right;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        padding-right: 10px;
+    }
+    .explanation ul li:first-child{
+        font-family: "Nanum Gothic", sans-serif;
+        font-weight: bold;
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+    .explanation ul li:nth-child(2){
+        margin-bottom: 5px;
+        font-family: 'NanumSquare', sans-serif;
+        font-size: 1.2rem;
+    }
+    .pwcheck{
+        overflow: hidden;
+        width: 330px;
+        margin: 0 auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .pwcheck span{
+        font-size: 1.4rem;
+        font-family: "Nanum Gothic", sans-serif;
+        font-weight: bold;   
+    }
+    .pwcheck .pw{
+        border: 1px solid #ccc;
+        padding: 5px;
+        font-size: 1rem;
+        font-family: "Nanum Gothic", sans-serif;
+        width: 200px;
+        border-radius: 5px;
+        margin-left: 10px;
+    }
+    .btngroup{
+        overflow: hidden;
+        width: 220px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .btngroup .previous{
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        color: #0079ff;
+        font-family: "Nanum Gothic", sans-serif;
+        font-weight: 600;
+        padding: 15px 20px 15px 20px;
+        background-color: white;
+        display: inline-block;
+        font-size: 1.3rem;
+        float: left;
+        cursor: pointer;
+    }
+    .btngroup .submit{
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        color: white;
+        font-family: "Nanum Gothic", sans-serif;
+        font-weight: 600;
+        padding: 15px 35px 15px 35px;
+        background-color: white;
+        display: inline-block;
+        font-size: 1.3rem;
+        float: left;
+        margin-left: 10px;
+        background-color: #0079ff;
+        cursor: pointer;
+    }
+}
+
+/*모바일*/
+@media screen and (max-width: 768px) {
+    #wrap{
+        width: 100%;
+        max-width: 768px;
+    }
+    .section{
+        width:100%;
+        overflow: hidden;
+    }
+
+    #sub-imgbanner{
+        background: url(../jpg/subbg1.jpg) no-repeat center #89c4e4;
+
+    }
+    
+    .sub-img-text{
+        color: #fff;
+        letter-spacing: -1px;
+        padding-top: 4rem;
+        font-family: "Nanum Gothic", sans-serif;
+        float: right;
+    }
+    .sub-img-text h3{
+        font-size: 3vw;
+    }
+    .sub-img-text h2{
+        font-size: 6vw;
+        font-weight: normal;
+    }
+
+    #sub-con-body{
+        padding: 5rem 0;
+    }
+
+    #sub-imgbanner{
+        background-image: url(../mypage_img/privacy.png);
+        background-position: center;
+        background-size: 100px 100px;
+        font-family: 'NanumSquare', sans-serif;
+        width: 100%;
+        height: 180px;
+    }
+    
+    
+    .notify{
+        overflow: hidden;
+        width: 100%;
+        font-size: 2rem;
+        font-family: "Nanum Gothic", sans-serif;
+        font-weight: bold;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .notify .title{
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-left: 20px;
+    }
+    .notify .title .textcolor{
+        color: #0079ff;
+    }
+
+    /* 회원탈퇴 페이지 */
+
+    .explanation{
+        overflow: hidden;
+        border:1px solid #ccc;
+        border-radius: 5px;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .explanation ul:first-child{
+        overflow: hidden;
+        padding: 20px 0px 20px 25px;
+        width: 70%;
+        float: left;
+    }
+    .explanation ul:nth-child(2){
+        overflow: hidden;
+        width: 20%;
+    }
+    .explanation ul:nth-child(2) li{
+        float: right;
+        padding-top: 4.5rem;
+        padding-bottom: 30px;
+        padding-right: 10px;
+    }
+    .explanation ul li:first-child{
+        font-family: "Nanum Gothic", sans-serif;
+        font-weight: bold;
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+    .explanation ul li:nth-child(2){
+        margin-bottom: 5px;
+        font-family: 'NanumSquare', sans-serif;
+        font-size: 1.2rem;
+    }
+    .pwcheck{
+        overflow: hidden;
+        width: 330px;
+        margin: 0 auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .pwcheck span{
+        font-size: 1.4rem;
+        font-family: "Nanum Gothic", sans-serif;
+        font-weight: bold;   
+    }
+    .pwcheck .pw{
+        border: 1px solid #ccc;
+        padding: 5px;
+        font-size: 1rem;
+        font-family: "Nanum Gothic", sans-serif;
+        width: 200px;
+        border-radius: 5px;
+        margin-left: 10px;
+    }
+    .btngroup{
+        overflow: hidden;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .btngroup .previous{
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        color: #0079ff;
+        font-family: "Nanum Gothic", sans-serif;
+        font-weight: 600;
+        padding: 15px 20px 15px 20px;
+        background-color: white;
+        display: inline-block;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+    .btngroup .submit{
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        color: white;
+        font-family: "Nanum Gothic", sans-serif;
+        font-weight: 600;
+        padding: 15px 35px 15px 35px;
+        background-color: white;
+        display: inline-block;
+        font-size: 1.3rem;
+        margin-left: 10px;
+        background-color: #0079ff;
+        cursor: pointer;
+    }
+}
