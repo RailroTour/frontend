@@ -17,9 +17,9 @@ $(document).ready(function(){
     
     
     //기본정보 조회
-    detailCommon(decoding_api_key, 32, 1832039);
+    detailCommon(decoding_api_key, getParameterByName('contenttypeid'), getParameterByName('contentid'));
     //소개정보 조회
-    detailIntro(decoding_api_key, 32, 1832039);
+    detailIntro(decoding_api_key, getParameterByName('contenttypeid'), getParameterByName('contentid'));
 
     (function( $ ) {
     "use strict";
