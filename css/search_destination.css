@@ -20,16 +20,20 @@
     margin-right: 5px;
     vertical-align: middle;
     color: #4b4b4b;
+    border: none;
 }
 .Contents .page_num_group>.selected{
     color: rgb(0, 186, 255);
     border: 2px solid  rgb(0, 186, 255);
 }
+
+/*
 .Contents .page_num_group a:first-child{
-    border: 1px solid #ccc;
+    border: none;
     color: #646464;
 }
 .Contents .page_num_group a:last-child{
-    border: 1px solid #ccc;
+    border: none;
     color: #646464;
 }
+*/

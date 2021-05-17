@@ -628,6 +628,7 @@
   border: 2px solid rgb(0, 186, 255);
 }
 
+/*
 .Contents .page_num_group a:first-child {
   border: 1px solid #ccc;
   color: #646464;
@@ -637,6 +638,7 @@
   border: 1px solid #ccc;
   color: #646464;
 }
+*/
 
 /*모바일 기기에서*/
 @media screen and (max-width: 768px) {
