@@ -53,12 +53,11 @@
         font-weight: bold;
         border-bottom: 1px solid #ccc;
         padding-bottom: 20px;
+        text-align: center;
     }
     .notify .title{
         padding-top: 25px;
         padding-bottom: 25px;
-       margin-left: 20px;
-        float: left;
     }
     #management ul{
         overflow: hidden;
