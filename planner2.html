@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="./css/commen.css">
     <link rel="stylesheet" href="./css/sub-banner.css">
     <link rel="stylesheet" href="./css/planner2.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script>
 <script src="./js/planner2.js"></script>
+
+
 </head>
 <body>
     <div id="wrap"> <!-- 전체를 감싸는 부분 -->
@@ -25,14 +26,14 @@
         </section>
         <section id="sub-content">
             <div id="sub-con-navi">
-                <div class="section">
+                <div class="sub-con-navi-box">
                     <div class="homebtn">
                         <a href="../index.html">
                             <img src="./jpg/home.jpg" alt="">
                         </a>
                     </div>
                     <div class="listmenu">
-                        <button>플래너</button>
+                        <button>내일로 소개</button>
                         <ul class="listbox">
                             <li><a href="#">내일로 소개</a></li>
                             <li><a href="#">TOP 100</a></li>
@@ -42,7 +43,7 @@
                         </ul>
                     </div>
                     <div class="listmenu">
-                         <button>새 플래너 작성</button>
+                         <button>내일로 란?</button>
                         <ul class="listbox">
                             <li><a href="#">내일로 소개</a></li>
                             <li><a href="#">TOP 100</a></li>
@@ -76,60 +77,11 @@
                 <ul class="travel-box travel-area">
                     <li class="key"><span>여행지</span></li>
                     <li class="vals">						
-                        <label class="btn btn-secondary">
-                                <input type="radio" name="jb-radio" id="jb-radio-1" class="radio" checked>&nbsp;전체
-                        </label>
-                        <label class="btn btn-secondary">
-                            <input type="radio" name="jb-radio" id="jb-radio-2">&nbsp;서울
-                        </label>
-                        <label class="btn btn-secondary">
-                            <input type="radio" name="jb-radio" id="jb-radio-3">&nbsp;경기도
-                        </label>
-                        <label class="btn btn-secondary">
-                            <input type="radio" name="jb-radio" id="jb-radio-4">&nbsp;강원도
-                        </label>              
-                        <label class="btn btn-secondary">
-                            <input type="radio" name="jb-radio" id="jb-radio-5">&nbsp;인천
-                        </label>     
-                        <label class="btn btn-secondary">
-                            <input type="radio" name="jb-radio" id="jb-radio-6">&nbsp;경상북도
-                        </label>     
-                        <label class="btn btn-secondary">
-                            <input type="radio" name="jb-radio" id="jb-radio-7">&nbsp;경상남도
-                        </label>     
-                        <label class="btn btn-secondary">
-                            <input type="radio" name="jb-radio" id="jb-radio-8">&nbsp;부산
-                        </label>     
-                        <label class="btn btn-secondary">
-                            <input type="radio" name="jb-radio" id="jb-radio-9">&nbsp;대구
-                        </label>     
-                        <label class="btn btn-secondary">
-                            <input type="radio" name="jb-radio" id="jb-radio-10">&nbsp;대전
-                        </label>     
-                        <label class="btn btn-secondary">
-                            <input type="radio" name="jb-radio" id="jb-radio-11">&nbsp;충청북도
-                        </label>     
-                        <label class="btn btn-secondary">
-                            <input type="radio" name="jb-radio" id="jb-radio-12">&nbsp;충청남도
-                        </label>     
-                        <label class="btn btn-secondary">
-                            <input type="radio" name="jb-radio" id="jb-radio-13">&nbsp;광주
-                        </label>           
-                            <label class="btn btn-secondary">
-                            <input type="radio" name="jb-radio" id="jb-radio-14">&nbsp;세종
-                        </label>
-                        <label class="btn btn-secondary">
-                            <input type="radio" name="jb-radio" id="jb-radio-15">&nbsp;울산
-                        </label>
-                        <label class="btn btn-secondary">
-                            <input type="radio" name="jb-radio" id="jb-radio-16">&nbsp;전라북도
-                        </label>
-                        <label class="btn btn-secondary">
-                            <input type="radio" name="jb-radio" id="jb-radio-17">&nbsp;전라남도
-                        </label>
-                        <label class="btn btn-secondary">
-                            <input type="radio" name="jb-radio" id="jb-radio-18">&nbsp;제주도
-                        </label>
+                        <div class="select">
+							<input type="radio" id="select" name="claasify" checked><label for="select">전체</label> 
+							<input type="radio" id="select2" name="claasify"><label for="select2">전라북도</label>
+							<input type="radio" id="select3" name="claasify"><label for="select3">전라남도</label>
+						</div>
                     </li>
                 </ul>
                 
