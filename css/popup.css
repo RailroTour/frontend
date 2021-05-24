@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/*    font-family: 'NanumSquare', sans-serif;
+        font-family: "Nanum Gothic", sans-serif;
+*/
+
+body{
+    font-family: 'NanumSquare', sans-serif;
+    overflow: hidden;
+}
+center{
+    font-size: 1.5rem;
+    margin-top: 15px;
+    font-family: 'NanumSquare', sans-serif;
+}
+.bar{
+    width: 615px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 2px solid black;
+    margin-top: 20px;
+    font-family: "Nanum Gothic", sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #f8f8f8;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+}
+.bar li{
+    text-align: center;
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.bar .train_kind{
+    width: 100px;
+}
+.bar .start_station{
+    border-left: 1px solid #ccc;
+    width: 80px;
+    border-right: 1px solid #ccc;
+}
+.bar .end_station{
+    width: 80px;
+}
+.bar .start_time{
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    width: 100px;
+}
+.bar .end_time{
+    width: 100px;
+}
+.bar .price{
+    width: 150px;
+    border-left: 1px solid #ccc;
+}
+.informations{
+    overflow: auto;
+    height: 200px;
+    width: 615px;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+}
+.train_info{
+    width: 615px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 1rem;
+    border-bottom: 1px solid #919191;
+    overflow: hidden;
+}
+.train_info li{
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.train_info .train_kind{
+    width: 100px;
+    background-color: #b6d0f8;
+    text-decoration: underline;
+    color: #344f97;
+}
+.train_info .start_station{
+    border-left: 1px solid #ccc;
+    width: 80px;
+    border-right: 1px solid #ccc;
+}
+.train_info .end_station{
+    width: 80px;
+}
+.train_info .start_time{
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    width: 100px;
+}
+.train_info .end_time{
+    width: 100px;
+}
+.train_info .price{
+    width: 150px;
+    border-left: 1px solid #ccc;
+    color: #0000b0;
+}
+.close button{
+    color: white;
+    text-align: center;
+    width: 100px;
+    background-color: #009dff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: "Nanum Gothic", sans-serif;
+    cursor: pointer;
+}
