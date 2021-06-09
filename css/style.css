@@ -572,150 +572,86 @@
     #intro-banner{
         margin-top: 5rem;
     }
-    #intro-banner .planner_view_group{
-        overflow: hidden;
-        width: 1080px;
-        margin: 80px auto;
-    }
-    #intro-banner .planner_view{
-        width: 245px;
-        border: 1px solid #ccc;
-        overflow: hidden;
-        float: left;
-        margin-right: 30px;
-    }
-
-    #intro-banner .planner_view:hover{
-        border: 1px solid #375dff;
-    }
-
-    #intro-banner .planner_view:last-Child{
-        margin-right: 0;
-    }
-
-
-    #intro-banner .content-center{
-        position: relative;
-        height: 90px;
-    }
-    #intro-banner .content-center .group{
-        position: absolute;
-        background: white;
-    }
-    #intro-banner .content-center .group1, .group3, .group5, .group7{
-        z-index: 4
-    }
-    #intro-banner .round_cover{
-        width: 30px;
-        margin: 10px auto;
-        overflow: hidden;
-    }
-    #intro-banner .round{
-        float: left;
-        width: 10px;
-        height: 10px;
-        background: #ccc;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    #intro-banner .round.bu1{
-        background: blue;
-        margin-right: 10px;
-    }
-    #intro-banner .planner_view .title{
-        margin: 14px;
-        overflow: hidden;
-    }
-    #intro-banner .planner_view .title img{
-        float: left;
-    }
-    #intro-banner .planner_view .traveler{
-        float: left;
-        margin-left: 5px;
-        color: #b5b5b5;
-        line-height: 1.1rem;
-    }
-    #intro-banner .planner_view .date{
-        color: #b5b5b5;
-        float: right;
-    }
-    #intro-banner .planner_view .name{
-        float: left;
-        color: #111;
-    }
-
-    #intro-banner .planner_view .cover_bg{
-        display: block;
-        margin: 5px auto;
-    }
-    #intro-banner .planner_view .travel_title{
-        width: 90%;
-        border-bottom: 1px solid #ccc;
-        color: #006cff;
-        font-weight: bold;
-        font-size: 1.1rem;
-        letter-spacing: -1px;
-        margin: 10px auto;
-        padding-bottom: 8px;
-    }
-    #intro-banner .planner_view .content-center{
-        margin: 0 auto;
-        overflow: hidden;
-        width: 90%;
-        padding-bottom: 20px;
-    }
-    #intro-banner .planner_view .travel_content{
-        float: left;
-        font-size: 0.8rem;
-        margin-top: 9px;
-    }
-    #intro-banner .planner_view .travel_content:nth-child(2){
-        margin-left: 8px;
-        margin-right: 8px;
-    }
-    #intro-banner .planner_view .travel_content>span{
-        font-size: 1rem;
-        display: block;
-        margin-bottom: 5px;
-    }
-
-    #intro-banner .planner_view .bottom_title{
-        border-top: 1px solid #ccc;
-        padding-top: 5px;
-        width: 90%;
-        margin: 0 auto;
-    }
-    #intro-banner .planner_view .bottom_title .tag{
-        float: left;
-    }
-    #intro-banner .planner_view .bottom_title .shopping{
-        float: right;
-        padding-bottom: 5px;
-    }
-
-
-    #intro-banner .view{
-        width: 200px;
-        margin: 0 auto;
-    }
-    #intro-banner .view a{
-        display: block;
-        background: #4f93ff;
+    
+    
+    /*    추천 여행 코스*/
+    .planners{
         text-align: center;
+        
+    }
+    .planner{
+        margin-bottom: 30px;
+        cursor: pointer;
+        background-color: #f8f8f8;
+        display: inline-block;
+        width: 30%; 
+        border: 1px solid #ccc;
+        position: relative;
+        overflow: hidden;
+        
+    }
+    .planner .cover-img{
+        width: 348px; 
+        height: 232px;
+        overflow: hidden;
+    }
+    .planner img{
+        width: 348px; 
+        height: auto;
+    }
+    .planner:hover img{
+        transform: scale(1.3);
+        transition: all 2.5s ease-in-out;
+    }
+    .planner .fa-eye{
+        color: #9d9d9d;
+    }
+    .planner .basic-data{
+        font-size: 1.2rem;
+        padding: 5px 10px;
+        overflow: hidden;
+    }
+    .planner .basic-data span.view{
+        float: left;
+    }
+    .planner .basic-data span.writer{
+        float: right;
+        color: #585858;
+    }
+    .planner .contents {
         font-size: 1.3rem;
-        padding: 1rem;
         font-weight: bold;
-        border-radius: 25px;
+        padding: 5px 10px;
+        overflow: hidden;
+        width: 100%;
+    }
+    .planner .contents .days{
+        color: red;
+        float: left;
+    }
+    .planner .contents .title{
+        width: 85%;
+        margin-left: 10px;
+        overflow:hidden; 
+        display: inline-block;
+        text-overflow:ellipsis; 
+        white-space:nowrap;
+        text-align: left;
+    }
+     .planner .circle {
+        background: #ce00ff;
+        border-radius: 50%;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        text-align: center;
         color: white;
-        border: 2px solid #4f93ff;
+        padding: 15px;
     }
-    #intro-banner .view:hover a{
-        background: #fff;
-        color: #4f93ff;
-    }
-
 
 }
+
+
 
 /*모바일*/
 @media screen and (max-width: 768px){
@@ -1167,6 +1103,9 @@
         margin-top: 50px;
     }
     
+    #intro-title{
+        margin-bottom: 40px;
+    }
     #intro-title h2{
         font-size: 2.5rem;
         color: white;
@@ -1186,140 +1125,90 @@
     #intro-banner{
         overflow: hidden;
     }
-    #intro-banner .planner_view_group{
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+    
+    
+    .planners{
+        text-align: center;
+    }
+    .planner{
+        margin-bottom: 40px;
+        cursor: pointer;
+        background-color: #fdfdfd;
+        display: inline-block;
+        width: 31%; 
+        border: 1px solid #ccc;
+        position: relative;
+        overflow: hidden;
+    }
+    .planner .cover-img{
+        overflow: hidden;
+    }
+    .planner img{
+        width: 348px; 
+        height: auto;
+    }
+    .planner:hover img{
+        transform: scale(1.3);
+        transition: all 2.5s ease-in-out;
+    }
+    .planner .fa-eye{
+        color: #9d9d9d;
+    }
+    .planner .basic-data{
+        font-size: 1.2rem;
+        padding: 5px 10px;
+        overflow: hidden;
+    }
+    .planner .basic-data span.view{
+        float: left;
+    }
+    .planner .basic-data span.writer{
+        float: right;
+        color: #585858;
+    }
+    .planner .contents {
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding: 5px 10px;
         overflow: hidden;
         width: 100%;
-        margin: 0px auto;
     }
-    #intro-banner .planner_view{
-        width: 245px;
-        border: 1px solid #ccc;
-        overflow: hidden;
-        margin: 0 auto;
-        margin-top: 20px;
+    .planner .contents .days{
+        color: red;
+        float: left;
     }
-
-    #intro-banner .planner_view:hover{
-        border: 1px solid #375dff;
+    .planner .contents .title{
+        width: 70%;
+        overflow:hidden; 
+        display: inline-block;
+        text-overflow:ellipsis; 
+        white-space:nowrap;
+        text-align: left;
     }
-
-
-    #intro-banner .content-center{
-        position: relative;
-        height: 90px;
-    }
-    #intro-banner .content-center .group{
+     .planner .circle {
+        background: #ce00ff;
+        border-radius: 50%;
         position: absolute;
-        background: white;
-    }
-    #intro-banner .content-center .group1, .group3, .group5, .group7{
-        z-index: 4
-    }
-    #intro-banner .round_cover{
-        width: 30px;
-        margin: 10px auto;
-        overflow: hidden;
-    }
-    #intro-banner .round{
-        float: left;
-        width: 10px;
-        height: 10px;
-        background: #ccc;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    #intro-banner .round.bu1{
-        background: blue;
-        margin-right: 10px;
-    }
-    #intro-banner .planner_view .title{
-        margin: 14px;
-        overflow: hidden;
-    }
-    #intro-banner .planner_view .title img{
-        float: left;
-    }
-    #intro-banner .planner_view .traveler{
-        float: left;
-        margin-left: 5px;
-        color: #b5b5b5;
-        line-height: 1.1rem;
-    }
-    #intro-banner .planner_view .date{
-        color: #b5b5b5;
-        float: right;
-    }
-    #intro-banner .planner_view .name{
-        float: left;
-        color: #111;
-    }
-
-    #intro-banner .planner_view .cover_bg{
-        display: block;
-        margin: 5px auto;
-    }
-    #intro-banner .planner_view .travel_title{
-        width: 90%;
-        border-bottom: 1px solid #ccc;
-        color: #006cff;
-        font-weight: bold;
-        font-size: 1.1rem;
-        letter-spacing: -1px;
-        margin: 10px auto;
-        padding-bottom: 8px;
-    }
-    #intro-banner .planner_view .content-center{
-        margin: 0 auto;
-        overflow: hidden;
-        width: 90%;
-        padding-bottom: 20px;
-    }
-    #intro-banner .planner_view .travel_content{
-        float: left;
-        font-size: 0.8rem;
-        margin-top: 9px;
-    }
-    #intro-banner .planner_view .travel_content:nth-child(2){
-        margin-left: 8px;
-        margin-right: 8px;
-    }
-    #intro-banner .planner_view .travel_content>span{
-        font-size: 1rem;
-        display: block;
-        margin-bottom: 5px;
-    }
-
-    #intro-banner .planner_view .bottom_title{
-        border-top: 1px solid #ccc;
-        padding-top: 5px;
-        width: 90%;
-        margin: 0 auto;
-    }
-    #intro-banner .planner_view .bottom_title .tag{
-        float: left;
-        padding-bottom: 5px;
-    }
-
-
-    #intro-banner .view{
-        width: 200px;
-        margin: 0 auto;
-    }
-    #intro-banner .view a{
-        display: block;
-        background: #4f93ff;
+        top: 5px;
+        right: 5px;
         text-align: center;
-        font-size: 1.3rem;
-        padding: 1rem;
-        font-weight: bold;
-        border-radius: 25px;
         color: white;
-        border: 2px solid #4f93ff;
+        padding: 15px;
     }
-    #intro-banner .view:hover a{
-        background: #fff;
-        color: #4f93ff;
-    }
+    
+}
+
+
+
+.planner .tema-tour{
+    background-color: #9d00ff;
+}
+.planner .tema-rest{
+    background-color: green;
+}
+.planner .tema-experience{
+    background-color: #0a84ff;
+}
+.planner .tema-health{
+    background-color: #ffa700;
 }

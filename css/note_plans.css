@@ -241,6 +241,8 @@
 /*    로딩바*/
     #viewLoading{
         display: none;
+
+        text-align: center;
     }
     
 /*    상단 로고 및 메뉴*/

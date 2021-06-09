@@ -310,7 +310,7 @@
     }
     .route_search .search_result{
         width: 100%;
-        height: 80%;
+        height: 85%;
         overflow: auto;
     }
     .route_search .search_area .area_name{

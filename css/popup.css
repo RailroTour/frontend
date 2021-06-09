@@ -14,6 +14,27 @@ center{
     margin-top: 15px;
     font-family: 'NanumSquare', sans-serif;
 }
+#train{
+    text-align: center;
+    margin-top: 3%;
+}
+#train li{
+    display: inline-block;
+}
+#train li select{
+    padding: 3px 0px;
+    width: 100px;
+}
+#search-btn button{
+    color: white;
+    background-color: #009dff;
+    border-radius: 5px;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+
 .bar{
     width: 615px;
     margin: 0 auto;

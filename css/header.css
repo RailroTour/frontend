@@ -218,7 +218,8 @@
         padding-top: 15px;
         padding-bottom: 15px;
     }
-    .section{
+    #head-bot>.section,
+    #head-top>.section{
         flex-direction: column;
         display: flex;
         overflow: hidden;

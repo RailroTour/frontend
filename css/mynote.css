@@ -16,7 +16,6 @@
         overflow: hidden;
     }
 
-
     #sub-con-navi{
         border-bottom: 1px solid #ccc;
         overflow: hidden;
@@ -308,6 +307,7 @@
         overflow: hidden;
     }
     .plan_route .plan_info .day_info{
+        margin-top: 30px;
 
     }
     .plan_route .plan_info .day_info .day{
@@ -482,6 +482,9 @@
     .plan_route table tr td:nth-child(4){
         width: 285px;
     }
+    .plan_route table tr td:nth-child(5){
+        width: 285px;
+    }
     table tr td div{
         margin-left: 10px;
     }
@@ -493,7 +496,9 @@
         display: none;
     }
     
-    
+    .plan_nav .nav_route{
+        display: none;
+    }
     
     #sub-con-navi{
         border-bottom: 1px solid #ccc;
@@ -891,6 +896,9 @@
         width: 285px;
     }
     .plan_route table tr td:nth-child(4){
+        width: 285px;
+    }
+    .plan_route table tr td:nth-child(5){
         width: 285px;
     }
     table tr td div{

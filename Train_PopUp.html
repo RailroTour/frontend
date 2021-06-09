@@ -8,9 +8,43 @@
     <link rel="stylesheet" href="./css/popup.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script>
+    <script type="text/javascript" src="./js/jquery.ajax-cross-origin.min.js"></script>
+    <script src="./js/popup.js"></script>
 </head>
 <body>
     <center>기차시간 조회</center>
+        <ul id="train">
+            <li>    
+                <select name="start-train-station" id="start">
+                     <option value="">출발역 선택</option>
+                     <optgroup label="전라북도">
+                        <option value="NAT320131">대야</option>
+                        <option value="NAT030667">용동</option>
+                     </optgroup>
+                    <optgroup label="전라남도">
+                        <option value="NAT031998">나주</option>
+                        <option value="NAT032099">다시</option>
+                     </optgroup>
+                </select>
+           </li>
+           <li>-</li>
+            <li>
+                <select name="end-train-station" id="end">
+                     <option value="">도착역 선택</option>
+                     <optgroup label="전라북도">
+                        <option value="NAT320131">대야</option>
+                        <option value="NAT030667">용동</option>
+                     </optgroup>
+                    <optgroup label="전라남도">
+                        <option value="NAT031998">나주</option>
+                        <option value="NAT032099">다시</option>
+                     </optgroup>
+                </select>
+            </li>
+            <li id="search-btn">
+                <button>조회</button>
+            </li>
+    </ul>
     <!--열차종류, 출발지, 도착지, 출발시간, 도착시간, 가격-->
     <ul class="bar">
         <li class="train_kind">열차 종류</li>
